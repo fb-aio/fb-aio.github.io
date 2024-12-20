@@ -1,0 +1,1 @@
+import{ax as e,ay as u,aK as r}from"./index-CbmALuuH.js";function a(t){const o=e(u.muted);return r.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:o,...t})}function n(t){const o=e(u.muted);return r.jsx("audio",{controls:!0,autoPlay:!0,loop:!0,muted:o,...t})}export{n as A,a as V};
