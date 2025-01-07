@@ -1,0 +1,1 @@
+import{r,aM as t}from"./index-tVoMhA9s.js";import{i as s}from"./MyApp-CoDKbg3z.js";import{c as a}from"./groups-XndzC3cr.js";function c(){s("ManageGroups.data",[]);const[e,o]=s("ManageGroups.posts",[]);return r.useEffect(()=>{a({groupID:"1154059318582088",startTime:1704526131e3}).then(o)},[]),t.jsx(t.Fragment,{children:"Manage Group"})}export{c as default};
