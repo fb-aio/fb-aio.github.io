@@ -1,0 +1,1 @@
+import{r as i,aL as u}from"./index-umhg-c6o.js";import{j as s,aa as n}from"./MyApp-DUCIl_8m.js";function l({target:o}){return s("About."+(o==null?void 0:o.id),null),i.useEffect(()=>{o!=null&&o.id&&n(o.id)},[o==null?void 0:o.id]),u.jsx(u.Fragment,{children:"About"})}export{l as default};
