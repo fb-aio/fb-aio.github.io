@@ -1,0 +1,1 @@
+System.register(["./index-legacy-B8f70dyz.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.aL}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
