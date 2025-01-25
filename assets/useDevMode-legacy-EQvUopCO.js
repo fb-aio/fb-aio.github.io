@@ -1,0 +1,1 @@
+System.register(["./index-legacy-BS3M7GzW.js"],(function(e,t){"use strict";var n,s;return{setters:[e=>{n=e.ax,s=e.ay}],execute:function(){e("u",(function(){const e=n(s.devMode),t=n(s.setDevMode);return{devMode:e,setDevMode:t}}))}}}));
