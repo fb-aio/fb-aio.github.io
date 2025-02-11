@@ -1,1 +1,0 @@
-System.register(["./index-legacy-Czz5p9p5.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.aM}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
