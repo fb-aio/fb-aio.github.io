@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DDZkDdRn.js"],(function(e,t){"use strict";var n,s;return{setters:[e=>{n=e.ay,s=e.az}],execute:function(){e("u",(function(){const e=n(s.devMode),t=n(s.setDevMode);return{devMode:e,setDevMode:t}}))}}}));
