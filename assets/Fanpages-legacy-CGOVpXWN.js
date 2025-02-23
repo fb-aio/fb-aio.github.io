@@ -1,1 +1,0 @@
-System.register(["./index-legacy-iq35y4yc.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.aM}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
