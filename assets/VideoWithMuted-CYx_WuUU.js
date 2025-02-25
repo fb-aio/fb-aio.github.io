@@ -1,1 +1,0 @@
-import{ay as o,az as u,aM as r}from"./index-r4DOAPZF.js";function a(t){const e=o(u.muted);return r.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t,children:t.children})}function n(t){const e=o(u.muted);return r.jsx("audio",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t})}export{n as A,a as V};

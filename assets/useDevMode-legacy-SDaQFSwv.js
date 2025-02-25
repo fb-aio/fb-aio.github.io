@@ -1,0 +1,1 @@
+System.register(["./index-legacy-8-GCpkLg.js"],(function(e,t){"use strict";var n,s;return{setters:[e=>{n=e.az,s=e.aA}],execute:function(){e("u",(function(){const e=n(s.devMode),t=n(s.setDevMode);return{devMode:e,setDevMode:t}}))}}}));
