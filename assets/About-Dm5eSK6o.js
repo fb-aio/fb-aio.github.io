@@ -1,1 +1,0 @@
-import{r as i,aM as u}from"./index-Cfldxvxn.js";import{e as s,ac as n}from"./MyApp-DfLIkit0.js";function d({target:o}){return s("About."+(o==null?void 0:o.id),null),i.useEffect(()=>{o!=null&&o.id&&n(o.id)},[o==null?void 0:o.id]),u.jsx(u.Fragment,{children:"About"})}export{d as default};
