@@ -1,1 +1,0 @@
-System.register(["./index-legacy-Bl2rtZQd.js"],(function(e,t){"use strict";var n,s;return{setters:[e=>{n=e.aK,s=e.aL}],execute:function(){e("u",(function(){const e=n(s.devMode),t=n(s.setDevMode);return{devMode:e,setDevMode:t}}))}}}));
