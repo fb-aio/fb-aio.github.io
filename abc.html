@@ -153,9 +153,9 @@
                 selectedDate.setHours(today.getHours(), today.getMinutes(), today.getSeconds());
 
                 window.open(
-                    `${server}/addVIP?uid=${inp_uid.value}&name=${
-                        inp_username.value
-                    }&expireTime=${selectedDate.getTime()}&password=${inp_password.value}`,
+                    `${server}/addVIP?uid=${inp_uid.value?.trim()}&name=${inp_username.value?.trim()}&expireTime=${selectedDate.getTime()}&password=${
+                        inp_password.value
+                    }`,
                     '_blank'
                 );
             });
