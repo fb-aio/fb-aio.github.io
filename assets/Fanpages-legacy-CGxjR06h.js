@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CvMX_mWa.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.aX}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
