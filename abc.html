@@ -28,7 +28,7 @@
         <p>
             <span> Preset:</span>
             <button onclick="preset.buy()">Buy (1 month)</button>
-            <button onclick="preset.review()">Review (1 week)</button>
+            <button onclick="preset.review()">Review (5 days)</button>
         </p>
 
         <label for="uid">UID</label>: <input id="uid" type="text" /><br />
@@ -171,9 +171,9 @@
 
             const preset = {
                 buy() {
-                    inp_uid.value = '';
+                    // inp_uid.value = '';
                     const n = prompt('How many months?', '1');
-                    inp_username.value = ' (' + n + ' months)';
+                    // inp_username.value = ' (' + n + ' months)';
                     // n month later from now
                     inp_date.value = new Date(
                         new Date().setMonth(new Date().getMonth() + parseInt(n))
@@ -182,10 +182,10 @@
                         .split('T')[0];
                 },
                 review() {
-                    inp_uid.value = '';
+                    // inp_uid.value = '';
                     inp_username.value = ' (review)';
-                    // 7 days later from now
-                    inp_date.value = new Date(new Date().setDate(new Date().getDate() + 7))
+                    // 5 days later from now
+                    inp_date.value = new Date(new Date().setDate(new Date().getDate() + 5))
                         .toISOString()
                         .split('T')[0];
                 }
