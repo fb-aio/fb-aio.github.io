@@ -1,0 +1,1 @@
+import{aU as e,r as s,aW as r}from"./index-CSUSveRp.js";function i({target:a}){const{ti:t}=e();return s.useState([]),r.jsx("div",{children:r.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}export{i as default};
