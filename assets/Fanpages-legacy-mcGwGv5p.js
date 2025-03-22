@@ -1,1 +1,0 @@
-System.register(["./index-legacy-vmtn728u.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.aW}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
