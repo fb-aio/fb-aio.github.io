@@ -1,1 +1,0 @@
-System.register(["./index-legacy-BhhpuGzU.js"],(function(e,t){"use strict";var n,s;return{setters:[e=>{n=e.aJ,s=e.aK}],execute:function(){e("u",(function(){const e=n(s.devMode),t=n(s.setDevMode);return{devMode:e,setDevMode:t}}))}}}));
