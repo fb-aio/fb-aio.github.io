@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CNCum5uo.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.aW}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
