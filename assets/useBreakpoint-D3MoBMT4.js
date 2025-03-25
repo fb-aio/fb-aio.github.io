@@ -1,1 +1,0 @@
-import{r as o,v as a}from"./index-DQ0yk-ze.js";import{u as c}from"./useForceUpdate-Dc81BxcG.js";import{u as f}from"./index-8_LI6n9A.js";function b(){let s=arguments.length>0&&arguments[0]!==void 0?arguments[0]:!0;const e=o.useRef({}),t=c(),r=f();return a(()=>{const n=r.subscribe(u=>{e.current=u,s&&t()});return()=>r.unsubscribe(n)},[]),e.current}export{b as u};
