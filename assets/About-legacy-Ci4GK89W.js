@@ -1,0 +1,1 @@
+System.register(["./index-legacy-jXzPIGGS.js","./MyApp-legacy-B705nUPC.js"],(function(e,t){"use strict";var r,i,n,u;return{setters:[e=>{r=e.r,i=e.b6},e=>{n=e.i,u=e.aJ}],execute:function(){e("default",(function({target:e}){return n("About."+e?.id,null),r.useEffect((()=>{e?.id&&u(e.id)}),[e?.id]),i.jsx(i.Fragment,{children:"About"})}))}}}));
