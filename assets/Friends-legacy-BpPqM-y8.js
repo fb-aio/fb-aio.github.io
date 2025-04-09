@@ -1,1 +1,0 @@
-System.register(["./index-legacy-jXzPIGGS.js"],(function(e,t){"use strict";var r,n,i;return{setters:[e=>{r=e.b4,n=e.r,i=e.b6}],execute:function(){e("default",(function({target:e}){const{ti:t}=r();return n.useState([]),i.jsx("div",{children:i.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));
