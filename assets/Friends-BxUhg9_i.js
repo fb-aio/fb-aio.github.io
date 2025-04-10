@@ -1,1 +1,0 @@
-import{b6 as e,r as s,b8 as r}from"./index-wbIphP0C.js";function i({target:n}){const{ti:t}=e();return s.useState([]),r.jsx("div",{children:r.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}export{i as default};
