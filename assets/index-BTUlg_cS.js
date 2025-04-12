@@ -1,0 +1,1 @@
+import{b6 as t,b8 as r}from"./index-Ch_G9kBw.js";import{S as e}from"./Screen-BtXnKjhR.js";import"./col-CdLcpdvi.js";import"./row-s2gux7rM.js";import"./responsiveObserver-C0IFxghw.js";import"./MyApp-CWjpWm50.js";function u(){const{ti:o}=t();return r.jsx(e,{title:o({en:"Coming soon",vi:"Sắp ra mắt"})+" 🌠",mode:"center"})}export{u as default};
