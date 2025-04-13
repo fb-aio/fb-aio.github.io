@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CUf9GEiQ.js","./MyApp-legacy-DzZ8DJEP.js"],(function(e,t){"use strict";var r,i,n,u;return{setters:[e=>{r=e.r,i=e.b8},e=>{n=e.i,u=e.aH}],execute:function(){e("default",(function({target:e}){return n("About."+e?.id,null),r.useEffect((()=>{e?.id&&u(e.id)}),[e?.id]),i.jsx(i.Fragment,{children:"About"})}))}}}));
