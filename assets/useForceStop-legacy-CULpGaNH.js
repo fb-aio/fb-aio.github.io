@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CQTAZTzy.js"],(function(e,t){"use strict";var r;return{setters:[e=>{r=e.r}],execute:function(){e("u",(function(){const e=r.useRef((()=>{}));return r.useEffect((()=>()=>e.current()),[]),{start(){e.current();let t=!1;return e.current=()=>{t=!0},{value:()=>t,stop(){t=!0}}},stop(){e.current()}}}))}}}));
