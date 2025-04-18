@@ -1,1 +1,0 @@
-System.register(["./index-legacy-CkTbUFYN.js"],(function(e,t){"use strict";var r;return{setters:[e=>{r=e.b8}],execute:function(){e("default",(function({target:e,postId:t}){return r.jsx("div",{children:"Share"})}))}}}));
