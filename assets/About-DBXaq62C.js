@@ -1,0 +1,1 @@
+import{r as u,b8 as o}from"./index-B1m4p4sF.js";import{i as s,aI as n}from"./MyApp-BYMspX5C.js";function l({target:i}){return s("About."+(i==null?void 0:i.id),null),u.useEffect(()=>{i!=null&&i.id&&n(i.id)},[i==null?void 0:i.id]),o.jsx(o.Fragment,{children:"About"})}export{l as default};
