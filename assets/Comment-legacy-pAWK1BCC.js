@@ -1,1 +1,0 @@
-System.register(["./index-legacy-BsTDsbq7.js"],(function(e,t){"use strict";var r;return{setters:[e=>{r=e.b9}],execute:function(){e("default",(function({target:e,postId:t}){return r.jsx("h2",{children:"Comments: 🚧 Work in progress"})}))}}}));
