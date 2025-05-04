@@ -1,0 +1,1 @@
+import{r as o,Q as a}from"./index-CFP_M0pK.js";import{u as c}from"./useForceUpdate-CjHLsKFV.js";import{u as f}from"./responsiveObserver-d3qeAXeD.js";function b(){let s=arguments.length>0&&arguments[0]!==void 0?arguments[0]:!0;const e=o.useRef({}),t=c(),r=f();return a(()=>{const n=r.subscribe(u=>{e.current=u,s&&t()});return()=>r.unsubscribe(n)},[]),e.current}export{b as u};
