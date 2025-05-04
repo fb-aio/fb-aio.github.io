@@ -1,0 +1,1 @@
+System.register(["./index-legacy-30tEudgh.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.b9}],execute:function(){e("default",(function(){return n.jsx(n.Fragment,{children:"Fanpages"})}))}}}));
