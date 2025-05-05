@@ -1,1 +1,0 @@
-import{aW as o,aX as u,b9 as r}from"./index-CFP_M0pK.js";function n(t){const e=o(u.muted);return r.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t,children:t.children})}function a(t){const e=o(u.muted);return r.jsx("audio",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t})}export{a as A,n as V};
