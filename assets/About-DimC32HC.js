@@ -1,1 +1,0 @@
-import{r as u,b9 as o}from"./index-Zc7Ca41U.js";import{i as s,aJ as n}from"./MyApp-BaflfD-a.js";function l({target:i}){return s("About."+(i==null?void 0:i.id),null),u.useEffect(()=>{i!=null&&i.id&&n(i.id)},[i==null?void 0:i.id]),o.jsx(o.Fragment,{children:"About"})}export{l as default};
