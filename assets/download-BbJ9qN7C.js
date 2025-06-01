@@ -1,0 +1,1 @@
+function a(o,n){const e=document.createElement("a");e.href=o,e.download=n,e.target="_blank",e.rel="noopener noreferrer",e.referrerPolicy="no-referrer-when-downgrade",document.body.appendChild(e),e.click(),document.body.removeChild(e)}async function t(o,n){const e=new Blob([o],{type:"application/json"}),r=URL.createObjectURL(e);a(r,n),URL.revokeObjectURL(r)}export{t as a,a as d};
