@@ -1,1 +1,0 @@
-import{b6 as t,r as e,b8 as r}from"./index-CMf_ecK7.js";function d({target:n}){const{ti:s}=t(),[i,a]=e.useState([]);return r.jsx("div",{children:r.jsx("h1",{children:s({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}export{d as default};

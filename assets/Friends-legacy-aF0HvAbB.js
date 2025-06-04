@@ -1,0 +1,1 @@
+System.register(["./index-legacy-Dn0Xtw2p.js"],(function(e,t){"use strict";var r,n,i;return{setters:[e=>{r=e.b9,n=e.r,i=e.bb}],execute:function(){e("default",(function({target:e}){const{ti:t}=r(),[s,c]=n.useState([]);return i.jsx("div",{children:i.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));
