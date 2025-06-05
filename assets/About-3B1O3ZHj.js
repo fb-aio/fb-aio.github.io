@@ -1,1 +1,0 @@
-import{r as u,bc as o}from"./index-H_Z-vH28.js";import{i as s,aF as n}from"./MyApp-B_g8LIxh.js";function d({target:i}){return s("About."+(i==null?void 0:i.id),null),u.useEffect(()=>{i!=null&&i.id&&n(i.id)},[i==null?void 0:i.id]),o.jsx(o.Fragment,{children:"About"})}export{d as default};
