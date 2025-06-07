@@ -1,1 +1,0 @@
-System.register(["./index-legacy-Baz-A1OG.js"],(function(e,t){"use strict";var r,n,i;return{setters:[e=>{r=e.ba,n=e.r,i=e.bc}],execute:function(){e("default",(function({target:e}){const{ti:t}=r(),[s,c]=n.useState([]);return i.jsx("div",{children:i.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));
