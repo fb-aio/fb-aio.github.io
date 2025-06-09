@@ -1,1 +1,0 @@
-import{ba as t,r as e,bc as r}from"./index-Dt3dbTyS.js";function c({target:n}){const{ti:s}=t(),[i,a]=e.useState([]);return r.jsx("div",{children:r.jsx("h1",{children:s({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}export{c as default};
