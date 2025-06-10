@@ -1,0 +1,1 @@
+System.register([],(function(e,t){"use strict";return{execute:function(){e("getInstaUsernameFromURL",(function(e=""){return/instagram.com\/stories\/([^\/]+)/.exec(e)?.[1]||/instagram.com\/([^\/]+)/.exec(e)?.[1]}))}}}));
