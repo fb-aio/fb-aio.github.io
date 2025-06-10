@@ -1,0 +1,1 @@
+import{b9 as t,r as e,bb as r}from"./index-BIBdFLQ1.js";function d({target:n}){const{ti:s}=t(),[i,a]=e.useState([]);return r.jsx("div",{children:r.jsx("h1",{children:s({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}export{d as default};
