@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CdOc5CRl.js"],(function(e,t){"use strict";var r,n,i;return{setters:[e=>{r=e.bb,n=e.r,i=e.bd}],execute:function(){e("default",(function({target:e}){const{ti:t}=r(),[s,c]=n.useState([]);return i.jsx("div",{children:i.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));
