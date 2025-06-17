@@ -1,0 +1,1 @@
+import{aT as o,aU as u,aW as r}from"./index-CigYlAwO.js";function a(t){const e=o(u.muted);return r.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t,children:t.children})}function d(t){const e=o(u.muted);return r.jsx("audio",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t})}export{d as AudioWithMuted,a as default};

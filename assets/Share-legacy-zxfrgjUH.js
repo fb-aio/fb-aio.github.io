@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DmD5eBsc.js"],(function(e,t){"use strict";var r;return{setters:[e=>{r=e.aW}],execute:function(){e("default",(function({target:e,postId:t}){return r.jsx("h2",{children:"Shares: 🚧 Work in progress"})}))}}}));
