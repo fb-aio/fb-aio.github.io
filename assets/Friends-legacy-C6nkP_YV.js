@@ -1,1 +1,0 @@
-System.register(["./index-legacy-BSBAr0sT.js"],(function(e,t){"use strict";var r,n,i;return{setters:[e=>{r=e.a$,n=e.r,i=e.aW}],execute:function(){e("default",(function({target:e}){const{ti:t}=r(),[s,c]=n.useState([]);return i.jsx("div",{children:i.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));

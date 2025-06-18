@@ -1,0 +1,1 @@
+import{r as u,aW as i}from"./index-ngsDSLD_.js";import s from"./useCacheState-qrl8eZ7W.js";import{ar as f}from"./MyApp-BFxuDYu2.js";function l({target:o}){return s("About."+(o==null?void 0:o.id),null),u.useEffect(()=>{o!=null&&o.id&&f(o.id)},[o==null?void 0:o.id]),i.jsx(i.Fragment,{children:"About"})}export{l as default};
