@@ -1,0 +1,1 @@
+import{aT as o,aU as r,aW as u}from"./index-hQEvDYx3.js";function a(t){const e=o(r.muted);return u.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t,children:t.children})}export{a as default};
