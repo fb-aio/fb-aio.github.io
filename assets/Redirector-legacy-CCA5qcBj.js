@@ -1,0 +1,1 @@
+System.register(["./index-legacy-14azebin.js"],(function(e,t){"use strict";var n,r,s,u;return{setters:[e=>{n=e.b6,r=e.bf,s=e.r,u=e.b3}],execute:function(){e("default",(function({to:e}){const t=n(),c=r();return s.useEffect((()=>{t.pathname!==e&&c(e)}),[e]),u.jsx(u.Fragment,{})}))}}}));

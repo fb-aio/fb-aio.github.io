@@ -1,0 +1,1 @@
+System.register(["./index-legacy-14azebin.js","./MyApp-legacy-CiTM_dDY.js"],(function(e,t){"use strict";var r,n,s;return{setters:[e=>{r=e.r,n=e.b3},e=>{s=e.u}],execute:function(){e("default",(function({target:e}){const{ti:t}=s(),[i,c]=r.useState([]);return n.jsx("div",{children:n.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));

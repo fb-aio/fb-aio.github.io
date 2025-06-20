@@ -1,0 +1,1 @@
+System.register(["./index-legacy-14azebin.js"],(function(e,t){"use strict";var r;return{setters:[e=>{r=e.b3}],execute:function(){e("default",(function({target:e,postId:t}){return r.jsx("h2",{children:"Shares: 🚧 Work in progress"})}))}}}));
