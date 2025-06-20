@@ -1,0 +1,1 @@
+System.register(["./index-legacy-C5UlsND8.js"],(function(e,t){"use strict";var n,r,u;return{setters:[e=>{n=e.aU,r=e.aS,u=e.b3}],execute:function(){e("default",(function(e){const t=n(r.muted);return u.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:t,...e,children:e.children})}))}}}));
