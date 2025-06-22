@@ -1,0 +1,1 @@
+import{r as t,b3 as i}from"./index-CH61Qr5c.js";import o from"./useCacheState-BWsyRM6U.js";import{aT as r}from"./MyApp-a9CNwDIi.js";function e({target:e}){return o("About."+(null==e?void 0:e.id),null),t.useEffect((()=>{(null==e?void 0:e.id)&&r(e.id)}),[null==e?void 0:e.id]),i.jsx(i.Fragment,{children:"About"})}export{e as default};
