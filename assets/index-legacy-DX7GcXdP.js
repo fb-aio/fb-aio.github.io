@@ -1,1 +1,0 @@
-System.register(["./index-legacy-C2sOvnwe.js"],(function(e,t){"use strict";var n,r;return{setters:[e=>{n=e.b3,r=e.b7}],execute:function(){e("default",(function(){return n.jsx("div",{children:n.jsx(r,{onClick:async()=>{},children:"Test"})})}))}}}));

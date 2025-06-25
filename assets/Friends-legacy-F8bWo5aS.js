@@ -1,0 +1,1 @@
+System.register(["./index-legacy-Bz6e7Qlg.js","./MyApp-legacy-DLZbFEUA.js"],(function(e,t){"use strict";var r,n,s;return{setters:[e=>{r=e.r,n=e.b3},e=>{s=e.u}],execute:function(){e("default",(function({target:e}){const{ti:t}=s(),[i,c]=r.useState([]);return n.jsx("div",{children:n.jsx("h1",{children:t({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}))}}}));
