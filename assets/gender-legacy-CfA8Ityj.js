@@ -1,1 +1,0 @@
-System.register([],(function(e,n){"use strict";return{execute:function(){var n=e("a",(e=>(e.MALE="MALE",e.FEMALE="FEMALE",e.NEUTER="NEUTER",e.UNKNOWN="UNKNOWN",e))(n||{}));e("G",{MALE:{color:"blue",en:"Male",vi:"Nam"},FEMALE:{color:"pink",en:"Female",vi:"Nữ"},NEUTER:{color:"orange",en:"Neuter",vi:"Trung tính"},UNKNOWN:{color:"default",en:"Unknown",vi:"Không xác định"}})}}}));
