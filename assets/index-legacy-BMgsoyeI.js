@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CwhWm-gy.js"],(function(e,t){"use strict";var n,r;return{setters:[e=>{n=e.b3,r=e.b8}],execute:function(){e("default",(function(){return n.jsx("div",{children:n.jsx(r,{onClick:async()=>{},children:"Test"})})}))}}}));

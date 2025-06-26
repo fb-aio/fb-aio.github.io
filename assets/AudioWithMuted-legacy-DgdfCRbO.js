@@ -1,0 +1,1 @@
+System.register(["./index-legacy-CwhWm-gy.js"],(function(t,e){"use strict";var u,n,o;return{setters:[t=>{u=t.aV,n=t.aT,o=t.b3}],execute:function(){t("default",(function(t){const e=u(n.muted);return o.jsx("audio",{controls:!0,autoPlay:!0,loop:!0,muted:e,...t})}))}}}));

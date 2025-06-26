@@ -1,1 +1,0 @@
-System.register(["./index-legacy-HlUvSt2C.js"],(function(e,t){"use strict";var n,r,a;return{setters:[e=>{n=e.b6,r=e.bf,a=e.r}],execute:function(){e("default",(function({to:e,search:t}){const c=n(),s=r();return a.useEffect((()=>{if(c.pathname===e)return;const n=[t,c.search].filter(Boolean).map((e=>e.replace("?",""))).join("&");s({pathname:e,search:n})}),[e,t]),null}))}}}));
