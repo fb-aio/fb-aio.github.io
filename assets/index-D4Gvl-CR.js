@@ -1,0 +1,1 @@
+import{b3 as s,b8 as e,cz as n,aR as a}from"./index-BHawqXDM.js";function t(){return s.jsx("div",{children:s.jsx(e,{onClick:async()=>{n(["tabs"]).then((s=>{s&&a("chrome.tabs.query",[{}]).then(console.log)}))},children:"Test"})})}export{t as default};
