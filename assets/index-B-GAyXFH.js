@@ -1,0 +1,1 @@
+import{b0 as r,b5 as s}from"./index-CDvU_Y4s.js";import{S as t}from"./Screen-e-O0I9MF.js";import"./col-BIL2fzIw.js";import"./row-B_wnN_in.js";import"./useBreakpoint-B1McFKOU.js";import"./MyApp-Dn0GDBhz.js";function o(){return r.jsx(t,{title:"Test",children:r.jsx(s,{onClick:()=>{},children:"Test"})})}export{o as default};

@@ -1,0 +1,1 @@
+import{aS as o,aQ as t,b0 as a}from"./index-CDvU_Y4s.js";function e(e){const n=o(t.muted);return a.jsx("video",{controls:!0,autoPlay:!0,loop:!0,muted:n,...e,children:e.children})}export{e as default};
