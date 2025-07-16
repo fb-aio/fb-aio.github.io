@@ -1,1 +1,0 @@
-import{r as t,b0 as i}from"./index-BAuWTpdf.js";import o from"./useCacheState-iX1yB8bB.js";import{aP as r}from"./MyApp-CzQIiubU.js";function e({target:e}){return o("About."+(null==e?void 0:e.id),null),t.useEffect((()=>{(null==e?void 0:e.id)&&r(e.id)}),[null==e?void 0:e.id]),i.jsx(i.Fragment,{children:"About"})}export{e as default};
