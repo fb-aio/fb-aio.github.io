@@ -1,1 +1,0 @@
-import{b3 as e,bc as a,r}from"./index-msCLmypP.js";function t({to:t,search:n}){const s=e(),o=a();return r.useEffect((()=>{if(s.pathname===t)return;const e=[n,s.search].filter(Boolean).map((e=>e.replace("?",""))).join("&");o({pathname:t,search:e})}),[t,n]),null}export{t as default};
