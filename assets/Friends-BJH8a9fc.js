@@ -1,1 +1,0 @@
-import{r,b1 as t}from"./index-DMoEY0cz.js";import{u as s}from"./MyApp-DAon9VKq.js";function e({target:e}){const{ti:i}=s(),[n,o]=r.useState([]);return t.jsx("div",{children:t.jsx("h1",{children:i({en:"🚧 Work in progress",vi:"🚧 Đang phát triển"})})})}export{e as default};

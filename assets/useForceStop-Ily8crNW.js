@@ -1,1 +1,0 @@
-import{r}from"./index-DMoEY0cz.js";function t(){const t=r.useRef((()=>{}));return r.useEffect((()=>()=>t.current()),[]),{start(){t.current();let r=!1;return t.current=()=>{r=!0},{value:()=>r,stop(){r=!0}}},stop(){t.current()}}}export{t as u};
