@@ -1,1 +1,0 @@
-import{aU as a,bc as e,r}from"./index-BhXd2Xk3.js";function t({to:t,search:n}){const s=a(),o=e();return r.useEffect((()=>{if(s.pathname===t)return;const a=[n,s.search].filter(Boolean).map((a=>a.replace("?",""))).join("&");o({pathname:t,search:a})}),[t,n]),null}export{t as default};
