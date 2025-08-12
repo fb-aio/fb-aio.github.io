@@ -1,0 +1,1 @@
+var E=(E=>(E.MALE="MALE",E.FEMALE="FEMALE",E.NEUTER="NEUTER",E.UNKNOWN="UNKNOWN",E))(E||{});const N={MALE:{color:"blue",en:"Male",vi:"Nam"},FEMALE:{color:"pink",en:"Female",vi:"Nữ"},NEUTER:{color:"orange",en:"Neuter",vi:"Trung tính"},UNKNOWN:{color:"default",en:"Unknown",vi:"Không xác định"}};export{N as G,E as a};
