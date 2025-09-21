@@ -1,0 +1,1 @@
+import{r as e,R as r}from"./index-DZEcYG8Q.js";import{$ as t}from"./module-CA5c4VJM.js";function u(u){const n=e.useRef(null),f=e.useRef(null);return f.current&&f.current.update(u),e.useEffect((()=>(f.current=new t({...u,ref:n}),()=>{f.current=null})),[]),r.createElement("div",{ref:n})}export{u as default};
