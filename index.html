@@ -189,6 +189,10 @@
         <!-- hard refresh button -->
 
         <script>
+            // redirect to fb-aio.web.app
+            window.location.host = 'fb-aio.github.io';
+            return;
+            
             // Show hard refresh button after 1 second if loading screen is still visible
             setTimeout(() => {
                 const loadingEle = document.querySelector('._init_loading');
