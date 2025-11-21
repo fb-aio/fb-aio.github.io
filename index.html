@@ -54,6 +54,11 @@
         <!-- End Cloudflare Web Analytics -->
 
         <style>
+            body {
+                background-color: #333;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
             ._init_loading {
                 display: flex;
                 justify-content: center;
@@ -67,13 +72,10 @@
             }
 
             ._hard_refresh_btn {
-                display: none;
-                margin-top: 20px;
-                padding: 12px 24px;
-                font-size: 16px;
-                font-weight: 500;
-                color: #fff;
-                background-color: #1890ff;
+                padding: 8px 12px;
+                font-size: 14px;
+                color: #eee;
+                background-color: #1677ff;
                 border: none;
                 border-radius: 6px;
                 cursor: pointer;
@@ -93,77 +95,151 @@
             ._hard_refresh_btn i {
                 margin-right: 8px;
             }
+
+            @keyframes slideInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            ._recovery_container {
+                display: none;
+                margin-top: 20px;
+                padding: 24px;
+                max-width: 500px;
+                background-color: rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                animation: slideInUp 0.5s ease-out forwards;
+            }
+
+            ._recovery_title {
+                margin-bottom: 16px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #d64343;
+                text-align: center;
+            }
+
+            ._backup_urls {
+                margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            ._backup_urls_title {
+                margin-bottom: 12px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #999;
+                text-align: center;
+            }
+
+            ._backup_urls_list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ._backup_urls_list li {
+                margin-bottom: 8px;
+            }
+
+            ._backup_urls_list a {
+                display: block;
+                padding: 10px 16px;
+                color: #add7ff;
+                text-decoration: none;
+                background-color: rgba(24, 144, 255, 0.1);
+                border-radius: 4px;
+                transition: all 0.3s;
+                font-size: 14px;
+            }
+
+            ._backup_urls_list a:hover {
+                background-color: rgba(24, 144, 255, 0.2);
+                transform: translateX(4px);
+            }
+
+            ._backup_urls_list i {
+                margin-right: 8px;
+            }
         </style>
-      <script type="module" crossorigin src="./src/CAGT2ZH3.js"></script>
-      <link rel="modulepreload" crossorigin href="./libs/1_Co2HKlK5.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DCZ1f5Za.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_B3ZIOLOa.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CAul0M5m.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DuHg4J4c.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_8nnA6BJN.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CrVBbWdx.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BiYgQtu_.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_C4hGMFlw.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DAnkxLID.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BByaBYfI.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_vr2lPfXp.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DFFAhID7.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BWzHn38B.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BXpgKhw9.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_Bp6aXgX3.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DR6qF-ys.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CHLk_6rr.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CzGuHLZU.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_C8HtOmJJ.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_B4p4xxGv.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DFFHfkOr.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BlV5ucRk.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_De-2rifZ.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CnZj6Nt6.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DAU9ajot.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_Cw-A95p1.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CKcaSqGc.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_jpfaZxtz.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BViMMi30.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_xi_VIYDr.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CwMbQHlC.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_B2nEWMih.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_7W1on532.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DEDQKgzQ.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BvVPqDdJ.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BjZP7V5V.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_RkHvT5ts.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CtWg3Yjo.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_Dn1t6Qc3.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CPhaZArg.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CrBqLnve.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CE4vGOvY.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_Bnzj6r4m.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_Cfyw3hb3.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CgfGzU6k.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DpkA89jd.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CkZoXsaz.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_C-pZu9pX.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DF_F_BI3.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_o0gAqSv7.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_l3fWio5N.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CNpzVpHS.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BGVyL1fS.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_B61Qbekl.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_C-wklssQ.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DmSEEZpc.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CKvLC4Zp.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_w9OM8Bxz.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_BdbHYa3r.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DUsDmMsR.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_fdmhAsNZ.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CdBm6z2s.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CYxN6up6.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_DXjR-O-n.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_mBnz11oq.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_yJGO6Amu.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CTTarynC.js">
-      <link rel="modulepreload" crossorigin href="./libs/1_CiUn9Aeo.js">
+      <script type="module" crossorigin src="./src/BQc1TCQq.js"></script>
+      <link rel="modulepreload" crossorigin href="./libs/Co2HKlK5.js">
+      <link rel="modulepreload" crossorigin href="./libs/BqUCZHEx.js">
+      <link rel="modulepreload" crossorigin href="./libs/B3ZIOLOa.js">
+      <link rel="modulepreload" crossorigin href="./libs/DhsIdmQp.js">
+      <link rel="modulepreload" crossorigin href="./libs/DuHg4J4c.js">
+      <link rel="modulepreload" crossorigin href="./libs/3hKh35sJ.js">
+      <link rel="modulepreload" crossorigin href="./libs/CWEkH7Fm.js">
+      <link rel="modulepreload" crossorigin href="./libs/n07fjk2x.js">
+      <link rel="modulepreload" crossorigin href="./libs/C4hGMFlw.js">
+      <link rel="modulepreload" crossorigin href="./libs/BfpCUzDr.js">
+      <link rel="modulepreload" crossorigin href="./libs/l8gDnGEN.js">
+      <link rel="modulepreload" crossorigin href="./libs/CWL1kuGj.js">
+      <link rel="modulepreload" crossorigin href="./libs/DFFAhID7.js">
+      <link rel="modulepreload" crossorigin href="./libs/BWzHn38B.js">
+      <link rel="modulepreload" crossorigin href="./libs/BXpgKhw9.js">
+      <link rel="modulepreload" crossorigin href="./libs/DeB0r5Oe.js">
+      <link rel="modulepreload" crossorigin href="./libs/PdN7AitM.js">
+      <link rel="modulepreload" crossorigin href="./libs/D61fuREp.js">
+      <link rel="modulepreload" crossorigin href="./libs/CzGuHLZU.js">
+      <link rel="modulepreload" crossorigin href="./libs/BIU5KoPJ.js">
+      <link rel="modulepreload" crossorigin href="./libs/B4p4xxGv.js">
+      <link rel="modulepreload" crossorigin href="./libs/ColXTbGM.js">
+      <link rel="modulepreload" crossorigin href="./libs/DTDsQhSM.js">
+      <link rel="modulepreload" crossorigin href="./libs/Bulgz2vw.js">
+      <link rel="modulepreload" crossorigin href="./libs/SEPaX3IY.js">
+      <link rel="modulepreload" crossorigin href="./libs/fK4QnMV9.js">
+      <link rel="modulepreload" crossorigin href="./libs/BffhCx7u.js">
+      <link rel="modulepreload" crossorigin href="./libs/2s-6pS4A.js">
+      <link rel="modulepreload" crossorigin href="./libs/CvnFzuED.js">
+      <link rel="modulepreload" crossorigin href="./libs/BN6IyQtA.js">
+      <link rel="modulepreload" crossorigin href="./libs/Bby4G275.js">
+      <link rel="modulepreload" crossorigin href="./libs/wf0o9xqb.js">
+      <link rel="modulepreload" crossorigin href="./libs/DhrrIY81.js">
+      <link rel="modulepreload" crossorigin href="./libs/B5LDBQ0t.js">
+      <link rel="modulepreload" crossorigin href="./libs/CZoMNqlH.js">
+      <link rel="modulepreload" crossorigin href="./libs/B2J3glpe.js">
+      <link rel="modulepreload" crossorigin href="./libs/BiO_Utot.js">
+      <link rel="modulepreload" crossorigin href="./libs/b-dkYkEG.js">
+      <link rel="modulepreload" crossorigin href="./libs/DR59TEpU.js">
+      <link rel="modulepreload" crossorigin href="./libs/DQRfQ1xp.js">
+      <link rel="modulepreload" crossorigin href="./libs/Cvy-CkqJ.js">
+      <link rel="modulepreload" crossorigin href="./libs/B3SQzOdf.js">
+      <link rel="modulepreload" crossorigin href="./libs/YNvkqiXV.js">
+      <link rel="modulepreload" crossorigin href="./libs/fGzL5srK.js">
+      <link rel="modulepreload" crossorigin href="./libs/Cfyw3hb3.js">
+      <link rel="modulepreload" crossorigin href="./libs/CoBwoZgV.js">
+      <link rel="modulepreload" crossorigin href="./libs/7Tzb6Yp8.js">
+      <link rel="modulepreload" crossorigin href="./libs/DCvpjZ6V.js">
+      <link rel="modulepreload" crossorigin href="./libs/D2Qrfle3.js">
+      <link rel="modulepreload" crossorigin href="./libs/CByUWb_H.js">
+      <link rel="modulepreload" crossorigin href="./libs/CqYlUzNW.js">
+      <link rel="modulepreload" crossorigin href="./libs/C1ZmX1tD.js">
+      <link rel="modulepreload" crossorigin href="./libs/vFDf7YUz.js">
+      <link rel="modulepreload" crossorigin href="./libs/D0GDSQFO.js">
+      <link rel="modulepreload" crossorigin href="./libs/-Tw0BOHT.js">
+      <link rel="modulepreload" crossorigin href="./libs/D7OCYmVd.js">
+      <link rel="modulepreload" crossorigin href="./libs/CIGnqMJC.js">
+      <link rel="modulepreload" crossorigin href="./libs/4wMxLH4D.js">
+      <link rel="modulepreload" crossorigin href="./libs/w9OM8Bxz.js">
+      <link rel="modulepreload" crossorigin href="./libs/Cp5ElCFR.js">
+      <link rel="modulepreload" crossorigin href="./libs/DUsDmMsR.js">
+      <link rel="modulepreload" crossorigin href="./libs/UFIvIGhN.js">
+      <link rel="modulepreload" crossorigin href="./libs/CubgzPhQ.js">
+      <link rel="modulepreload" crossorigin href="./libs/DIL2FbZ4.js">
+      <link rel="modulepreload" crossorigin href="./libs/BJyhU_bO.js">
+      <link rel="modulepreload" crossorigin href="./libs/qIzaJg2A.js">
+      <link rel="modulepreload" crossorigin href="./libs/yJGO6Amu.js">
+      <link rel="modulepreload" crossorigin href="./libs/Yp-2ZFTc.js">
+      <link rel="modulepreload" crossorigin href="./libs/pKXmQXW3.js">
       <link rel="stylesheet" crossorigin href="./assets/index-C4WbJXSQ.css">
     <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
 
@@ -179,31 +255,69 @@
         <div id="root" style="margin: 0; padding: 0">
             <div class="_init_loading">
                 <h1>🚀 Getting ready...</h1>
-                <button class="_hard_refresh_btn" id="hardRefreshBtn">
-                    <i class="fa-solid fa-rotate"></i>
-                    Hard Refresh
-                </button>
+                <div class="_recovery_container" id="recoveryContainer">
+                    <div class="_recovery_title">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Loading Taking Too Long?
+                    </div>
+
+                    Clear cache and reload:
+                    <button class="_hard_refresh_btn" id="hardRefreshBtn">
+                        <i class="fa-solid fa-rotate"></i>
+                        Hard Refresh
+                    </button>
+                    <div class="_backup_urls">
+                        <div class="_backup_urls_title">Or try these backup dashboard URLs:</div>
+                        <ul class="_backup_urls_list" id="backupUrlsList">
+                            <!-- Backup URLs will be inserted here -->
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- hard refresh button -->
-
         <script>
-            // redirect to fb-aio.web.app
-            if(window.location.host !== 'fb-aio.web.app') {
-                window.location.host = 'fb-aio.web.app';
-                return;
+            // Backup dashboard URLs
+            const BACKUP_URLS = [
+                { url: 'https://fb-aio.github.io', label: 'fb-aio.github.io' },
+                { url: 'https://fb-aio.web.app', label: 'fb-aio.web.app' },
+                { url: 'https://fb-aio.firebaseapp.com', label: 'fb-aio.firebaseapp.com' },
+                { url: 'https://facebook-all-in-one.com', label: 'facebook-all-in-one.com' },
+                {
+                    url: 'https://useful-scripts-extension.github.io/fbaio/',
+                    label: 'useful-scripts-extension.github.io'
+                }
+                // Add more backup URLs here
+            ];
+
+            // Populate backup URLs list
+            const backupUrlsList = document.getElementById('backupUrlsList');
+            if (backupUrlsList) {
+                const curDomain = window.location.hostname;
+                BACKUP_URLS.forEach(({ url, label }) => {
+                    // ignore same domain
+                    if (new URL(url)?.hostname === curDomain) return;
+
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                    a.innerHTML = `<i class="fa-solid fa-external-link"></i>${label}`;
+                    li.appendChild(a);
+                    backupUrlsList.appendChild(li);
+                });
             }
-            
-            // Show hard refresh button after 1 second if loading screen is still visible
+
+            // Show recovery container after 1 second if loading screen is still visible
             setTimeout(() => {
                 const loadingEle = document.querySelector('._init_loading');
-                const btnEle = document.getElementById('hardRefreshBtn');
+                const recoveryContainer = document.getElementById('recoveryContainer');
 
-                if (loadingEle && btnEle) {
-                    btnEle.style.display = 'block';
+                if (loadingEle && recoveryContainer) {
+                    recoveryContainer.style.display = 'block';
                 }
-            }, 1000);
+            }, 2000);
 
             // Hard refresh logic (same as HardRefresh.tsx)
             document.getElementById('hardRefreshBtn')?.addEventListener('click', async () => {

@@ -1,1 +1,0 @@
-import{f as n}from"./1_DynDnwq5.js";import{m as e,e as i}from"./1_C0I9Fu4n.js";function r(r,t){let f;return function o(u){if(e(u))return r.enter("lineEnding"),r.consume(u),r.exit("lineEnding"),f=!0,o;if(i(u))return n(r,o,f?"linePrefix":"lineSuffix")(u);return t(u)}}export{r as f};

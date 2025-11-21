@@ -1,1 +1,0 @@
-import{r as e,a as r}from"./1_DCZ1f5Za.js";import{Picker as t}from"./1_BdssK4cE.js";import"./1_Co2HKlK5.js";function u(u){const n=e.useRef(null),s=e.useRef(null);return s.current&&s.current.update(u),e.useEffect((()=>(s.current=new t({...u,ref:n}),()=>{s.current=null})),[]),r.createElement("div",{ref:n})}export{u as default};
