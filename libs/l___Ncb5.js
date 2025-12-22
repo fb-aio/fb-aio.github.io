@@ -1,0 +1,1 @@
+import{v as n}from"./7PIhp50x.js";function o(o,t,i,e){let f,c,r;"function"==typeof t&&"function"!=typeof i?(c=void 0,r=t,f=i):(c=t,r=i,f=e),n(o,c,(function(n,o){const t=o[o.length-1],i=t?t.children.indexOf(n):void 0;return r(n,i,t)}),f)}export{o as v};

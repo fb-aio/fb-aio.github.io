@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- cache control -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- description -->
+        <meta
+            name="description"
+            content="FB AIO: All in one toolbox for manage your Social Media"
+        />
+
+        <title>FB AIO Extension</title>
+
+        <link rel="icon" href="./assets/logo-BgUNo_GL.png" />
+        <link rel="apple-touch-icon" href="./assets/logo-BgUNo_GL.png" sizes="180x180" />
+        <link rel="mask-icon" href="./assets/logo-BgUNo_GL.png" color="#333333" />
+        <meta name="theme-color" content="#333333" />
+
+        <link
+            rel="preload"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+            />
+        </noscript>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MQRTEC81L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-0MQRTEC81L');
+        </script>
+
+        <!-- Cloudflare Web Analytics -->
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "5dc12585eeb74ce08ce642906ba466ee"}'
+        ></script>
+        <!-- End Cloudflare Web Analytics -->
+
+        <!-- Cloudflare Web Analytics -->
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "9ad9e9ec7e484ea188cba4ec5af07c88"}'
+        ></script>
+        <!-- End Cloudflare Web Analytics -->
+
+        <style>
+            /* fix swal */
+            html body.swal2-height-auto {
+                height: 100vh !important;
+                width: 100vw !important;
+            }
+
+            body {
+                background-color: #333;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            ._init_loading {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                color: #999;
+            }
+
+            ._hard_refresh_btn {
+                padding: 8px 12px;
+                font-size: 14px;
+                color: #eee;
+                background-color: #1677ff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            ._hard_refresh_btn:hover {
+                background-color: #40a9ff;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+            }
+
+            ._hard_refresh_btn:active {
+                transform: translateY(0);
+            }
+
+            ._hard_refresh_btn i {
+                margin-right: 8px;
+            }
+
+            @keyframes slideInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            ._recovery_container {
+                display: none;
+                margin-top: 20px;
+                padding: 24px;
+                max-width: 500px;
+                background-color: rgba(255, 255, 255, 0.05);
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                animation: slideInUp 0.5s ease-out forwards;
+            }
+
+            ._recovery_title {
+                margin-bottom: 16px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #d64343;
+                text-align: center;
+            }
+
+            ._backup_urls {
+                margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            ._backup_urls_title {
+                margin-bottom: 12px;
+                font-size: 15px;
+                font-weight: 500;
+                color: #d66543;
+                text-align: center;
+            }
+
+            ._backup_urls_list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ._backup_urls_list li {
+                margin-bottom: 8px;
+            }
+
+            ._backup_urls_list a {
+                display: block;
+                padding: 10px 16px;
+                color: #add7ff;
+                text-decoration: none;
+                background-color: rgba(24, 144, 255, 0.1);
+                border-radius: 4px;
+                transition: all 0.3s;
+                font-size: 14px;
+            }
+
+            ._backup_urls_list a:hover {
+                background-color: rgba(24, 144, 255, 0.2);
+                transform: translateX(4px) scale(1.1);
+            }
+
+            ._backup_urls_list i {
+                margin-right: 8px;
+            }
+        </style>
+        <script type="module" crossorigin src="./src/Dmv3Yz9M.js"></script>
+        <link rel="modulepreload" crossorigin href="./libs/Co2HKlK5.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BqUCZHEx.js" />
+        <link rel="modulepreload" crossorigin href="./libs/B3ZIOLOa.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DhsIdmQp.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DuHg4J4c.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BmchACth.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CnXAf8Vh.js" />
+        <link rel="modulepreload" crossorigin href="./libs/n07fjk2x.js" />
+        <link rel="modulepreload" crossorigin href="./libs/C4hGMFlw.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BfpCUzDr.js" />
+        <link rel="modulepreload" crossorigin href="./libs/l8gDnGEN.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CWL1kuGj.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DFFAhID7.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BWzHn38B.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BXpgKhw9.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DeB0r5Oe.js" />
+        <link rel="modulepreload" crossorigin href="./libs/PdN7AitM.js" />
+        <link rel="modulepreload" crossorigin href="./libs/D61fuREp.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CzGuHLZU.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BIU5KoPJ.js" />
+        <link rel="modulepreload" crossorigin href="./libs/B4p4xxGv.js" />
+        <link rel="modulepreload" crossorigin href="./libs/ColXTbGM.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DTDsQhSM.js" />
+        <link rel="modulepreload" crossorigin href="./libs/Bulgz2vw.js" />
+        <link rel="modulepreload" crossorigin href="./libs/SEPaX3IY.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DXFBfNl4.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BffhCx7u.js" />
+        <link rel="modulepreload" crossorigin href="./libs/C0EsHBUL.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BxftYQae.js" />
+        <link rel="modulepreload" crossorigin href="./libs/8xDUHXKi.js" />
+        <link rel="modulepreload" crossorigin href="./libs/z_nI7TSN.js" />
+        <link rel="modulepreload" crossorigin href="./libs/qGIPZVJt.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DFV4p4nf.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CO4lnx3K.js" />
+        <link rel="modulepreload" crossorigin href="./libs/B2J3glpe.js" />
+        <link rel="modulepreload" crossorigin href="./libs/Bs5mM_zg.js" />
+        <link rel="modulepreload" crossorigin href="./libs/b-dkYkEG.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DR59TEpU.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DocV2sZy.js" />
+        <link rel="modulepreload" crossorigin href="./libs/Cvy-CkqJ.js" />
+        <link rel="modulepreload" crossorigin href="./libs/C6889RA7.js" />
+        <link rel="modulepreload" crossorigin href="./libs/YNvkqiXV.js" />
+        <link rel="modulepreload" crossorigin href="./libs/5kvZFJB6.js" />
+        <link rel="modulepreload" crossorigin href="./libs/Cfyw3hb3.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CoBwoZgV.js" />
+        <link rel="modulepreload" crossorigin href="./libs/C5PnOSHc.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CcWSOk94.js" />
+        <link rel="modulepreload" crossorigin href="./libs/B7RobpjL.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DilNiO9d.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CqYlUzNW.js" />
+        <link rel="modulepreload" crossorigin href="./libs/C1ZmX1tD.js" />
+        <link rel="modulepreload" crossorigin href="./libs/vFDf7YUz.js" />
+        <link rel="modulepreload" crossorigin href="./libs/D0GDSQFO.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DlqirC0g.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BulO2OZ2.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CIGnqMJC.js" />
+        <link rel="modulepreload" crossorigin href="./libs/4wMxLH4D.js" />
+        <link rel="modulepreload" crossorigin href="./libs/w9OM8Bxz.js" />
+        <link rel="modulepreload" crossorigin href="./libs/Cd2CAR3h.js" />
+        <link rel="modulepreload" crossorigin href="./libs/DUsDmMsR.js" />
+        <link rel="modulepreload" crossorigin href="./libs/UFIvIGhN.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CubgzPhQ.js" />
+        <link rel="modulepreload" crossorigin href="./libs/CIAAA8RV.js" />
+        <link rel="modulepreload" crossorigin href="./libs/BJyhU_bO.js" />
+        <link rel="modulepreload" crossorigin href="./libs/lJFTaOpX.js" />
+        <link rel="modulepreload" crossorigin href="./libs/yJGO6Amu.js" />
+        <link rel="modulepreload" crossorigin href="./libs/Yp-2ZFTc.js" />
+        <link rel="modulepreload" crossorigin href="./libs/pKXmQXW3.js" />
+        <link rel="stylesheet" crossorigin href="./assets/style-DYf4RWkG.css" />
+        <link rel="manifest" href="./manifest.webmanifest" />
+        <script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script>
+    </head>
+
+    <body style="margin: 0; padding: 0">
+        <!--[if IE]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="https://browsehappy.com/">upgrade your browser</a> to improve your
+                experience and security.
+            </p>
+        <![endif]-->
+
+        <div id="root" style="margin: 0; padding: 0">
+            <div class="_init_loading">
+                <h1>🚀 Getting ready...</h1>
+                <div class="_recovery_container" id="recoveryContainer">
+                    <div class="_recovery_title">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Loading Too Long?
+                    </div>
+
+                    Clear cache and reload:
+                    <button class="_hard_refresh_btn" id="hardRefreshBtn">
+                        <i class="fa-solid fa-rotate"></i>
+                        Hard Refresh
+                    </button>
+                    <div class="_backup_urls">
+                        <div class="_backup_urls_title">Still loading? Try these backup:</div>
+                        <ul class="_backup_urls_list" id="backupUrlsList">
+                            <!-- Backup URLs will be inserted here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Backup dashboard URLs
+            window.FBAIO_BACKUP_URLS = [
+                { url: 'https://fbaio.org', label: 'fbaio.org' },
+                { url: 'https://fb-aio.github.io', label: 'fb-aio.github.io' },
+                { url: 'https://fb-aio.web.app', label: 'fb-aio.web.app' },
+                { url: 'https://fb-aio.firebaseapp.com', label: 'fb-aio.firebaseapp.com' },
+                { url: 'https://facebook-all-in-one.com', label: 'facebook-all-in-one.com' },
+                { divider: true },
+                { url: 'https://fbaio.pages.dev', label: 'fbaio.pages.dev' },
+                { url: 'https://fbaio.vercel.app/', label: 'fbaio.vercel.app' },
+                { url: 'https://fbaio.netlify.app/', label: 'fbaio.netlify.app' },
+                { divider: true },
+                { url: 'https://hoangtran99.is-a.dev/fbaio/', label: 'hoangtran99.is-a.dev' },
+                {
+                    url: 'https://useful-scripts-extension.github.io/fbaio/',
+                    label: 'useful-scripts-extension.github.io'
+                }
+                // Add more backup URLs here
+            ];
+
+            // Populate backup URLs list
+            const backupUrlsList = document.getElementById('backupUrlsList');
+            if (backupUrlsList) {
+                const curDomain = window.location.hostname;
+                window.FBAIO_BACKUP_URLS.forEach(({ url, label, divider }) => {
+                    // ignore same domain
+                    // if (new URL(url)?.hostname === curDomain) return;
+                    if (divider) {
+                        const hr = document.createElement('hr');
+                        backupUrlsList.appendChild(hr);
+                        return;
+                    }
+
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = url + window.location.hash;
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                    a.innerHTML = `<i class="fa-solid fa-external-link"></i>${label}`;
+                    li.appendChild(a);
+                    backupUrlsList.appendChild(li);
+                });
+            }
+
+            // Show recovery container after 1 second if loading screen is still visible
+            setTimeout(() => {
+                const loadingEle = document.querySelector('._init_loading');
+                const recoveryContainer = document.getElementById('recoveryContainer');
+
+                if (loadingEle && recoveryContainer) {
+                    recoveryContainer.style.display = 'block';
+                }
+            }, 2000);
+
+            // Hard refresh logic (same as HardRefresh.tsx)
+            document.getElementById('hardRefreshBtn')?.addEventListener('click', async () => {
+                const btn = document.getElementById('hardRefreshBtn');
+                if (!btn) return;
+
+                try {
+                    // Disable button and show loading state
+                    btn.disabled = true;
+                    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Clearing cache...';
+
+                    // Clear all caches
+                    await caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+
+                    // Update button text
+                    btn.innerHTML =
+                        '<i class="fa-solid fa-spinner fa-spin"></i> Unregistering service worker...';
+
+                    // Unregister all service workers
+                    await navigator.serviceWorker
+                        .getRegistrations()
+                        .then(r => r.forEach(x => x.unregister()));
+
+                    // Update button text
+                    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Reloading...';
+
+                    // Wait a moment then reload
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    window.location.reload();
+                } catch (error) {
+                    console.error('Hard refresh failed:', error);
+                    btn.disabled = false;
+                    btn.innerHTML =
+                        '<i class="fa-solid fa-rotate"></i> Hard Refresh (Failed - Try Again)';
+                    btn.style.backgroundColor = '#ff4d4f';
+                }
+            });
+        </script>
+    </body>
+</html>

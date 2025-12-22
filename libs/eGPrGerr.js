@@ -1,0 +1,1 @@
+import{e as n}from"./C0I9Fu4n.js";function r(r,t,e,o){const u=o?o-1:Number.POSITIVE_INFINITY;let f=0;return function(o){if(n(o))return r.enter(e),i(o);return t(o)};function i(o){return n(o)&&f++<u?(r.consume(o),i):(r.exit(e),t(o))}}export{r as f};
