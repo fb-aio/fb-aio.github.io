@@ -1,0 +1,1 @@
+function r(e){if("string"==typeof e||"number"==typeof e)return""+e;let t="";if(Array.isArray(e))for(let n,f=0;f<e.length;f++)""!==(n=r(e[f]))&&(t+=(t&&" ")+n);else for(let r in e)e[r]&&(t+=(t&&" ")+r);return t}export{r as c};
