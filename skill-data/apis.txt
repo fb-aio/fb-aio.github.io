@@ -1,0 +1,145 @@
+id | platform | name | tags | required_params
+get_fb_page_transparency | facebook | Get Facebook page transparency info | facebook,page,transparency | url
+get_fb_page_authenticity | facebook | Get Facebook page authenticity info | facebook,page,authenticity | url
+get_fb_group_member_info | facebook | Get member info of Facebook group | facebook,group,member,info | group_url,user_url
+get_fb_page_about_info | facebook | Get about info of Facebook page | facebook,page,about,info | url
+get_list_fb_search_pages | facebook | Get list Facebook pages (from search result) | facebook,page,search,list | name
+get_list_fb_posts | facebook | Get list Facebook posts (user/page) | facebook,post,list | url
+get_list_fb_group_posts | facebook | Get list Facebook posts (group) | facebook,group,post,list | url
+fb_get_note | facebook | Get current Facebook note | facebook,note,get | 
+fb_set_note | facebook | Create Facebook note | facebook,note,create | note
+fb_delete_note | facebook | Delete Facebook note | facebook,note,delete | 
+get_list_fb_hidden_albums | facebook | Get list hidden albums on Facebook | facebook,album,hidden,list | url
+get_list_fb_album_media | facebook | Get list photos/videos of album Facebook | facebook,album,media,list | album_id
+get_list_fb_albums | facebook | Get list albums Facebook | facebook,album,list | url
+get_list_fb_comment_reply | facebook | Get list replies comment | facebook,post,comment,reply,list | comment_id,expansion_token
+get_list_fb_pages_other | facebook | Get list fb pages that the user liked | facebook,page,liked,list | url
+get_list_fb_groups_other | facebook | Get all fb groups that the user joined | facebook,group,joined,list | url
+get_fb_post_info | facebook | Get Facebook post info | facebook,post,info | url
+get_list_fb_mediaset | facebook | Get all medias from mediaset_token | facebook,media,list | mediaset_token
+get_fb_entity_info | facebook | Get Facebook entity info | facebook,user,info | url
+get_fb_user_info | facebook | Get Facebook user info | facebook,user,info | url
+get_fb_uid | facebook | Get Facebook UID from URL | facebook,uid | url
+get_fb_post_id | facebook | Get Facebook post ID from URL | facebook,post,id | url
+get_fb_video_id | facebook | Get Facebook video ID from URL | facebook,video,id | url
+call_fb_graphql | facebook | Call Facebook GraphQL API | facebook,graphql | doc_id,variables
+get_fb_video_info | facebook | Get Facebook video info | facebook,video,info | url
+get_list_fb_highlights | facebook | Get list Highlight story on Facebook | facebook,highlights,list | url
+get_fb_highlight_info | facebook | Get list story in one highlight on Facebook | facebook,highlights,video,list | url
+get_list_fb_user_reels | facebook | Get list of Facebook user reels | facebook,user,reels,list | url
+get_list_fb_user_photos | facebook | Get list photos of Facebook user | facebook,user,photo,list | url
+add_fb_friend | facebook | Add friend on Facebook | facebook,friend,add | targetUid
+remove_fb_friend | facebook | Remove Facebook friend | facebook,friend,remove | targetUid
+poke_fb_friend | facebook | Poke Facebook friend | facebook,friend,poke | url
+get_list_fb_all_friend | facebook | Get list all friends Facebook | facebook,friend,list | 
+get_list_fb_comment | facebook | Get list comments of Facebook post | facebook,post,comment,list | url
+get_fb_profile_tiles | facebook | Get profile pinned sections | facebook,profile,tile | url
+get_fb_activities | facebook | Get activity log | facebook,activity,log | 
+get_my_fb_blocked | facebook | Get blocked list | facebook,block,get | type
+get_all_my_blocked_with_time | facebook | Get all blocked with time | facebook,block,get | 
+fb_set_block | facebook | Block / Unblock | facebook,block,set | url,type,value
+get_check_ins | facebook | Get check-ins | facebook,checkin,get | url
+create_comment | facebook | Create comment | facebook,comment,create | post,comment
+reply_to_comment | facebook | Reply to comment | facebook,comment,reply | postID,parentCommentID,comment
+undo_react_to_comment | facebook | Undo react to comment | facebook,comment,react | comment_id
+react_to_comment | facebook | React to comment | facebook,comment,react | comment_id,post_id,reaction
+get_comment_info | facebook | Get fb comment info | facebook,comment,info | comment_id
+get_fb_dtsg | facebook | Get fb_dtsg | facebook,core,token | 
+get_access_token | facebook | Get fb access token | facebook,core,token | type
+get_my_profile_lite | facebook | Get my profile lite | facebook,core,profile | 
+get_delegate_page_id | facebook | Get Delegate Page ID | facebook,core,page | url
+get_bulk_route_definition | facebook | Get Bulk Route Definition | facebook,route,info | urls
+get_route_definition | facebook | Get Route Definition | facebook,route,info | url
+get_all_collection_ids | facebook | Get all Collection IDs | facebook,collection,id | url
+get_single_collection_id | facebook | Get Collection ID | facebook,collection,id | url,tab_key
+get_group_files | facebook | Get Group Files | facebook,group,file | group_url
+get_follow_count | facebook | Get Follow Count | facebook,follow,count | 
+get_following | facebook | Get Following | facebook,follow,list | 
+get_unfollowed | facebook | Get Unfollowed | facebook,follow,list | 
+get_follower_grid | facebook | Get Followers Grid | facebook,follower,list | 
+get_following_grid | facebook | Get Following Grid | facebook,following,list | 
+get_incoming_friend_requests_fast | facebook | Get Incoming Friend Requests (Fast) | facebook,friend,request | 
+get_outgoing_friend_requests_fast | facebook | Get Outgoing Friend Requests (Fast) | facebook,friend,request | 
+get_incoming_friend_requests | facebook | Get Incoming Friend Requests | facebook,friend,request | 
+get_outgoing_friend_requests | facebook | Get Outgoing Friend Requests | facebook,friend,request | 
+decline_friend_request | facebook | Decline Friend Request | facebook,friend,action | uid
+accept_friend_request | facebook | Accept Friend Request | facebook,friend,action | uid
+cancel_outgoing_friend_request | facebook | Cancel Outgoing Friend Request | facebook,friend,action | uid
+get_profile_friends_section | facebook | Get Profile Friends Section | facebook,friend,get | 
+find_buddy | facebook | Find friend buddy | facebook,friend,get | 
+get_online_friends | facebook | Get Online Friends | facebook,friend,get | 
+get_unfriended | facebook | Get Unfriended | facebook,friend,get | 
+get_add_friend_time | facebook | Get Add Friend History | facebook,friend,get | 
+get_friend_birthdays | facebook | Get Friend Birthdays | facebook,friend,get | 
+get_followers | facebook | Get Followers | facebook,friend,get | 
+get_friendship_data | facebook | Get Friendship Data | facebook,friendship,get | url
+video_id_to_post_id | facebook | Video ID to Post ID | facebook,id,video | video_id
+get_group_members_root | facebook | Get Group Members Root | facebook,group,member | group_url
+search_group_members | facebook | Search Group Members | facebook,group,members,search | group_url,search
+get_group_admins_section | facebook | Get Group Admins Section | facebook,group,admin,list | group_url
+get_group_friends_section | facebook | Get Group Friends Section | facebook,group,friend,list | group_url
+get_group_experts_section | facebook | Get Group Experts Section | facebook,group,expert,list | group_url
+get_group_contributors_section | facebook | Get Group Contributors Section | facebook,group,contributor,list | group_url
+get_group_things_in_common_section | facebook | Get Group Things In Common | facebook,group,member,list | group_url
+get_group_same_city_section | facebook | Get Group Same City | facebook,group,member,list | group_url
+get_group_new_members_section | facebook | Get Group New Members | facebook,group,new | group_url
+get_my_group_members | facebook | Get My Group Members | facebook,group,admin | group_url,statusFilter,membershipType
+get_group_member_count | facebook | Group Member Count | facebook,groups,members | group_url
+get_my_joined_groups_root | facebook | Get My Joined Groups Root | facebook,group,get | 
+get_my_joined_groups | facebook | Get My Joined Groups | facebook,group,get | 
+get_my_groups | facebook | Get My Groups | facebook,group,get | 
+get_my_managed_groups | facebook | Get My Managed Groups | facebook,group,admin | 
+leave_group | facebook | Leave Group | facebook,group,leave | group_url
+join_group | facebook | Join Group | facebook,group,join | group_url
+get_locked_profile_status | facebook | Locked Profile Status | facebook,profile,locked | 
+update_locked_profile_status | facebook | Update Locked Profile Status | facebook,profile,locked | 
+get_all_chat | facebook | Get all fb chat | facebook,messages,chat | 
+get_messages_after_msg_id | facebook | Get Messages Around Message ID | facebook,messages,chat | thread_id,msg_id
+get_messages_at_time_cursor | facebook | Get Messages At Time Cursor | facebook,messages,chat | thread_id
+check_can_message | facebook | Check Can Message | facebook,messages,check | url
+get_my_liked_pages | facebook | Get My Liked Pages | facebook,pages,get | 
+unlike_page | facebook | Unlike Page | facebook,pages,unlike | url
+follow_page | facebook | Follow Page | facebook,pages,follow | url,followType
+un_follow_page | facebook | Unfollow Page | facebook,pages,unfollow | url
+get_page_invites | facebook | Get Page Invites | facebook,pages,invite | 
+accept_page_invite | facebook | Accept Page Invite | facebook,pages,invite | invite_id
+decline_page_invite | facebook | Decline Page Invite | facebook,pages,invite | invite_id
+get_group_photos | facebook | Get Group Photos | facebook,photos,group | url
+get_largest_photo | facebook | Get Largest Photo | facebook,photos,get | photo_id
+get_basic_photo_info | facebook | Get Basic Photo Info | facebook,photos,info | photo_id
+delete_post | facebook | Delete Post | facebook,posts,delete | storyId
+trash_post | facebook | Trash Post | facebook,posts,trash | storyId
+search_all_posts_on_fb | facebook | Search All Posts | facebook,posts,search | url,text
+get_post_reaction_count | facebook | Get Post Reaction Count | facebook,reactions,posts | postId
+get_reels_feed | facebook | Reels Feed | facebook,reels | 
+search_pages | facebook | Search Pages | facebook,search,pages | keyword
+search_groups | facebook | Search Groups | facebook,search,groups | keyword
+search_profiles | facebook | Search Profiles | facebook,search,profile | keyword
+search_place | facebook | Search Places | facebook,search,places | keyword
+set_avatar_shield | facebook | Set Avatar Shield | facebook,security,shield | 
+get_recent_stories | facebook | Get Recent Stories | facebook,stories | 
+get_archived_stories | facebook | Get Archived Stories | facebook,stories,archive | 
+get_story_viewers | facebook | Get Story Viewers | facebook,stories | storyId
+get_story_from_bucket_id | facebook | Get Story From Bucket ID | facebook,stories | bucketID
+get_first_story_bucket_id_to_show | facebook | Get First Story Bucket ID | facebook,stories | url
+react_story | facebook | React Story | facebook,stories,reaction | storyId,reaction
+delete_archived_story | facebook | Delete Archived Story | facebook,stories,archive,delete | storyId
+get_tagged_video | facebook | Get Tagged Videos | facebook,tagged,videos | url
+get_all_message_themes | facebook | Get All Message Themes | facebook,theme,messages | 
+get_post_format_presets | facebook | Post Format Presets | facebook,upload,posts | 
+get_user_video | facebook | Get User Videos | facebook,videos,user | url
+get_group_video | facebook | Get Group Videos | facebook,videos,groups | url
+get_page_video | facebook | Get Page's Videos | facebook,videos,pages | url
+get_ig_user_info | instagram | Get Instagram user info | instagram,user,info | url
+get_list_ig_user_stories | instagram | Get Instagram user stories | instagram,user,stories,list | url
+get_list_ig_user_reels | instagram | Get Instagram user reels | instagram,user,reels,list | url
+get_list_ig_post | instagram | Get Instagram post list | instagram,post,list | url
+get_threads_user_info | threads | Get Threads user info | threads,user,info | url
+get_list_threads_posts | threads | Get list Threads post of user | threads,post,list | url
+get_tiktok_video_info | tiktok | Get Tiktok video info | tiktok,video,info | url
+get_tiktok_user_info | tiktok | Get Tiktok user info | tiktok,user,info | url
+get_bilibili_video_info | bilibili | Get Bilibili video info | bilibili,video | url
+extract_douyin_url | douyin | Extract Douyin URL from text | extract,douyin,url | text
+get_douyin_video_id | douyin | Get Douyin video ID from URL | douyin,video,id | url
+get_douyin_video_info | douyin | Get Douyin video info | douyin,video,info | url
+get_ext_version | utils | Get extension version | fbaio,get,version |

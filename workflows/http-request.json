@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "manual-trigger-1",
+      "type": "manual_trigger",
+      "position": { "x": 250, "y": 100 },
+      "data": { "label": "Start" }
+    },
+    {
+      "id": "http-1",
+      "type": "http_request",
+      "position": { "x": 250, "y": 250 },
+      "data": {
+        "label": "Fetch User Data",
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/users/1",
+        "requestMode": "fetch"
+      }
+    },
+    {
+      "id": "code-1",
+      "type": "code",
+      "position": { "x": 250, "y": 420 },
+      "data": {
+        "label": "Extract Data",
+        "code": "// Process the HTTP response\nconst user = $input.first;\nreturn {\n  name: user.name,\n  email: user.email,\n  city: user.address?.city,\n  company: user.company?.name\n};"
+      }
+    },
+    {
+      "id": "output-1",
+      "type": "workflow_output",
+      "position": { "x": 250, "y": 580 },
+      "data": { "label": "Output" }
+    }
+  ],
+  "edges": [
+    { "id": "edge-1", "source": "manual-trigger-1", "target": "http-1" },
+    { "id": "edge-2", "source": "http-1", "target": "code-1" },
+    { "id": "edge-3", "source": "code-1", "target": "output-1" }
+  ]
+}

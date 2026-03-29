@@ -1,0 +1,4403 @@
+{
+  "updatedAt": "2026-03-29T23:24:04.225Z",
+  "apis": [
+    {
+      "id": "get_fb_page_transparency",
+      "platform": "facebook",
+      "name": "Get Facebook page transparency info",
+      "description": "Support both page and user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook page or user",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "Transparency info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "page",
+        "transparency"
+      ]
+    },
+    {
+      "id": "get_fb_page_authenticity",
+      "platform": "facebook",
+      "name": "Get Facebook page authenticity info",
+      "description": "Support both page and user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook page or user",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "Authenticity info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "page",
+        "authenticity"
+      ]
+    },
+    {
+      "id": "get_fb_group_member_info",
+      "platform": "facebook",
+      "name": "Get member info of Facebook group",
+      "description": "Joined time, signals, recent photos, recent activity, ...",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook group",
+          "required": true
+        },
+        {
+          "name": "user_url",
+          "type": "string",
+          "description": "The URL / UID of the member",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the members of the Facebook group",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "member",
+        "info"
+      ]
+    },
+    {
+      "id": "get_fb_page_about_info",
+      "platform": "facebook",
+      "name": "Get about info of Facebook page",
+      "description": "The info in the about page fb.com/../about",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook page",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The about info of the Facebook page",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "page",
+        "about",
+        "info"
+      ]
+    },
+    {
+      "id": "get_list_fb_search_pages",
+      "platform": "facebook",
+      "name": "Get list Facebook pages (from search result)",
+      "description": "Search by name",
+      "params": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Facebook page's name to search",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "pages",
+          "type": "array",
+          "description": "The list of Facebook pages",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "page",
+        "search",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_posts",
+      "platform": "facebook",
+      "name": "Get list Facebook posts (user/page)",
+      "description": "Support User and Fanpage",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the user / page facebook",
+          "required": true
+        },
+        {
+          "name": "privacy",
+          "type": "string",
+          "description": "Privacy (default: All)",
+          "required": false
+        },
+        {
+          "name": "afterTime",
+          "type": "number",
+          "description": "Posted after date",
+          "required": false
+        },
+        {
+          "name": "beforeTime",
+          "type": "timestamp",
+          "description": "Posted before date",
+          "required": false
+        },
+        {
+          "name": "omitPinnedPost",
+          "type": "boolean",
+          "description": "Omit pinned posts",
+          "required": false
+        },
+        {
+          "name": "taggedInOnly",
+          "type": "boolean",
+          "description": "Only get posts that are tagged",
+          "required": false
+        },
+        {
+          "name": "postedByOthers",
+          "type": "boolean",
+          "description": "Only get posts that are posted by others",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "posts",
+          "type": "array",
+          "description": "The list of Facebook posts (user/page)",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "post",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_group_posts",
+      "platform": "facebook",
+      "name": "Get list Facebook posts (group)",
+      "description": "Support Facebook Group",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook group",
+          "required": true
+        },
+        {
+          "name": "sorting",
+          "type": "string",
+          "description": "Sorting (default: Newest Posts)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "posts",
+          "type": "array",
+          "description": "The list of Facebook posts (group)",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "post",
+        "list"
+      ]
+    },
+    {
+      "id": "fb_get_note",
+      "platform": "facebook",
+      "name": "Get current Facebook note",
+      "description": "Get current active Facebook note of the logged in account",
+      "params": [],
+      "response": [
+        {
+          "name": "note",
+          "type": "object",
+          "description": "Facebook note info (id, description, type, visibility, expiration time, custom audience)",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "note",
+        "get"
+      ]
+    },
+    {
+      "id": "fb_set_note",
+      "platform": "facebook",
+      "name": "Create Facebook note",
+      "description": "Create new Facebook note with custom content, duration and privacy settings",
+      "params": [
+        {
+          "name": "note",
+          "type": "string",
+          "description": "The note content",
+          "required": true
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "description": "Note display duration (seconds, default 1 day = 86400 seconds)",
+          "required": false
+        },
+        {
+          "name": "privacy",
+          "type": "string",
+          "description": "Note privacy setting (default: Friends)",
+          "required": false
+        },
+        {
+          "name": "custom_audience",
+          "type": "array",
+          "description": "Custom audience UID list (only use when privacy = CUSTOM, separated by comma or new line)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Note creation result",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "note",
+        "create"
+      ]
+    },
+    {
+      "id": "fb_delete_note",
+      "platform": "facebook",
+      "name": "Delete Facebook note",
+      "description": "Delete current Facebook note (if any)",
+      "params": [],
+      "response": [
+        {
+          "name": "response",
+          "type": "object",
+          "description": "Note deletion result",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "note",
+        "delete"
+      ]
+    },
+    {
+      "id": "get_list_fb_hidden_albums",
+      "platform": "facebook",
+      "name": "Get list hidden albums on Facebook",
+      "description": "Support user/page. Know the total number of photos, creation date, and last update date.",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user/page",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "albums",
+          "type": "array",
+          "description": "The list of hidden albums",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "album",
+        "hidden",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_album_media",
+      "platform": "facebook",
+      "name": "Get list photos/videos of album Facebook",
+      "description": "Support user / group / page. Video only returns thumbnail, use api get_fb_video_info to get video info from id",
+      "params": [
+        {
+          "name": "album_id",
+          "type": "string",
+          "description": "The ID of the Facebook album",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "medias",
+          "type": "array",
+          "description": "The list of photos/videos of the album",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "album",
+        "media",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_albums",
+      "platform": "facebook",
+      "name": "Get list albums Facebook",
+      "description": "Support user / group / page",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user / group / page",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "albums",
+          "type": "array",
+          "description": "The list of albums",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "album",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_comment_reply",
+      "platform": "facebook",
+      "name": "Get list replies comment",
+      "description": "Get list replies of any fb post's comment",
+      "params": [
+        {
+          "name": "comment_id",
+          "type": "string",
+          "description": "The ID of the comment to get replies (id in base64)",
+          "required": true
+        },
+        {
+          "name": "expansion_token",
+          "type": "string",
+          "description": "The expansion token of the comment (Use api get_list_fb_comment to get)",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "replies",
+          "type": "array",
+          "description": "List of replies",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "post",
+        "comment",
+        "reply",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_pages_other",
+      "platform": "facebook",
+      "name": "Get list fb pages that the user liked",
+      "description": "Support get list fb public pages that the user liked",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "The type of fb page (default: All)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "pages",
+          "type": "array",
+          "description": "The list of fb pages that the user liked",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "page",
+        "liked",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_groups_other",
+      "platform": "facebook",
+      "name": "Get all fb groups that the user joined",
+      "description": "Support public groups, even with user locked profile",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "The type of fb group (default: All public groups)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "groups",
+          "type": "array",
+          "description": "The list of fb groups that the user joined",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "joined",
+        "list"
+      ]
+    },
+    {
+      "id": "get_fb_post_info",
+      "platform": "facebook",
+      "name": "Get Facebook post info",
+      "description": "author, content, photos, videos, likes, comments,...",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook post",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The detailed info of the post",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "post",
+        "info"
+      ]
+    },
+    {
+      "id": "get_list_fb_mediaset",
+      "platform": "facebook",
+      "name": "Get all medias from mediaset_token",
+      "description": "mediaset_token usually get from post with multiple medias, or facebook album",
+      "params": [
+        {
+          "name": "mediaset_token",
+          "type": "string",
+          "description": "The mediaset_token",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "medias",
+          "type": "array",
+          "description": "The list of medias",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "media",
+        "list"
+      ]
+    },
+    {
+      "id": "get_fb_entity_info",
+      "platform": "facebook",
+      "name": "Get Facebook entity info",
+      "description": "avatar/url/type (user/group/page/...)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the User/Group/Page",
+          "required": true
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return the raw data? Raw data from Facebook",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The simple info of the entity (avatar, url, type)",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "user",
+        "info"
+      ]
+    },
+    {
+      "id": "get_fb_user_info",
+      "platform": "facebook",
+      "name": "Get Facebook user info",
+      "description": "",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook User",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The detailed info of the user (name, alternate name, gender, avatar, cover, ...)",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "user",
+        "info"
+      ]
+    },
+    {
+      "id": "get_fb_uid",
+      "platform": "facebook",
+      "name": "Get Facebook UID from URL",
+      "description": "Support User/Page/Group",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the User/Page/Group",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "uid",
+          "type": "string",
+          "description": "UID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "uid"
+      ]
+    },
+    {
+      "id": "get_fb_post_id",
+      "platform": "facebook",
+      "name": "Get Facebook post ID from URL",
+      "description": "Support all posts",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the Facebook post",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "post_id",
+          "type": "string",
+          "description": "Post ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "post",
+        "id"
+      ]
+    },
+    {
+      "id": "get_fb_video_id",
+      "platform": "facebook",
+      "name": "Get Facebook video ID from URL",
+      "description": "Support Video/Story/Post",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the Facebook video",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "video_id",
+          "type": "string",
+          "description": "Video ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "video",
+        "id"
+      ]
+    },
+    {
+      "id": "call_fb_graphql",
+      "platform": "facebook",
+      "name": "Call Facebook GraphQL API",
+      "description": "Only need to pass doc_id, and variables",
+      "params": [
+        {
+          "name": "doc_id",
+          "type": "string",
+          "description": "The doc_id of the GraphQL API",
+          "required": true
+        },
+        {
+          "name": "variables",
+          "type": "object",
+          "description": "The variables data of the GraphQL API",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "The data returned from Facebook",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "graphql"
+      ]
+    },
+    {
+      "id": "get_fb_video_info",
+      "platform": "facebook",
+      "name": "Get Facebook video info",
+      "description": "Support Video/Post/Comment",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / ID of the video",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the video",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "video",
+        "info"
+      ]
+    },
+    {
+      "id": "get_list_fb_highlights",
+      "platform": "facebook",
+      "name": "Get list Highlight story on Facebook",
+      "description": "Return the basic info of the highlights",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "array",
+          "description": "The basic info of the highlights",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "highlights",
+        "list"
+      ]
+    },
+    {
+      "id": "get_fb_highlight_info",
+      "platform": "facebook",
+      "name": "Get list story in one highlight on Facebook",
+      "description": "The URL of the highlights video",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the highlights video",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "array",
+          "description": "The info of the highlights video",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "highlights",
+        "video",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_user_reels",
+      "platform": "facebook",
+      "name": "Get list of Facebook user reels",
+      "description": "Support getting user reels roll list",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "reels",
+          "type": "array",
+          "description": "List of the user reels",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "user",
+        "reels",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_user_photos",
+      "platform": "facebook",
+      "name": "Get list photos of Facebook user",
+      "description": "Support getting user photos list",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of the Facebook user",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "The type of the photos",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "photos",
+          "type": "array",
+          "description": "List of user photos",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "user",
+        "photo",
+        "list"
+      ]
+    },
+    {
+      "id": "add_fb_friend",
+      "platform": "facebook",
+      "name": "Add friend on Facebook",
+      "description": "Use the Facebook account logged in to send",
+      "params": [
+        {
+          "name": "targetUid",
+          "type": "string",
+          "description": "The URL / UID of Facebook profile need add friend",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Results when sending invitation to add friends",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "add"
+      ]
+    },
+    {
+      "id": "remove_fb_friend",
+      "platform": "facebook",
+      "name": "Remove Facebook friend",
+      "description": "Use the Facebook account logged in to remove",
+      "params": [
+        {
+          "name": "targetUid",
+          "type": "string",
+          "description": "The URL / UID of Facebook profile need remove friend (in friends list)",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Results when sending to remove friends",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "remove"
+      ]
+    },
+    {
+      "id": "poke_fb_friend",
+      "platform": "facebook",
+      "name": "Poke Facebook friend",
+      "description": "Use the Facebook account logged in to poke",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / UID of Facebook profile need poke (in friends list)",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Results when sending to poke",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "poke"
+      ]
+    },
+    {
+      "id": "get_list_fb_all_friend",
+      "platform": "facebook",
+      "name": "Get list all friends Facebook",
+      "description": "Friends of the Facebook account logged in",
+      "params": [],
+      "response": [
+        {
+          "name": "friends",
+          "type": "array",
+          "description": "List results all friends",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_fb_comment",
+      "platform": "facebook",
+      "name": "Get list comments of Facebook post",
+      "description": "Support comments level 1 (not included replies)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / ID of the post",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Comment type (default Newest)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "comments",
+          "type": "array",
+          "description": "List of comments",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "post",
+        "comment",
+        "list"
+      ]
+    },
+    {
+      "id": "get_fb_profile_tiles",
+      "platform": "facebook",
+      "name": "Get profile pinned sections",
+      "description": "Get pinned sections on profile",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Profile URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "sections",
+          "type": "array",
+          "description": "Pinned sections list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "profile",
+        "tile"
+      ]
+    },
+    {
+      "id": "get_fb_activities",
+      "platform": "facebook",
+      "name": "Get activity log",
+      "description": "Comments, likes, searches...",
+      "params": [
+        {
+          "name": "category",
+          "type": "string",
+          "description": "Category",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        },
+        {
+          "name": "year",
+          "type": "number",
+          "description": "Year",
+          "required": false
+        },
+        {
+          "name": "month",
+          "type": "number",
+          "description": "Month",
+          "required": false
+        },
+        {
+          "name": "person_id",
+          "type": "string",
+          "description": "Other person ID",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "activities",
+          "type": "array",
+          "description": "Activities",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "activity",
+        "log"
+      ]
+    },
+    {
+      "id": "get_my_fb_blocked",
+      "platform": "facebook",
+      "name": "Get blocked list",
+      "description": "Get your blocked list",
+      "params": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Block type",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "blocked",
+          "type": "array",
+          "description": "Blocked list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "block",
+        "get"
+      ]
+    },
+    {
+      "id": "get_all_my_blocked_with_time",
+      "platform": "facebook",
+      "name": "Get all blocked with time",
+      "description": "Get blocked people with block time",
+      "params": [],
+      "response": [
+        {
+          "name": "blocked",
+          "type": "array",
+          "description": "List",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "block",
+        "get"
+      ]
+    },
+    {
+      "id": "fb_set_block",
+      "platform": "facebook",
+      "name": "Block / Unblock",
+      "description": "Block or unblock entity on Facebook",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Target URL/UID",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Block type",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "boolean",
+          "description": "Action (True=block, False=unblock)",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "block",
+        "set"
+      ]
+    },
+    {
+      "id": "get_check_ins",
+      "platform": "facebook",
+      "name": "Get check-ins",
+      "description": "Get checked-in places",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL/UID target",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "checkins",
+          "type": "array",
+          "description": "Checkins",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "checkin",
+        "get"
+      ]
+    },
+    {
+      "id": "create_comment",
+      "platform": "facebook",
+      "name": "Create comment",
+      "description": "Create comment on post",
+      "params": [
+        {
+          "name": "post",
+          "type": "string",
+          "description": "Post URL/ID",
+          "required": true
+        },
+        {
+          "name": "comment",
+          "type": "string",
+          "description": "Comment text",
+          "required": true
+        },
+        {
+          "name": "feedLocation",
+          "type": "string",
+          "description": "Feed Location",
+          "required": false
+        },
+        {
+          "name": "group",
+          "type": "string",
+          "description": "Group URL/ID",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "New comment URL",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "comment",
+        "create"
+      ]
+    },
+    {
+      "id": "reply_to_comment",
+      "platform": "facebook",
+      "name": "Reply to comment",
+      "description": "Reply to a comment",
+      "params": [
+        {
+          "name": "postID",
+          "type": "string",
+          "description": "Post ID",
+          "required": true
+        },
+        {
+          "name": "parentCommentID",
+          "type": "string",
+          "description": "Parent comment ID",
+          "required": true
+        },
+        {
+          "name": "comment",
+          "type": "string",
+          "description": "Reply text",
+          "required": true
+        },
+        {
+          "name": "feedLocation",
+          "type": "string",
+          "description": "Feed Location",
+          "required": false
+        },
+        {
+          "name": "groupID",
+          "type": "string",
+          "description": "Group ID",
+          "required": false
+        },
+        {
+          "name": "ranges",
+          "type": "array",
+          "description": "Ranges for mentions",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "New comment URL",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "comment",
+        "reply"
+      ]
+    },
+    {
+      "id": "undo_react_to_comment",
+      "platform": "facebook",
+      "name": "Undo react to comment",
+      "description": "Remove reaction from a comment",
+      "params": [
+        {
+          "name": "comment_id",
+          "type": "string",
+          "description": "Comment URL/ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Result",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "comment",
+        "react"
+      ]
+    },
+    {
+      "id": "react_to_comment",
+      "platform": "facebook",
+      "name": "React to comment",
+      "description": "Add reaction to comment",
+      "params": [
+        {
+          "name": "comment_id",
+          "type": "string",
+          "description": "Comment URL/ID",
+          "required": true
+        },
+        {
+          "name": "post_id",
+          "type": "string",
+          "description": "Post URL/ID",
+          "required": true
+        },
+        {
+          "name": "reaction",
+          "type": "string",
+          "description": "Reaction ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Result",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "comment",
+        "react"
+      ]
+    },
+    {
+      "id": "get_comment_info",
+      "platform": "facebook",
+      "name": "Get fb comment info",
+      "description": "Get specific comment info fb",
+      "params": [
+        {
+          "name": "comment_id",
+          "type": "string",
+          "description": "Comment URL/ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "comment",
+          "type": "object",
+          "description": "Comment details",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "comment",
+        "info"
+      ]
+    },
+    {
+      "id": "get_fb_dtsg",
+      "platform": "facebook",
+      "name": "Get fb_dtsg",
+      "description": "Get fb_dtsg for requests",
+      "params": [],
+      "response": [
+        {
+          "name": "fb_dtsg",
+          "type": "string",
+          "description": "fb_dtsg token",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "core",
+        "token"
+      ]
+    },
+    {
+      "id": "get_access_token",
+      "platform": "facebook",
+      "name": "Get fb access token",
+      "description": "Get EAAB/EAAG/... Token",
+      "params": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Token type",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "token",
+          "type": "string",
+          "description": "Token",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "core",
+        "token"
+      ]
+    },
+    {
+      "id": "get_my_profile_lite",
+      "platform": "facebook",
+      "name": "Get my profile lite",
+      "description": "Get own profile info",
+      "params": [],
+      "response": [
+        {
+          "name": "profile",
+          "type": "object",
+          "description": "Profile info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "core",
+        "profile"
+      ]
+    },
+    {
+      "id": "get_delegate_page_id",
+      "platform": "facebook",
+      "name": "Get Delegate Page ID",
+      "description": "Get delegate page ID",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Target URL/ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "pageId",
+          "type": "string",
+          "description": "Page ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "core",
+        "page"
+      ]
+    },
+    {
+      "id": "get_bulk_route_definition",
+      "platform": "facebook",
+      "name": "Get Bulk Route Definition",
+      "description": "Get bulk route details",
+      "params": [
+        {
+          "name": "urls",
+          "type": "string",
+          "description": "List urls want to check, each in new line",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "Route info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "route",
+        "info"
+      ]
+    },
+    {
+      "id": "get_route_definition",
+      "platform": "facebook",
+      "name": "Get Route Definition",
+      "description": "Get route definition payload",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "Facebook page route data",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "route",
+        "info"
+      ]
+    },
+    {
+      "id": "get_all_collection_ids",
+      "platform": "facebook",
+      "name": "Get all Collection IDs",
+      "description": "Target URL/UID",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Target URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "collections",
+          "type": "object",
+          "description": "Collections",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "collection",
+        "id"
+      ]
+    },
+    {
+      "id": "get_single_collection_id",
+      "platform": "facebook",
+      "name": "Get Collection ID",
+      "description": "Get specific collection ID",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Target URL/UID",
+          "required": true
+        },
+        {
+          "name": "tab_key",
+          "type": "string",
+          "description": "Tab key (example: photos_albums)",
+          "required": true
+        },
+        {
+          "name": "parent_tab_key",
+          "type": "string",
+          "description": "Parent Tab Key (Optional)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "collectionId",
+          "type": "string",
+          "description": "Collection ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "collection",
+        "id"
+      ]
+    },
+    {
+      "id": "get_group_files",
+      "platform": "facebook",
+      "name": "Get Group Files",
+      "description": "Get files attached in a group",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "files",
+          "type": "array",
+          "description": "Files list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "file"
+      ]
+    },
+    {
+      "id": "get_follow_count",
+      "platform": "facebook",
+      "name": "Get Follow Count",
+      "description": "Get followed profiles count",
+      "params": [],
+      "response": [
+        {
+          "name": "counts",
+          "type": "object",
+          "description": "Follow counts",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "follow",
+        "count"
+      ]
+    },
+    {
+      "id": "get_following",
+      "platform": "facebook",
+      "name": "Get Following",
+      "description": "Get profiles you are following",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "following",
+          "type": "array",
+          "description": "Following list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "follow",
+        "list"
+      ]
+    },
+    {
+      "id": "get_unfollowed",
+      "platform": "facebook",
+      "name": "Get Unfollowed",
+      "description": "Get profiles you unfollowed",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "unfollowed",
+          "type": "array",
+          "description": "Unfollowed list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "follow",
+        "list"
+      ]
+    },
+    {
+      "id": "get_follower_grid",
+      "platform": "facebook",
+      "name": "Get Followers Grid",
+      "description": "Get followers grid",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "followers",
+          "type": "array",
+          "description": "Followers",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "follower",
+        "list"
+      ]
+    },
+    {
+      "id": "get_following_grid",
+      "platform": "facebook",
+      "name": "Get Following Grid",
+      "description": "Get following grid",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        },
+        {
+          "name": "search",
+          "type": "string",
+          "description": "Search",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "following",
+          "type": "array",
+          "description": "Following list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "following",
+        "list"
+      ]
+    },
+    {
+      "id": "get_incoming_friend_requests_fast",
+      "platform": "facebook",
+      "name": "Get Incoming Friend Requests (Fast)",
+      "description": "Get received friend requests",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "Requests data and total count",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "request"
+      ]
+    },
+    {
+      "id": "get_outgoing_friend_requests_fast",
+      "platform": "facebook",
+      "name": "Get Outgoing Friend Requests (Fast)",
+      "description": "Get sent friend requests",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "Requests data and total count",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "request"
+      ]
+    },
+    {
+      "id": "get_incoming_friend_requests",
+      "platform": "facebook",
+      "name": "Get Incoming Friend Requests",
+      "description": "Get received friend requests",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "requests",
+          "type": "array",
+          "description": "Requests list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "request"
+      ]
+    },
+    {
+      "id": "get_outgoing_friend_requests",
+      "platform": "facebook",
+      "name": "Get Outgoing Friend Requests",
+      "description": "Get sent friend requests",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "requests",
+          "type": "array",
+          "description": "Requests list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "request"
+      ]
+    },
+    {
+      "id": "decline_friend_request",
+      "platform": "facebook",
+      "name": "Decline Friend Request",
+      "description": "Decline a friend request",
+      "params": [
+        {
+          "name": "uid",
+          "type": "string",
+          "description": "Requester UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "action"
+      ]
+    },
+    {
+      "id": "accept_friend_request",
+      "platform": "facebook",
+      "name": "Accept Friend Request",
+      "description": "Accept a friend request",
+      "params": [
+        {
+          "name": "uid",
+          "type": "string",
+          "description": "Requester UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "action"
+      ]
+    },
+    {
+      "id": "cancel_outgoing_friend_request",
+      "platform": "facebook",
+      "name": "Cancel Outgoing Friend Request",
+      "description": "Cancel a sent friend request",
+      "params": [
+        {
+          "name": "uid",
+          "type": "string",
+          "description": "Requestee UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "action"
+      ]
+    },
+    {
+      "id": "get_profile_friends_section",
+      "platform": "facebook",
+      "name": "Get Profile Friends Section",
+      "description": "Get friends list by section (Birthdays, recently added...)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL/UID (optional, default to your UID)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        },
+        {
+          "name": "section",
+          "type": "string",
+          "description": "Section",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "friends",
+          "type": "array",
+          "description": "Friends list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "find_buddy",
+      "platform": "facebook",
+      "name": "Find friend buddy",
+      "description": "Find buddies from messenger sidebar",
+      "params": [
+        {
+          "name": "max",
+          "type": "number",
+          "description": "Number to fetch (default 50)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "buddies",
+          "type": "array",
+          "description": "Buddies",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "get_online_friends",
+      "platform": "facebook",
+      "name": "Get Online Friends",
+      "description": "Get online friends list",
+      "params": [
+        {
+          "name": "max",
+          "type": "number",
+          "description": "Number to fetch (default 50)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "friends",
+          "type": "array",
+          "description": "Friends list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "get_unfriended",
+      "platform": "facebook",
+      "name": "Get Unfriended",
+      "description": "Get unfriended list",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "unfriended",
+          "type": "array",
+          "description": "Unfriended list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "get_add_friend_time",
+      "platform": "facebook",
+      "name": "Get Add Friend History",
+      "description": "Get time when friends were added",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "friends",
+          "type": "array",
+          "description": "Friends time list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "get_friend_birthdays",
+      "platform": "facebook",
+      "name": "Get Friend Birthdays",
+      "description": "Get friends birthdays",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor (default: 1)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "birthdays",
+          "type": "array",
+          "description": "Birthdays list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "get_followers",
+      "platform": "facebook",
+      "name": "Get Followers",
+      "description": "Get followers list",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "followers",
+          "type": "array",
+          "description": "Followers list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friend",
+        "get"
+      ]
+    },
+    {
+      "id": "get_friendship_data",
+      "platform": "facebook",
+      "name": "Get Friendship Data",
+      "description": "Get friendship timeline between you and target UID",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Friend URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "timeline",
+          "type": "array",
+          "description": "Friendship data",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "friendship",
+        "get"
+      ]
+    },
+    {
+      "id": "video_id_to_post_id",
+      "platform": "facebook",
+      "name": "Video ID to Post ID",
+      "description": "Convert Video ID to Post ID",
+      "params": [
+        {
+          "name": "video_id",
+          "type": "string",
+          "description": "Video ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "postId",
+          "type": "string",
+          "description": "Post ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "id",
+        "video"
+      ]
+    },
+    {
+      "id": "get_group_members_root",
+      "platform": "facebook",
+      "name": "Get Group Members Root",
+      "description": "Get overview of group member sections",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "Sections data",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "member"
+      ]
+    },
+    {
+      "id": "search_group_members",
+      "platform": "facebook",
+      "name": "Search Group Members",
+      "description": "Search members in a group",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "search",
+          "type": "string",
+          "description": "Search keyword",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Members list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "members",
+        "search"
+      ]
+    },
+    {
+      "id": "get_group_admins_section",
+      "platform": "facebook",
+      "name": "Get Group Admins Section",
+      "description": "Get Admins and Moderators section",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Admins list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "admin",
+        "list"
+      ]
+    },
+    {
+      "id": "get_group_friends_section",
+      "platform": "facebook",
+      "name": "Get Group Friends Section",
+      "description": "Get friends in group section",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Friends list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "friend",
+        "list"
+      ]
+    },
+    {
+      "id": "get_group_experts_section",
+      "platform": "facebook",
+      "name": "Get Group Experts Section",
+      "description": "Get group experts section",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Experts list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "expert",
+        "list"
+      ]
+    },
+    {
+      "id": "get_group_contributors_section",
+      "platform": "facebook",
+      "name": "Get Group Contributors Section",
+      "description": "Get top contributors section",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Contributors list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "contributor",
+        "list"
+      ]
+    },
+    {
+      "id": "get_group_things_in_common_section",
+      "platform": "facebook",
+      "name": "Get Group Things In Common",
+      "description": "Get people with things in common",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Members list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "member",
+        "list"
+      ]
+    },
+    {
+      "id": "get_group_same_city_section",
+      "platform": "facebook",
+      "name": "Get Group Same City",
+      "description": "Get members in the same city",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Members list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "member",
+        "list"
+      ]
+    },
+    {
+      "id": "get_group_new_members_section",
+      "platform": "facebook",
+      "name": "Get Group New Members",
+      "description": "Get new members section",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Members list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "new"
+      ]
+    },
+    {
+      "id": "get_my_group_members",
+      "platform": "facebook",
+      "name": "Get My Group Members",
+      "description": "Manage group members (for Admins)",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        },
+        {
+          "name": "statusFilter",
+          "type": "string",
+          "description": "Status filter",
+          "required": true
+        },
+        {
+          "name": "membershipType",
+          "type": "string",
+          "description": "Membership type",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        },
+        {
+          "name": "search",
+          "type": "string",
+          "description": "Search text",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "members",
+          "type": "array",
+          "description": "Members list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "admin"
+      ]
+    },
+    {
+      "id": "get_group_member_count",
+      "platform": "facebook",
+      "name": "Group Member Count",
+      "description": "Get admins and members count of a group",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "countInfo",
+          "type": "object",
+          "description": "Count info object",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "groups",
+        "members"
+      ]
+    },
+    {
+      "id": "get_my_joined_groups_root",
+      "platform": "facebook",
+      "name": "Get My Joined Groups Root",
+      "description": "Get joined and pending groups root",
+      "params": [
+        {
+          "name": "ordering",
+          "type": "string",
+          "description": "Ordering (optional)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "Groups data",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "get"
+      ]
+    },
+    {
+      "id": "get_my_joined_groups",
+      "platform": "facebook",
+      "name": "Get My Joined Groups",
+      "description": "Get groups you have joined",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        },
+        {
+          "name": "ordering",
+          "type": "string",
+          "description": "Ordering (optional)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "groups",
+          "type": "array",
+          "description": "Groups list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "get"
+      ]
+    },
+    {
+      "id": "get_my_groups",
+      "platform": "facebook",
+      "name": "Get My Groups",
+      "description": "Get admin and member groups (max 5000)",
+      "params": [],
+      "response": [
+        {
+          "name": "groups",
+          "type": "object",
+          "description": "Admin and member groups",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "get"
+      ]
+    },
+    {
+      "id": "get_my_managed_groups",
+      "platform": "facebook",
+      "name": "Get My Managed Groups",
+      "description": "Get groups you manage",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "groups",
+          "type": "array",
+          "description": "Groups list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "admin"
+      ]
+    },
+    {
+      "id": "leave_group",
+      "platform": "facebook",
+      "name": "Leave Group",
+      "description": "Leave a group",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "leave"
+      ]
+    },
+    {
+      "id": "join_group",
+      "platform": "facebook",
+      "name": "Join Group",
+      "description": "Join a group",
+      "params": [
+        {
+          "name": "group_url",
+          "type": "string",
+          "description": "Group URL/UID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "group",
+        "join"
+      ]
+    },
+    {
+      "id": "get_locked_profile_status",
+      "platform": "facebook",
+      "name": "Locked Profile Status",
+      "description": "Check if your profile is locked",
+      "params": [],
+      "response": [
+        {
+          "name": "status",
+          "type": "object",
+          "description": "Locked profile status",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "profile",
+        "locked"
+      ]
+    },
+    {
+      "id": "update_locked_profile_status",
+      "platform": "facebook",
+      "name": "Update Locked Profile Status",
+      "description": "Enable or disable locked profile feature",
+      "params": [
+        {
+          "name": "enable",
+          "type": "boolean",
+          "description": "Enable (true) / Disable (false)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "status",
+          "type": "object",
+          "description": "New status",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "profile",
+        "locked"
+      ]
+    },
+    {
+      "id": "get_all_chat",
+      "platform": "facebook",
+      "name": "Get all fb chat",
+      "description": "Get all Messenger chat threads",
+      "params": [],
+      "response": [
+        {
+          "name": "threads",
+          "type": "array",
+          "description": "Chat threads list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "messages",
+        "chat"
+      ]
+    },
+    {
+      "id": "get_messages_after_msg_id",
+      "platform": "facebook",
+      "name": "Get Messages Around Message ID",
+      "description": "Get messages before or after a specific message",
+      "params": [
+        {
+          "name": "thread_id",
+          "type": "string",
+          "description": "Thread ID",
+          "required": true
+        },
+        {
+          "name": "msg_id",
+          "type": "string",
+          "description": "Anchor Message ID",
+          "required": true
+        },
+        {
+          "name": "direction",
+          "type": "string",
+          "description": "Direction",
+          "required": false
+        },
+        {
+          "name": "limit",
+          "type": "number",
+          "description": "Limit (default 50)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "messages",
+          "type": "array",
+          "description": "Messages",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "messages",
+        "chat"
+      ]
+    },
+    {
+      "id": "get_messages_at_time_cursor",
+      "platform": "facebook",
+      "name": "Get Messages At Time Cursor",
+      "description": "Get messages before a specific time cursor",
+      "params": [
+        {
+          "name": "thread_id",
+          "type": "string",
+          "description": "Thread ID",
+          "required": true
+        },
+        {
+          "name": "time",
+          "type": "number",
+          "description": "Time (timestamp ms)",
+          "required": false
+        },
+        {
+          "name": "limit",
+          "type": "number",
+          "description": "Limit (default 50)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "messages",
+          "type": "array",
+          "description": "Messages",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "messages",
+        "chat"
+      ]
+    },
+    {
+      "id": "check_can_message",
+      "platform": "facebook",
+      "name": "Check Can Message",
+      "description": "Check if you can send a message to this user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Target UID/URL",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "canMessage",
+          "type": "boolean",
+          "description": "Can message",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "messages",
+        "check"
+      ]
+    },
+    {
+      "id": "get_my_liked_pages",
+      "platform": "facebook",
+      "name": "Get My Liked Pages",
+      "description": "Get list of Pages you have liked",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "pages",
+          "type": "array",
+          "description": "Pages list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "pages",
+        "get"
+      ]
+    },
+    {
+      "id": "unlike_page",
+      "platform": "facebook",
+      "name": "Unlike Page",
+      "description": "Unlike a Page",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Page URL/ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "pages",
+        "unlike"
+      ]
+    },
+    {
+      "id": "follow_page",
+      "platform": "facebook",
+      "name": "Follow Page",
+      "description": "Follow a Page (Default or See First)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Page URL/ID",
+          "required": true
+        },
+        {
+          "name": "followType",
+          "type": "string",
+          "description": "Follow Type",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "pages",
+        "follow"
+      ]
+    },
+    {
+      "id": "un_follow_page",
+      "platform": "facebook",
+      "name": "Unfollow Page",
+      "description": "Unfollow feed from a Page",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Page URL/ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "targetId",
+          "type": "string",
+          "description": "Page ID after unfollow",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "pages",
+        "unfollow"
+      ]
+    },
+    {
+      "id": "get_page_invites",
+      "platform": "facebook",
+      "name": "Get Page Invites",
+      "description": "Get list of pending Page invites",
+      "params": [],
+      "response": [
+        {
+          "name": "invites",
+          "type": "array",
+          "description": "Invites list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "pages",
+        "invite"
+      ]
+    },
+    {
+      "id": "accept_page_invite",
+      "platform": "facebook",
+      "name": "Accept Page Invite",
+      "description": "Accept an invite to like a page",
+      "params": [
+        {
+          "name": "invite_id",
+          "type": "string",
+          "description": "Invite ID",
+          "required": true
+        }
+      ],
+      "response": [],
+      "tags": [
+        "facebook",
+        "pages",
+        "invite"
+      ]
+    },
+    {
+      "id": "decline_page_invite",
+      "platform": "facebook",
+      "name": "Decline Page Invite",
+      "description": "Decline an invite to like a page",
+      "params": [
+        {
+          "name": "invite_id",
+          "type": "string",
+          "description": "Invite ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Result ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "pages",
+        "invite"
+      ]
+    },
+    {
+      "id": "get_group_photos",
+      "platform": "facebook",
+      "name": "Get Group Photos",
+      "description": "Get photos posted in a Group",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Group URL/ID",
+          "required": true
+        },
+        {
+          "name": "count",
+          "type": "number",
+          "description": "Count (Default 8)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "photos",
+          "type": "array",
+          "description": "Photos list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "photos",
+        "group"
+      ]
+    },
+    {
+      "id": "get_largest_photo",
+      "platform": "facebook",
+      "name": "Get Largest Photo",
+      "description": "Get max resolution photo URL from photoId",
+      "params": [
+        {
+          "name": "photo_id",
+          "type": "string",
+          "description": "Photo ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "photo",
+          "type": "object",
+          "description": "Photo info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "photos",
+        "get"
+      ]
+    },
+    {
+      "id": "get_basic_photo_info",
+      "platform": "facebook",
+      "name": "Get Basic Photo Info",
+      "description": "Get owner and original post info for a photo",
+      "params": [
+        {
+          "name": "photo_id",
+          "type": "string",
+          "description": "Photo ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "Basic info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "photos",
+        "info"
+      ]
+    },
+    {
+      "id": "delete_post",
+      "platform": "facebook",
+      "name": "Delete Post",
+      "description": "Delete a post permanently",
+      "params": [
+        {
+          "name": "storyId",
+          "type": "string",
+          "description": "Story ID (Base64)",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Delete status",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "posts",
+        "delete"
+      ]
+    },
+    {
+      "id": "trash_post",
+      "platform": "facebook",
+      "name": "Trash Post",
+      "description": "Move a post to trash",
+      "params": [
+        {
+          "name": "storyId",
+          "type": "string",
+          "description": "Story ID (Base64)",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success or not",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "posts",
+        "trash"
+      ]
+    },
+    {
+      "id": "search_all_posts_on_fb",
+      "platform": "facebook",
+      "name": "Search All Posts",
+      "description": "Search all posts on Facebook by text",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Target URL/ID",
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Search keyword",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "posts",
+          "type": "array",
+          "description": "List of posts",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "posts",
+        "search"
+      ]
+    },
+    {
+      "id": "get_post_reaction_count",
+      "platform": "facebook",
+      "name": "Get Post Reaction Count",
+      "description": "Get count of each reaction type on a post",
+      "params": [
+        {
+          "name": "postId",
+          "type": "string",
+          "description": "Post ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "reactions",
+          "type": "array",
+          "description": "Reactions list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "reactions",
+        "posts"
+      ]
+    },
+    {
+      "id": "get_reels_feed",
+      "platform": "facebook",
+      "name": "Reels Feed",
+      "description": "Get Reels from feed",
+      "params": [
+        {
+          "name": "page_id",
+          "type": "string",
+          "description": "Page ID (Optional)",
+          "required": false
+        },
+        {
+          "name": "group_id_list",
+          "type": "array",
+          "description": "Group IDs (Optional)",
+          "required": false
+        },
+        {
+          "name": "root_video_id",
+          "type": "string",
+          "description": "Root Video ID",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "reels",
+          "type": "array",
+          "description": "Videos list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "reels"
+      ]
+    },
+    {
+      "id": "search_pages",
+      "platform": "facebook",
+      "name": "Search Pages",
+      "description": "Search for Facebook Pages",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "description": "Search keyword",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "results",
+          "type": "array",
+          "description": "Pages list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "search",
+        "pages"
+      ]
+    },
+    {
+      "id": "search_groups",
+      "platform": "facebook",
+      "name": "Search Groups",
+      "description": "Search for Facebook Groups",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "description": "Search keyword",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "results",
+          "type": "array",
+          "description": "Groups list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "search",
+        "groups"
+      ]
+    },
+    {
+      "id": "search_profiles",
+      "platform": "facebook",
+      "name": "Search Profiles",
+      "description": "Search for Facebook Users",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "description": "Search keyword",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "results",
+          "type": "array",
+          "description": "Profiles list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "search",
+        "profile"
+      ]
+    },
+    {
+      "id": "search_place",
+      "platform": "facebook",
+      "name": "Search Places",
+      "description": "Search for places",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "description": "Keyword",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "results",
+          "type": "array",
+          "description": "Places list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "search",
+        "places"
+      ]
+    },
+    {
+      "id": "set_avatar_shield",
+      "platform": "facebook",
+      "name": "Set Avatar Shield",
+      "description": "Enable or disable avatar shield",
+      "params": [
+        {
+          "name": "value",
+          "type": "boolean",
+          "description": "Enable/disable",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "security",
+        "shield"
+      ]
+    },
+    {
+      "id": "get_recent_stories",
+      "platform": "facebook",
+      "name": "Get Recent Stories",
+      "description": "Get recent stories on timeline",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "stories",
+          "type": "array",
+          "description": "Stories list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories"
+      ]
+    },
+    {
+      "id": "get_archived_stories",
+      "platform": "facebook",
+      "name": "Get Archived Stories",
+      "description": "Get story archives lists",
+      "params": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "stories",
+          "type": "array",
+          "description": "Stories list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories",
+        "archive"
+      ]
+    },
+    {
+      "id": "get_story_viewers",
+      "platform": "facebook",
+      "name": "Get Story Viewers",
+      "description": "Get users who viewed a story",
+      "params": [
+        {
+          "name": "storyId",
+          "type": "string",
+          "description": "Story ID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "viewers",
+          "type": "array",
+          "description": "Viewers list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories"
+      ]
+    },
+    {
+      "id": "get_story_from_bucket_id",
+      "platform": "facebook",
+      "name": "Get Story From Bucket ID",
+      "description": "Get a story based on bucket ID",
+      "params": [
+        {
+          "name": "bucketID",
+          "type": "string",
+          "description": "Bucket ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "story",
+          "type": "object",
+          "description": "Story details",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories"
+      ]
+    },
+    {
+      "id": "get_first_story_bucket_id_to_show",
+      "platform": "facebook",
+      "name": "Get First Story Bucket ID",
+      "description": "Get first story bucket to show of a user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "User URL/ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "Bucket info ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories"
+      ]
+    },
+    {
+      "id": "react_story",
+      "platform": "facebook",
+      "name": "React Story",
+      "description": "React to a story",
+      "params": [
+        {
+          "name": "storyId",
+          "type": "string",
+          "description": "Story ID",
+          "required": true
+        },
+        {
+          "name": "reaction",
+          "type": "string",
+          "description": "Any Emoji",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories",
+        "reaction"
+      ]
+    },
+    {
+      "id": "delete_archived_story",
+      "platform": "facebook",
+      "name": "Delete Archived Story",
+      "description": "Delete an archived story",
+      "params": [
+        {
+          "name": "storyId",
+          "type": "string",
+          "description": "Archived Story ID",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Success",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "stories",
+        "archive",
+        "delete"
+      ]
+    },
+    {
+      "id": "get_tagged_video",
+      "platform": "facebook",
+      "name": "Get Tagged Videos",
+      "description": "Get list of videos a user is tagged in",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Entity URL/ID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "taggedVideo",
+          "type": "array",
+          "description": "Tagged video list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "tagged",
+        "videos"
+      ]
+    },
+    {
+      "id": "get_all_message_themes",
+      "platform": "facebook",
+      "name": "Get All Message Themes",
+      "description": "Get messenger theme choices",
+      "params": [],
+      "response": [],
+      "tags": [
+        "facebook",
+        "theme",
+        "messages"
+      ]
+    },
+    {
+      "id": "get_post_format_presets",
+      "platform": "facebook",
+      "name": "Post Format Presets",
+      "description": "Get preset backgrounds for text status",
+      "params": [],
+      "response": [
+        {
+          "name": "presets",
+          "type": "object",
+          "description": "Presets info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "upload",
+        "posts"
+      ]
+    },
+    {
+      "id": "get_user_video",
+      "platform": "facebook",
+      "name": "Get User Videos",
+      "description": "Get videos uploaded by user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "User URL/ID",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Video collection type",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Videos info object",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "videos",
+        "user"
+      ]
+    },
+    {
+      "id": "get_group_video",
+      "platform": "facebook",
+      "name": "Get Group Videos",
+      "description": "Get videos uploaded in a group",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Group URL/ID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Videos list",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "videos",
+        "groups"
+      ]
+    },
+    {
+      "id": "get_page_video",
+      "platform": "facebook",
+      "name": "Get Page's Videos",
+      "description": "Get page uploaded videos",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Page URL/ID",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Cursor",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "result",
+          "type": "object",
+          "description": "Videos result",
+          "required": false
+        }
+      ],
+      "tags": [
+        "facebook",
+        "videos",
+        "pages"
+      ]
+    },
+    {
+      "id": "get_ig_user_info",
+      "platform": "instagram",
+      "name": "Get Instagram user info",
+      "description": "avatar/url/type",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL or Username of Instagram user",
+          "required": true
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return the raw data? Raw data from Instagram",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the Instagram user",
+          "required": false
+        }
+      ],
+      "tags": [
+        "instagram",
+        "user",
+        "info"
+      ]
+    },
+    {
+      "id": "get_list_ig_user_stories",
+      "platform": "instagram",
+      "name": "Get Instagram user stories",
+      "description": "The URL or Username of Instagram user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL or Username of Instagram user",
+          "required": true
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return the raw data? Raw data from Instagram",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "stories",
+          "type": "array",
+          "description": "The stories of the Instagram user",
+          "required": false
+        }
+      ],
+      "tags": [
+        "instagram",
+        "user",
+        "stories",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_ig_user_reels",
+      "platform": "instagram",
+      "name": "Get Instagram user reels",
+      "description": "The URL or Username of Instagram user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL or Username of Instagram user",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return the raw data? Raw data from Instagram",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "reels",
+          "type": "array",
+          "description": "The reels of the Instagram user",
+          "required": false
+        }
+      ],
+      "tags": [
+        "instagram",
+        "user",
+        "reels",
+        "list"
+      ]
+    },
+    {
+      "id": "get_list_ig_post",
+      "platform": "instagram",
+      "name": "Get Instagram post list",
+      "description": "Get all posts of the Instagram user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL or Username of Instagram user",
+          "required": true
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "posts",
+          "type": "array",
+          "description": "The list of the Instagram post",
+          "required": false
+        }
+      ],
+      "tags": [
+        "instagram",
+        "post",
+        "list"
+      ]
+    },
+    {
+      "id": "get_threads_user_info",
+      "platform": "threads",
+      "name": "Get Threads user info",
+      "description": "Support get Threads user info",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL or Username of Threads user",
+          "required": true
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return the raw data? Raw data from Threads",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the Threads user",
+          "required": false
+        }
+      ],
+      "tags": [
+        "threads",
+        "user",
+        "info"
+      ]
+    },
+    {
+      "id": "get_list_threads_posts",
+      "platform": "threads",
+      "name": "Get list Threads post of user",
+      "description": "Support get list Threads post from URL",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL or Username of Threads user",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Post type: 'Threads', 'Replies', 'Media' or 'Reposts' (default 'Threads')",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return the raw data? Raw data from Threads",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "posts",
+          "type": "array",
+          "description": "The list of the Threads post",
+          "required": false
+        }
+      ],
+      "tags": [
+        "threads",
+        "post",
+        "list"
+      ]
+    },
+    {
+      "id": "get_tiktok_video_info",
+      "platform": "tiktok",
+      "name": "Get Tiktok video info",
+      "description": "The URL of the video",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the video",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the video",
+          "required": false
+        }
+      ],
+      "tags": [
+        "tiktok",
+        "video",
+        "info"
+      ]
+    },
+    {
+      "id": "get_tiktok_user_info",
+      "platform": "tiktok",
+      "name": "Get Tiktok user info",
+      "description": "The URL of the user",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the user",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the user",
+          "required": false
+        }
+      ],
+      "tags": [
+        "tiktok",
+        "user",
+        "info"
+      ]
+    },
+    {
+      "id": "get_bilibili_video_info",
+      "platform": "bilibili",
+      "name": "Get Bilibili video info",
+      "description": "Get Bilibili video info",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL of the video",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the video",
+          "required": false
+        }
+      ],
+      "tags": [
+        "bilibili",
+        "video"
+      ]
+    },
+    {
+      "id": "extract_douyin_url",
+      "platform": "douyin",
+      "name": "Extract Douyin URL from text",
+      "description": "Support shared Douyin link (often injected video name, user name, ...)",
+      "params": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "The text contains Douyin URL",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The Douyin URL",
+          "required": false
+        }
+      ],
+      "tags": [
+        "extract",
+        "douyin",
+        "url"
+      ]
+    },
+    {
+      "id": "get_douyin_video_id",
+      "platform": "douyin",
+      "name": "Get Douyin video ID from URL",
+      "description": "Support shared Douyin link (often injected video name, user name, ...)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The Douyin video URL ",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "The Douyin video ID",
+          "required": false
+        }
+      ],
+      "tags": [
+        "douyin",
+        "video",
+        "id"
+      ]
+    },
+    {
+      "id": "get_douyin_video_info",
+      "platform": "douyin",
+      "name": "Get Douyin video info",
+      "description": "Support shared Douyin link (often injected video name, user name, ...)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The Douyin video URL, support shared link (injected video name, user name, ...)",
+          "required": true
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The Douyin video info",
+          "required": false
+        }
+      ],
+      "tags": [
+        "douyin",
+        "video",
+        "info"
+      ]
+    },
+    {
+      "id": "get_ext_version",
+      "platform": "utils",
+      "name": "Get extension version",
+      "description": "Version of FB AIO",
+      "params": [],
+      "response": [
+        {
+          "name": "version",
+          "type": "string",
+          "description": "Version",
+          "required": false
+        }
+      ],
+      "tags": [
+        "fbaio",
+        "get",
+        "version"
+      ]
+    }
+  ]
+}

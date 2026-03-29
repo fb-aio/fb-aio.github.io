@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "manual-trigger-1",
+      "type": "manual_trigger",
+      "position": { "x": 250, "y": 100 },
+      "data": {
+        "label": "Start"
+      }
+    },
+    {
+      "id": "code-1",
+      "type": "code",
+      "position": { "x": 250, "y": 250 },
+      "data": {
+        "label": "Hello World",
+        "code": "return 'Hello World from FB AIO!';"
+      }
+    },
+    {
+      "id": "output-1",
+      "type": "workflow_output",
+      "position": { "x": 250, "y": 400 },
+      "data": {
+        "label": "Output"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "manual-trigger-1",
+      "target": "code-1"
+    },
+    {
+      "id": "edge-2",
+      "source": "code-1",
+      "target": "output-1"
+    }
+  ]
+}

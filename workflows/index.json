@@ -1,0 +1,62 @@
+[
+  {
+    "id": "example-hello-world",
+    "name": "Hello World",
+    "description": "A simple workflow that demonstrates the basic structure. Click Run to see a greeting message.",
+    "author": "FB AIO",
+    "authorUid": "system",
+    "icon": "fa-solid fa-hand-wave",
+    "color": "#52c41a",
+    "isSafe": true,
+    "downloads": 0,
+    "imports": 0,
+    "nodesCount": 3,
+    "createdAt": "2026-03-18T00:00:00.000Z",
+    "file": "hello-world.json"
+  },
+  {
+    "id": "example-random-number",
+    "name": "Random Number Generator",
+    "description": "Generates a random number and performs mathematical operations on it.",
+    "author": "FB AIO",
+    "authorUid": "system",
+    "icon": "fa-solid fa-dice",
+    "color": "#1890ff",
+    "isSafe": true,
+    "downloads": 0,
+    "imports": 0,
+    "nodesCount": 4,
+    "createdAt": "2026-03-18T00:00:00.000Z",
+    "file": "random-number.json"
+  },
+  {
+    "id": "example-http-request",
+    "name": "HTTP Request Demo",
+    "description": "Fetches user data from a public API and extracts relevant information.",
+    "author": "FB AIO",
+    "authorUid": "system",
+    "icon": "fa-solid fa-globe",
+    "color": "#722ed1",
+    "isSafe": true,
+    "downloads": 0,
+    "imports": 0,
+    "nodesCount": 4,
+    "createdAt": "2026-03-18T00:00:00.000Z",
+    "file": "http-request.json"
+  },
+  {
+    "id": "example-data-processing",
+    "name": "Data Processing Pipeline",
+    "description": "Advanced workflow showing loops, conditionals, and data transformation. Processes a list of items with routing based on values.",
+    "author": "FB AIO",
+    "authorUid": "system",
+    "icon": "fa-solid fa-list-check",
+    "color": "#eb2f96",
+    "isSafe": true,
+    "downloads": 0,
+    "imports": 0,
+    "nodesCount": 8,
+    "createdAt": "2026-03-18T00:00:00.000Z",
+    "file": "data-processing.json"
+  }
+]

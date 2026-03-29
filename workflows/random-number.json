@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "manual-trigger-1",
+      "type": "manual_trigger",
+      "position": { "x": 250, "y": 100 },
+      "data": { "label": "Start" }
+    },
+    {
+      "id": "code-1",
+      "type": "code",
+      "position": { "x": 250, "y": 250 },
+      "data": {
+        "label": "Generate Random Number",
+        "code": "// Generate a random number between 1 and 100\nconst randomNum = Math.floor(Math.random() * 100) + 1;\nreturn { random: randomNum, message: 'Your lucky number!' };"
+      }
+    },
+    {
+      "id": "code-2",
+      "type": "code",
+      "position": { "x": 250, "y": 400 },
+      "data": {
+        "label": "Process Result",
+        "code": "// Access input from previous node\nconst input = $input.first;\nreturn {\n  original: input.random,\n  doubled: input.random * 2,\n  squared: input.random * input.random,\n  processed: true\n};"
+      }
+    },
+    {
+      "id": "output-1",
+      "type": "workflow_output",
+      "position": { "x": 250, "y": 550 },
+      "data": { "label": "Output" }
+    }
+  ],
+  "edges": [
+    { "id": "edge-1", "source": "manual-trigger-1", "target": "code-1" },
+    { "id": "edge-2", "source": "code-1", "target": "code-2" },
+    { "id": "edge-3", "source": "code-2", "target": "output-1" }
+  ]
+}

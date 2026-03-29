@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "manual-trigger-1",
+      "type": "manual_trigger",
+      "position": { "x": 250, "y": 50 },
+      "data": { "label": "Start" }
+    },
+    {
+      "id": "code-1",
+      "type": "code",
+      "position": { "x": 250, "y": 180 },
+      "data": {
+        "label": "Create Sample Data",
+        "code": "// Create sample items to process\nconst items = [\n  { id: 1, name: 'Item A', value: 100 },\n  { id: 2, name: 'Item B', value: 250 },\n  { id: 3, name: 'Item C', value: 50 },\n  { id: 4, name: 'Item D', value: 500 },\n  { id: 5, name: 'Item E', value: 75 }\n];\nreturn items;"
+      }
+    },
+    {
+      "id": "loop-1",
+      "type": "loop",
+      "position": { "x": 250, "y": 320 },
+      "data": {
+        "label": "Process Each Item",
+        "iterations": "{{$json.length}}"
+      }
+    },
+    {
+      "id": "code-2",
+      "type": "code",
+      "position": { "x": 250, "y": 470 },
+      "data": {
+        "label": "Transform Item",
+        "code": "// Process each item in the loop\nconst item = $input.first;\nconst isHighValue = item.value >= 100;\nreturn {\n  ...item,\n  processed: true,\n  category: isHighValue ? 'high' : 'low',\n  processedAt: new Date().toISOString()\n};"
+      }
+    },
+    {
+      "id": "switch-1",
+      "type": "switch",
+      "position": { "x": 250, "y": 620 },
+      "data": {
+        "label": "Route by Category",
+        "dataType": "string",
+        "value1": "{{$json.category}}",
+        "rulesOperator": "equals",
+        "value2": "high"
+      }
+    },
+    {
+      "id": "code-high-1",
+      "type": "code",
+      "position": { "x": 100, "y": 760 },
+      "data": {
+        "label": "High Value Handler",
+        "code": "// Handle high value items\nreturn {\n  ...$input.first,\n  action: 'sent_to_manager',\n  note: 'Requires approval'\n};"
+      }
+    },
+    {
+      "id": "code-low-1",
+      "type": "code",
+      "position": { "x": 400, "y": 760 },
+      "data": {
+        "label": "Low Value Handler",
+        "code": "// Handle low value items\nreturn {\n  ...$input.first,\n  action: 'auto_approved',\n  note: 'Processed automatically'\n};"
+      }
+    },
+    {
+      "id": "output-1",
+      "type": "workflow_output",
+      "position": { "x": 250, "y": 920 },
+      "data": { "label": "Final Output" }
+    }
+  ],
+  "edges": [
+    { "id": "edge-1", "source": "manual-trigger-1", "target": "code-1" },
+    { "id": "edge-2", "source": "code-1", "target": "loop-1" },
+    { "id": "edge-3", "source": "loop-1", "target": "code-2" },
+    { "id": "edge-4", "source": "code-2", "target": "switch-1" },
+    { "id": "edge-high", "source": "switch-1", "target": "code-high-1", "sourceHandle": "true" },
+    { "id": "edge-low", "source": "switch-1", "target": "code-low-1", "sourceHandle": "false" },
+    { "id": "edge-5", "source": "code-high-1", "target": "output-1" },
+    { "id": "edge-6", "source": "code-low-1", "target": "output-1" }
+  ]
+}

@@ -1,0 +1,746 @@
+{
+  "updatedAt": "2026-03-29T23:24:04.224Z",
+  "items": [
+    {
+      "label": "Search features",
+      "path": "/features",
+      "icon": "fa-solid fa-search fa-lg",
+      "badge": "NEW",
+      "dontNeedExt": true
+    },
+    {
+      "divider": true
+    },
+    {
+      "label": "Dashboard",
+      "path": "/",
+      "icon": "fa-solid fa-house fa-lg",
+      "dontNeedExt": true
+    },
+    {
+      "label": "Pricing",
+      "path": "/checkout",
+      "icon": "fa-solid fa-tags fa-lg",
+      "dontNeedExt": true
+    },
+    {
+      "label": "Features",
+      "path": "/features",
+      "icon": "fa-solid fa-puzzle-piece fa-lg",
+      "badge": "NEW",
+      "dontNeedExt": true,
+      "children": [
+        {
+          "label": "VIP 💎",
+          "path": "/vip",
+          "icon": "fa-solid fa-crown",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Updates",
+          "path": "/updates",
+          "icon": "fa-solid fa-circle-up",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Coming soon",
+          "path": "/coming-soon",
+          "icon": "fa-solid fa-hourglass-half",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Comparison",
+          "path": "/comparison",
+          "icon": "fa-solid fa-scale-balanced",
+          "dontNeedExt": true
+        }
+      ]
+    },
+    {
+      "divider": true
+    },
+    {
+      "label": "Bulk Downloader",
+      "path": "/bulk-downloader",
+      "icon": "fa-solid fa-arrows-down-to-line fa-lg fa-bounce",
+      "badge": "HOT"
+    },
+    {
+      "label": "Downloader",
+      "path": "/downloader",
+      "icon": "fa-solid fa-arrow-down fa-lg"
+    },
+    {
+      "divider": true
+    },
+    {
+      "label": "Automation",
+      "path": "/autorun",
+      "icon": "fa-solid fa-robot fa-lg",
+      "badge": "HOT",
+      "children": [
+        {
+          "label": "AutoRun",
+          "path": "/autorun",
+          "icon": "fa-solid fa-play",
+          "badge": "HOT"
+        },
+        {
+          "label": "Comment",
+          "path": "/auto/comment",
+          "icon": "fa-solid fa-comment",
+          "badge": "NEW"
+        },
+        {
+          "label": "Auto Post",
+          "path": "/auto-post-fb",
+          "icon": "fa-solid fa-newspaper",
+          "badge": "WIP"
+        },
+        {
+          "label": "APIs",
+          "path": "/apis",
+          "icon": "fa-solid fa-plug",
+          "badge": "NEW"
+        },
+        {
+          "label": "N8N",
+          "path": "/n8n",
+          "icon": "fa-solid fa-diagram-project",
+          "badge": "WIP"
+        }
+      ]
+    },
+    {
+      "label": "Clean Facebook",
+      "path": "/activities",
+      "icon": "fa-solid fa-broom fa-lg",
+      "badge": "NEW",
+      "children": [
+        {
+          "label": "Activities",
+          "path": "/activities",
+          "icon": "fa-solid fa-clock-rotate-left",
+          "badge": "NEW"
+        },
+        {
+          "label": "Posts",
+          "path": "/posts",
+          "icon": "fa-solid fa-newspaper",
+          "badge": "HOT"
+        },
+        {
+          "label": "Friends",
+          "path": "/friends",
+          "icon": "fa-solid fa-users",
+          "badge": "HOT"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Stories",
+          "path": "/stories",
+          "icon": "fa-solid fa-heart"
+        },
+        {
+          "label": "Friend requests",
+          "path": "/friend-requests",
+          "icon": "fa-solid fa-user-plus"
+        },
+        {
+          "label": "Following",
+          "path": "/follows",
+          "icon": "fa-solid fa-person-walking-arrow-right"
+        },
+        {
+          "label": "Groups",
+          "path": "/groups",
+          "icon": "fa-solid fa-users-line"
+        },
+        {
+          "label": "Pages",
+          "path": "/pages",
+          "icon": "fa-solid fa-flag"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Messages",
+          "path": "/messages/all",
+          "icon": "fa-solid fa-comments"
+        },
+        {
+          "label": "Delete messages",
+          "path": "/delete-messages",
+          "icon": "fa-solid fa-comment-slash",
+          "badge": "WIP"
+        },
+        {
+          "label": "First messages",
+          "path": "/messages/first",
+          "icon": "fa-solid fa-clock-rotate-left"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Reels",
+          "path": "/reels",
+          "icon": "fa-solid fa-film"
+        },
+        {
+          "label": "Blocked",
+          "path": "/blocked",
+          "icon": "fa-solid fa-ban"
+        }
+      ]
+    },
+    {
+      "label": "FB Tools",
+      "path": "/fb-crawler",
+      "icon": "fa-brands fa-facebook fa-lg",
+      "badge": "WIP",
+      "dontNeedExt": true,
+      "children": [
+        {
+          "label": "Crawl",
+          "path": "/fb-crawler",
+          "icon": "fa-solid fa-database",
+          "badge": "WIP"
+        },
+        {
+          "label": "Search pages",
+          "path": "/search-fb-pages",
+          "icon": "fa-solid fa-flag",
+          "badge": "NEW"
+        },
+        {
+          "label": "Search posts",
+          "path": "/search-fb-posts",
+          "icon": "fa-solid fa-newspaper"
+        },
+        {
+          "label": "Search accounts",
+          "path": "/search-fb-accounts",
+          "icon": "fa-solid fa-user"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Notes",
+          "path": "/notes",
+          "icon": "fa-solid fa-note-sticky",
+          "badge": "NEW"
+        },
+        {
+          "label": "Avatar Shield",
+          "path": "/fb-avatar-shield",
+          "icon": "fa-solid fa-shield-halved"
+        },
+        {
+          "label": "Hide profile",
+          "path": "/hide-profile-sections",
+          "icon": "fa-solid fa-eye-slash"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Access token",
+          "path": "/get-access-token",
+          "icon": "fa-solid fa-key"
+        },
+        {
+          "label": "Shortcuts",
+          "path": "/shortcuts",
+          "icon": "fa-solid fa-link",
+          "dontNeedExt": true
+        }
+      ]
+    },
+    {
+      "label": "Zalo Tools",
+      "path": "/zalo",
+      "icon": "fa-solid fa-z fa-lg",
+      "badge": "NEW",
+      "children": [
+        {
+          "label": "Manager",
+          "path": "/zalo",
+          "icon": "fa-solid fa-z",
+          "badge": "NEW"
+        }
+      ]
+    },
+    {
+      "label": "Youtube Tools",
+      "path": "/youtube-subs",
+      "icon": "fa-brands fa-youtube fa-lg",
+      "badge": "NEW",
+      "children": [
+        {
+          "label": "Subscription",
+          "path": "/youtube-subs",
+          "icon": "fa-solid fa-bell",
+          "badge": "NEW"
+        }
+      ]
+    },
+    {
+      "label": "Downloader",
+      "path": "/video-downloader",
+      "icon": "fa-solid fa-arrow-down",
+      "badge": "HOT",
+      "hidden": true,
+      "children": [
+        {
+          "label": "Video down",
+          "path": "/video-downloader",
+          "icon": "fa-solid fa-film",
+          "badge": "HOT"
+        },
+        {
+          "label": "Document down",
+          "path": "/doc-downloader",
+          "icon": "fa-solid fa-book",
+          "badge": "NEW"
+        }
+      ]
+    },
+    {
+      "label": "OSINT Tools",
+      "path": "/search",
+      "icon": "fa-solid fa-arrow-pointer fa-lg",
+      "badge": "HOT",
+      "dontNeedExt": true,
+      "children": [
+        {
+          "label": "Search tools",
+          "path": "/search",
+          "icon": "fa-solid fa-magnifying-glass",
+          "badge": "HOT",
+          "dontNeedExt": true
+        },
+        {
+          "label": "IP Info",
+          "path": "/ip-info",
+          "icon": "fa-solid fa-map-location-dot"
+        },
+        {
+          "label": "IP Location",
+          "path": "/ip-location",
+          "icon": "fa-solid fa-location-dot"
+        },
+        {
+          "label": "Github Osint",
+          "path": "/github-osint",
+          "icon": "fa-brands fa-github"
+        },
+        {
+          "label": "Cheat Sheets",
+          "path": "/cheat-sheets",
+          "icon": "fa-solid fa-shield-halved"
+        },
+        {
+          "label": "MetaOSINT",
+          "path": "/metaosint",
+          "icon": "fa-solid fa-infinity"
+        },
+        {
+          "label": "OSINT sources",
+          "path": "/osint-sources",
+          "icon": "fa-solid fa-book"
+        },
+        {
+          "label": "WebCheck",
+          "path": "/webcheck",
+          "icon": "fa-solid fa-compress"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Map",
+          "path": "/map",
+          "icon": "fa-solid fa-map",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Tip",
+          "path": "/tip",
+          "icon": "fa-solid fa-lightbulb",
+          "dontNeedExt": true
+        }
+      ]
+    },
+    {
+      "label": "Utils",
+      "path": "/json-to-excel",
+      "icon": "fa-solid fa-gear fa-lg",
+      "badge": "HOT",
+      "dontNeedExt": true,
+      "newTab": true,
+      "hidden": true,
+      "children": [
+        {
+          "label": "JSON to Excel",
+          "path": "/json-to-excel",
+          "icon": "fa-solid fa-file-excel",
+          "badge": "HOT",
+          "dontNeedExt": true
+        },
+        {
+          "label": "JSON Crack",
+          "path": "/json-crack",
+          "icon": "fa-solid fa-diagram-project"
+        },
+        {
+          "label": "Markdown to Word",
+          "path": "/md-to-word",
+          "icon": "fa-solid fa-file-word",
+          "badge": "NEW"
+        },
+        {
+          "label": "Markdown Editor",
+          "path": "/md-editor",
+          "icon": "fa-solid fa-file-lines"
+        },
+        {
+          "label": "Pixel Diff",
+          "path": "/pixel-diff",
+          "icon": "fa-solid fa-image"
+        },
+        {
+          "label": "Invisible text",
+          "path": "/invisible-text",
+          "icon": "fa-solid fa-eye-slash",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Web timer",
+          "path": "/web-timer",
+          "icon": "fa-solid fa-clock"
+        },
+        {
+          "label": "iFocus",
+          "path": "https://hoangtran99.is-a.dev/ifocus",
+          "icon": "fa-solid fa-battery-half",
+          "newTab": true
+        },
+        {
+          "label": "Titan Bench",
+          "path": "/titan-bench",
+          "icon": "fa-solid fa-bolt",
+          "badge": "NEW",
+          "newTab": true
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "IT Tools",
+          "path": "/it-tools",
+          "icon": "fa-solid fa-laptop-code"
+        },
+        {
+          "label": "Online Tools",
+          "path": "/online-tools",
+          "icon": "fa-solid fa-screwdriver-wrench"
+        },
+        {
+          "label": "Cyber Chef",
+          "path": "/cyberchef",
+          "icon": "fa-solid fa-utensils"
+        },
+        {
+          "label": "Webcrack",
+          "path": "/webcrack",
+          "icon": "fa-solid fa-code"
+        },
+        {
+          "label": "De4Js",
+          "path": "/de4js",
+          "icon": "fa-solid fa-code"
+        },
+        {
+          "label": "DeObf Js",
+          "path": "/deobfjs",
+          "icon": "fa-solid fa-code"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Thiings",
+          "path": "/thiings",
+          "icon": "fa-solid fa-cubes"
+        },
+        {
+          "label": "Simple Icons",
+          "path": "/simple-icons",
+          "icon": "fa-solid fa-icons"
+        },
+        {
+          "label": "Iconify",
+          "path": "/iconify",
+          "icon": "fa-solid fa-icons"
+        },
+        {
+          "label": "EmojiDB",
+          "path": "/emojidb",
+          "icon": "fa-solid fa-face-smile"
+        },
+        {
+          "label": "Cheat.sh",
+          "path": "/cheatsh",
+          "icon": "fa-solid fa-terminal"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "AIO Buff",
+          "path": "/aiobuff",
+          "icon": "fa-solid fa-rocket",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Unlock",
+          "path": "/store/unlock",
+          "icon": "fa-solid fa-unlock",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Accounts",
+          "path": "/store/accounts",
+          "icon": "fa-solid fa-user",
+          "dontNeedExt": true
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Facebook Nokia",
+          "path": "/useful-scripts",
+          "icon": "fa-solid fa-s",
+          "dontNeedExt": true,
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "label": "Games",
+      "path": "/wheel-of-names",
+      "icon": "fa-solid fa-gamepad fa-lg",
+      "badge": "HOT",
+      "children": [
+        {
+          "label": "WheelOfNames",
+          "path": "/wheel-of-names",
+          "icon": "fa-solid fa-dharmachakra"
+        },
+        {
+          "label": "Hack duckrace",
+          "path": "/duckrace",
+          "icon": "fa-solid fa-dice"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Aurora OS",
+          "path": "/aurora-os",
+          "icon": "fa-brands fa-apple"
+        },
+        {
+          "label": "Win 11",
+          "path": "/win11",
+          "icon": "fa-brands fa-windows"
+        },
+        {
+          "label": "Win 10",
+          "path": "/win10",
+          "icon": "fa-brands fa-windows"
+        },
+        {
+          "label": "Win XP",
+          "path": "/winXP",
+          "icon": "fa-brands fa-windows"
+        },
+        {
+          "label": "Win 98",
+          "path": "/win98",
+          "icon": "fa-brands fa-windows"
+        },
+        {
+          "label": "Win 96",
+          "path": "/win96",
+          "icon": "fa-brands fa-windows"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "LOL2D",
+          "path": "/lol2d",
+          "icon": "fa-solid fa-l",
+          "badge": "HOT"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Pong Retro",
+          "path": "/pong-retro",
+          "icon": "fa-solid fa-circle"
+        },
+        {
+          "label": "Hyper Pong",
+          "path": "/hyper-pong",
+          "icon": "fa-solid fa-circle-dot"
+        },
+        {
+          "label": "Jump King",
+          "path": "/jump-king",
+          "icon": "fa-solid fa-chess-king"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Sandboxels",
+          "path": "/sandboxels",
+          "icon": "fa-solid fa-bucket"
+        },
+        {
+          "label": "Mandelbrot",
+          "path": "/mandelbrot",
+          "icon": "fa-solid fa-hurricane"
+        },
+        {
+          "label": "Fluid",
+          "path": "/webgl-fluid",
+          "icon": "fa-solid fa-wind"
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Internet map",
+          "path": "/internet-map",
+          "icon": "fa-solid fa-map"
+        },
+        {
+          "label": "NASA Solar",
+          "path": "/nasa-solar",
+          "icon": "fa-solid fa-sun"
+        },
+        {
+          "label": "Solar System",
+          "path": "/solar-system",
+          "icon": "fa-solid fa-sun"
+        },
+        {
+          "label": "Multiverse",
+          "path": "/multiverse",
+          "icon": "fa-solid fa-star-and-crescent"
+        },
+        {
+          "label": "FB AIO",
+          "path": "/fbaio",
+          "icon": "fa-solid fa-face-smile",
+          "badge": "HOT"
+        }
+      ]
+    },
+    {
+      "divider": true
+    },
+    {
+      "label": "Help",
+      "path": "/FAQ",
+      "icon": "fa-solid fa-life-ring fa-lg",
+      "badge": "LOVE",
+      "dontNeedExt": true,
+      "children": [
+        {
+          "label": "FAQ",
+          "path": "/FAQ",
+          "icon": "fa-solid fa-circle-question fa-lg",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Tutorial",
+          "path": "/tutorial",
+          "icon": "fa-solid fa-book",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Support",
+          "path": "/support",
+          "icon": "fa-solid fa-headset fa-lg",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Donate",
+          "path": "/donate",
+          "icon": "fa-solid fa-heart",
+          "badge": "LOVE",
+          "dontNeedExt": true
+        },
+        {
+          "divider": true
+        },
+        {
+          "label": "Logs",
+          "path": "/logs",
+          "icon": "fa-solid fa-file-lines fa-lg",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Storage",
+          "path": "/storage-manager",
+          "icon": "fa-solid fa-database"
+        },
+        {
+          "label": "Hard Refresh",
+          "path": "/hard-refresh",
+          "icon": "fa-solid fa-refresh",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Source code",
+          "path": "/source-code",
+          "icon": "fa-solid fa-code",
+          "dontNeedExt": true
+        },
+        {
+          "label": "Settings",
+          "path": "/settings",
+          "icon": "fa-solid fa-gear",
+          "badge": "NEW"
+        }
+      ]
+    },
+    {
+      "label": "Hidden",
+      "path": "/ext-updated",
+      "icon": "fa-solid fa-eye fa-lg",
+      "hidden": true,
+      "children": [
+        {
+          "path": "/ext-updated"
+        },
+        {
+          "path": "/disclaimer"
+        },
+        {
+          "path": "/dev"
+        }
+      ]
+    }
+  ]
+}
