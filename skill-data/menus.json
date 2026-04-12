@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-07T22:05:07.073Z",
+  "updatedAt": "2026-04-12T17:44:06.235Z",
   "items": [
     {
       "label": "Search features",
@@ -309,6 +309,16 @@
           "badge": "NEW"
         }
       ]
+    },
+    {
+      "label": "Other products",
+      "path": "/products",
+      "icon": "fa-solid fa-cubes fa-lg",
+      "badge": "NEW",
+      "dontNeedExt": true
+    },
+    {
+      "divider": true
     },
     {
       "label": "OSINT Tools",
