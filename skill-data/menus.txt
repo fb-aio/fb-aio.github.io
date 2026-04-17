@@ -1,6 +1,7 @@
 /features | Search features [NEW] (no-ext)
 ---
 / | Dashboard (no-ext)
+https://blog.fbaio.org | Blog [NEW] (no-ext)
 /checkout | Pricing (no-ext)
 /features | Features [NEW] (no-ext)
  

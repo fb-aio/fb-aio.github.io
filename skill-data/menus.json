@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-17T05:29:10.270Z",
+  "updatedAt": "2026-04-17T16:10:55.240Z",
   "items": [
     {
       "label": "Search features",
@@ -16,6 +16,14 @@
       "path": "/",
       "icon": "fa-solid fa-house fa-lg",
       "dontNeedExt": true
+    },
+    {
+      "label": "Blog",
+      "path": "https://blog.fbaio.org",
+      "icon": "fa-solid fa-newspaper fa-lg",
+      "badge": "NEW",
+      "dontNeedExt": true,
+      "newTab": true
     },
     {
       "label": "Pricing",
