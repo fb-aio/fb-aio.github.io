@@ -138,6 +138,7 @@ get_threads_user_info | threads | Get Threads user info | threads,user,info | ur
 get_list_threads_posts | threads | Get list Threads post of user | threads,post,list | url
 get_tiktok_video_info | tiktok | Get Tiktok video info | tiktok,video,info | url
 get_tiktok_user_info | tiktok | Get Tiktok user info | tiktok,user,info | url
+get_list_tiktok_user_videos | tiktok | Get Tiktok user videos | tiktok,user,videos,list | 
 get_bilibili_video_info | bilibili | Get Bilibili video info | bilibili,video | url
 extract_douyin_url | douyin | Extract Douyin URL from text | extract,douyin,url | text
 get_douyin_video_id | douyin | Get Douyin video ID from URL | douyin,video,id | url

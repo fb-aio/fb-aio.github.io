@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19T03:51:32.833Z",
+  "updatedAt": "2026-04-30T05:10:20.363Z",
   "items": [
     {
       "label": "Search features",
@@ -681,7 +681,7 @@
       "label": "Help",
       "path": "/FAQ",
       "icon": "fa-solid fa-life-ring fa-lg",
-      "badge": "LOVE",
+      "badge": "HOT",
       "dontNeedExt": true,
       "children": [
         {
@@ -700,6 +700,7 @@
           "label": "Support",
           "path": "/support",
           "icon": "fa-solid fa-headset fa-lg",
+          "badge": "HOT",
           "dontNeedExt": true
         },
         {

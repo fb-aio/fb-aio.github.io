@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-19T03:51:32.834Z",
+  "updatedAt": "2026-04-30T05:10:20.365Z",
   "apis": [
     {
       "id": "get_fb_page_transparency",
@@ -4270,6 +4270,70 @@
         "tiktok",
         "user",
         "info"
+      ]
+    },
+    {
+      "id": "get_list_tiktok_user_videos",
+      "platform": "tiktok",
+      "name": "Get Tiktok user videos",
+      "description": "Support user URL or secUid input. Use cursor for pagination.",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "The URL / username of the Tiktok user (optional if secuid is provided)",
+          "required": false
+        },
+        {
+          "name": "secuid",
+          "type": "string",
+          "description": "The secUid of the Tiktok user (optional if url is provided)",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor (empty for first page)",
+          "required": false
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "description": "Return raw data from TikTok",
+          "required": false
+        }
+      ],
+      "response": [
+        {
+          "name": "items",
+          "type": "array",
+          "description": "The list of the user video / photo posts",
+          "required": false
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "The next cursor for pagination",
+          "required": false
+        },
+        {
+          "name": "hasMore",
+          "type": "boolean",
+          "description": "Whether there is more data to fetch",
+          "required": false
+        },
+        {
+          "name": "secUid",
+          "type": "string",
+          "description": "The resolved secUid",
+          "required": false
+        }
+      ],
+      "tags": [
+        "tiktok",
+        "user",
+        "videos",
+        "list"
       ]
     },
     {

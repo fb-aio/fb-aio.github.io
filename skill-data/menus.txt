@@ -2748,7 +2748,7 @@ O
 T
 ]
 ---
-/FAQ | Help [LOVE] (no-ext)
+/FAQ | Help [HOT] (no-ext)
  
  
 /
@@ -2825,6 +2825,12 @@ p
 o
 r
 t
+ 
+[
+H
+O
+T
+]
  
 (
 n
