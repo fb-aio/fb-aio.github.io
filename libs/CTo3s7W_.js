@@ -1,1 +1,0 @@
-import{f as n}from"./Biu44fzM.js";function s(s){const t=this;t.parser=function(o){return n(o,{...t.data("settings"),...s,extensions:t.data("micromarkExtensions")||[],mdastExtensions:t.data("fromMarkdownExtensions")||[]})}}export{s as r};
