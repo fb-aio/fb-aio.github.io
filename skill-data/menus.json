@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-05T08:42:30.314Z",
+  "updatedAt": "2026-05-19T08:27:51.656Z",
   "items": [
     {
       "label": "Search features",
@@ -18,14 +18,6 @@
       "dontNeedExt": true
     },
     {
-      "label": "Blog",
-      "path": "https://blog.fbaio.org",
-      "icon": "fa-solid fa-newspaper fa-lg",
-      "badge": "NEW",
-      "dontNeedExt": true,
-      "newTab": true
-    },
-    {
       "label": "Pricing",
       "path": "/checkout",
       "icon": "fa-solid fa-tags fa-lg",
@@ -33,10 +25,7 @@
     },
     {
       "label": "Features",
-      "path": "/features",
       "icon": "fa-solid fa-puzzle-piece fa-lg",
-      "badge": "NEW",
-      "dontNeedExt": true,
       "children": [
         {
           "label": "VIP 💎",
@@ -83,9 +72,7 @@
     },
     {
       "label": "Automation",
-      "path": "/autorun",
       "icon": "fa-solid fa-robot fa-lg",
-      "badge": "HOT",
       "children": [
         {
           "label": "AutoRun",
@@ -121,9 +108,7 @@
     },
     {
       "label": "Clean Facebook",
-      "path": "/activities",
       "icon": "fa-solid fa-broom fa-lg",
-      "badge": "NEW",
       "children": [
         {
           "label": "Activities",
@@ -207,10 +192,7 @@
     },
     {
       "label": "FB Tools",
-      "path": "/fb-crawler",
       "icon": "fa-brands fa-facebook fa-lg",
-      "badge": "WIP",
-      "dontNeedExt": true,
       "children": [
         {
           "label": "Crawl",
@@ -271,9 +253,7 @@
     },
     {
       "label": "Zalo Tools",
-      "path": "/zalo",
       "icon": "fa-solid fa-z fa-lg",
-      "badge": "NEW",
       "children": [
         {
           "label": "Manager",
@@ -285,9 +265,7 @@
     },
     {
       "label": "Youtube Tools",
-      "path": "/youtube-subs",
       "icon": "fa-brands fa-youtube fa-lg",
-      "badge": "NEW",
       "children": [
         {
           "label": "Subscription",
@@ -299,9 +277,7 @@
     },
     {
       "label": "Downloader",
-      "path": "/video-downloader",
       "icon": "fa-solid fa-arrow-down",
-      "badge": "HOT",
       "hidden": true,
       "children": [
         {
@@ -330,10 +306,7 @@
     },
     {
       "label": "OSINT Tools",
-      "path": "/search",
       "icon": "fa-solid fa-arrow-pointer fa-lg",
-      "badge": "HOT",
-      "dontNeedExt": true,
       "children": [
         {
           "label": "Search tools",
@@ -396,12 +369,7 @@
     },
     {
       "label": "Utils",
-      "path": "/json-to-excel",
       "icon": "fa-solid fa-gear fa-lg",
-      "badge": "HOT",
-      "dontNeedExt": true,
-      "newTab": true,
-      "hidden": true,
       "children": [
         {
           "label": "JSON to Excel",
@@ -551,9 +519,7 @@
     },
     {
       "label": "Games",
-      "path": "/wheel-of-names",
       "icon": "fa-solid fa-gamepad fa-lg",
-      "badge": "HOT",
       "children": [
         {
           "label": "WheelOfNames",
@@ -679,10 +645,7 @@
     },
     {
       "label": "Help",
-      "path": "/FAQ",
       "icon": "fa-solid fa-life-ring fa-lg",
-      "badge": "HOT",
-      "dontNeedExt": true,
       "children": [
         {
           "label": "FAQ",
@@ -746,7 +709,6 @@
     },
     {
       "label": "Hidden",
-      "path": "/ext-updated",
       "icon": "fa-solid fa-eye fa-lg",
       "hidden": true,
       "children": [
