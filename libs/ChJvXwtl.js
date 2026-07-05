@@ -1,0 +1,1 @@
+import{b as n}from"./CbGFTFN5.js";function r(r,t,e,u){const o=u?u-1:Number.POSITIVE_INFINITY;let f=0;return function(u){if(n(u))return r.enter(e),i(u);return t(u)};function i(u){return n(u)&&f++<o?(r.consume(u),i):(r.exit(e),t(u))}}export{r as f};

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T15:44:11.322Z",
+  "generatedAt": "2026-07-05T11:31:22.975Z",
   "rootPath": "src",
   "structure": [
     {
@@ -2563,6 +2563,13 @@
           "isLeaf": true
         },
         {
+          "title": "AdSlot.tsx",
+          "key": "components/AdSlot.tsx",
+          "type": "file",
+          "extension": ".tsx",
+          "isLeaf": true
+        },
+        {
           "title": "ArchivedStoryViewer.tsx",
           "key": "components/ArchivedStoryViewer.tsx",
           "type": "file",
@@ -2885,6 +2892,13 @@
           "isLeaf": true
         },
         {
+          "title": "useAdSense.ts",
+          "key": "hooks/useAdSense.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "useCacheState.ts",
           "key": "hooks/useCacheState.ts",
           "type": "file",
@@ -3100,6 +3114,34 @@
               ]
             },
             {
+              "title": "descriptors",
+              "key": "screens/Apis/descriptors",
+              "type": "folder",
+              "children": [
+                {
+                  "title": "e2ee.workflow.ts",
+                  "key": "screens/Apis/descriptors/e2ee.workflow.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "index.ts",
+                  "key": "screens/Apis/descriptors/index.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                }
+              ]
+            },
+            {
+              "title": "api-catalog.ignore.ts",
+              "key": "screens/Apis/api-catalog.ignore.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "apis.ts",
               "key": "screens/Apis/apis.ts",
               "type": "file",
@@ -3151,6 +3193,20 @@
             {
               "title": "type.ts",
               "key": "screens/Apis/type.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "workflowCatalog.test.ts",
+              "key": "screens/Apis/workflowCatalog.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "workflowCatalog.ts",
+              "key": "screens/Apis/workflowCatalog.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -4400,6 +4456,13 @@
                   "isLeaf": true
                 },
                 {
+                  "title": "MyWorkflowsPanel.tsx",
+                  "key": "screens/N8n/components/MyWorkflowsPanel.tsx",
+                  "type": "file",
+                  "extension": ".tsx",
+                  "isLeaf": true
+                },
+                {
                   "title": "NodeDetailModal.tsx",
                   "key": "screens/N8n/components/NodeDetailModal.tsx",
                   "type": "file",
@@ -4456,6 +4519,13 @@
                   "isLeaf": true
                 },
                 {
+                  "title": "useWorkflowAutosave.ts",
+                  "key": "screens/N8n/hooks/useWorkflowAutosave.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
                   "title": "useWorkflowExecution.ts",
                   "key": "screens/N8n/hooks/useWorkflowExecution.ts",
                   "type": "file",
@@ -4467,6 +4537,20 @@
                   "key": "screens/N8n/hooks/useWorkflowIO.tsx",
                   "type": "file",
                   "extension": ".tsx",
+                  "isLeaf": true
+                },
+                {
+                  "title": "workflowAutosave.test.ts",
+                  "key": "screens/N8n/hooks/workflowAutosave.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "workflowAutosave.ts",
+                  "key": "screens/N8n/hooks/workflowAutosave.ts",
+                  "type": "file",
+                  "extension": ".ts",
                   "isLeaf": true
                 }
               ]
@@ -4633,6 +4717,34 @@
               ]
             },
             {
+              "title": "apiParamResolver.test.ts",
+              "key": "screens/N8n/apiParamResolver.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "apiParamResolver.ts",
+              "key": "screens/N8n/apiParamResolver.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "executionFence.test.ts",
+              "key": "screens/N8n/executionFence.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "executionFence.ts",
+              "key": "screens/N8n/executionFence.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "expressionResolver.ts",
               "key": "screens/N8n/expressionResolver.ts",
               "type": "file",
@@ -4682,6 +4794,13 @@
               "isLeaf": true
             },
             {
+              "title": "store.workflow.test.ts",
+              "key": "screens/N8n/store.workflow.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "types.ts",
               "key": "screens/N8n/types.ts",
               "type": "file",
@@ -4710,6 +4829,20 @@
               "isLeaf": true
             },
             {
+              "title": "workflowRunner.partial.test.ts",
+              "key": "screens/N8n/workflowRunner.partial.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "workflowRunner.pin.test.ts",
+              "key": "screens/N8n/workflowRunner.pin.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "workflowRunner.ts",
               "key": "screens/N8n/workflowRunner.ts",
               "type": "file",
@@ -4719,6 +4852,20 @@
             {
               "title": "workflowScriptTypes.ts",
               "key": "screens/N8n/workflowScriptTypes.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "workflowStorage.test.ts",
+              "key": "screens/N8n/workflowStorage.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "workflowStorage.ts",
+              "key": "screens/N8n/workflowStorage.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
