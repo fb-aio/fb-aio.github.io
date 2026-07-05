@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T11:31:22.975Z",
+  "generatedAt": "2026-07-05T18:14:00.600Z",
   "rootPath": "src",
   "structure": [
     {
@@ -3133,6 +3133,13 @@
                   "isLeaf": true
                 }
               ]
+            },
+            {
+              "title": "aiPrompt.ts",
+              "key": "screens/Apis/aiPrompt.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
             },
             {
               "title": "api-catalog.ignore.ts",
