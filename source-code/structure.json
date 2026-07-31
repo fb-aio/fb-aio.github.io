@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T03:03:56.434Z",
+  "generatedAt": "2026-07-31T10:22:44.687Z",
   "rootPath": "src",
   "structure": [
     {
@@ -2343,6 +2343,13 @@
           "key": "assets/jsoneditor-dark.css",
           "type": "file",
           "extension": ".css",
+          "isLeaf": true
+        },
+        {
+          "title": "logo_old.png",
+          "key": "assets/logo_old.png",
+          "type": "file",
+          "extension": ".png",
           "isLeaf": true
         },
         {
