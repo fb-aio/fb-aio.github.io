@@ -4,6 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- /policy -> privacy policy, redirect before loading the app -->
+        <script>
+            (function () {
+                var POLICY_URL = 'https://github.com/fb-aio/entry/blob/main/policy_v3.md';
+                function redirectPolicy() {
+                    if (/^#\/policy\/?(\?|$)/.test(window.location.hash)) {
+                        window.location.replace(POLICY_URL);
+                    }
+                }
+                redirectPolicy();
+                window.addEventListener('hashchange', redirectPolicy);
+            })();
+        </script>
+
         <!-- cache control -->
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta http-equiv="Pragma" content="no-cache" />
@@ -180,7 +194,7 @@
                 margin-right: 8px;
             }
         </style>
-      <script type="module" crossorigin src="./src/BKOLs2IK.js"></script>
+      <script type="module" crossorigin src="./src/CjlJ5wPx.js"></script>
       <link rel="modulepreload" crossorigin href="./libs/CNBxHfNM.js">
       <link rel="modulepreload" crossorigin href="./libs/B3ZIOLOa.js">
       <link rel="modulepreload" crossorigin href="./libs/CGbJlitw.js">
