@@ -7,15 +7,14 @@ route | title | description
 /map | Map | Explore Vietnam new map
 /tip | Tip | Best tips when using Internet
 /bulk-downloader?platform=Facebook | Stalker / OSINT | joined groups, liked pages, tagged, ... even on locked profile
-/bulk-downloader?platform=Facebook | Stalker / OSINT | joined groups, liked pages, tagged, ... even on locked profile
 /bulk-downloader?platform=Facebook | Find all infor about someone | joined groups, liked pages, tagged, ... even on locked profile
 /search-fb-accounts | Search profile by Avatar | Enter user name and avatar to search
 /search-fb-posts | Search posts | Support many search criteria
-/search | Search tools | A collection of Useful Search Tools for Detectives
 /stories | Stories today | View all stories of your friends today, anonymous
 /autorun | Block the "seen" feature in Facebook Stories | View stories anonymously right on Facebook
+/autorun | Show total post reactions | Show reaction totals even when Facebook hides them
+/autorun | Invisible Messenger messages | Encode text between >< support encode with password
 /messages/first | First messages | View first messages of any thread
-/tip | Tip | Best tips when using Internet
 /bulk-downloader?platform=Facebook | Downloader | posts, story, videos, reels, ... of anyone
 /bulk-downloader?platform=Facebook | Bulk download all data | posts, story, videos, reels, ... of anyone
 /bulk-downloader?platform=FacebookPost | Download post data | Content, media, comments, reactions, shares...
@@ -35,46 +34,42 @@ route | title | description
 /groups | Groups | Leave group in bulk
 /pages | Pages | Bulk unfollow/unlike pages
 /blocked | Blocked | Manage all your blocked list
-/hide-profile-sections | Utils | Show less information on your profile
+/autorun | Utils | Hide specific UI on facebook by component name
+/autorun | Ad blocker for Facebook | Hide specific UI on facebook by component name
 /hide-profile-sections | Hide profile section | Show less information on your profile
-/search-fb-posts | Search posts | Support many search criteria
 /notes | Notes | Manage your notes on Messenger
 /fb-avatar-shield | Avatar Shield | Protect your profile avatar
 /get-access-token | Access token | Get access token of your account
 /shortcuts | Shortcuts | Access top features of Facebook faster
 /bulk-downloader?platform=Instagram | Download profile data | Story, highlight, posts, reels
-/bulk-downloader?platform=Instagram | Download profile data | Story, highlight, posts, reels
 /autorun | Block the "seen" feature in Instagram Stories | View stories anonymously right on Instagram
+/autorun | Enable Instagram image right-click | Allow right-clicking and saving images more easily
 /reels | Reels feed | View IG reels feed anonymously
-/bulk-downloader?platform=Threads | Download profile data | Posts, replies, reposts
 /bulk-downloader?platform=Threads | Download profile data | Posts, replies, reposts
 /autorun | Add download button on every video on Threads | Support all video/reel/comment
 /bulk-downloader?platform=Tiktok | Download all profile videos | Download all videos of a Tiktok user
-/bulk-downloader?platform=Tiktok | Download all profile videos | Download all videos of a Tiktok user
 /autorun | Add download button on every video on Tiktok | Support all video from home, search, user profile, ...
 /downloader?tab=video | Download video from URL (Tiktok/Douyin) | Enter URL to download video tiktok/douyin
-/downloader?tab=video | Download view only video | Support private (only you can view) and public videos
+/autorun | TikTok/Douyin batch download | Select and download TikTok or Douyin videos in bulk
 /downloader?tab=video | Download view only video | Support private (only you can view) and public videos
 /downloader?tab=doc | Download view only PDF | Support private (only you can view) and public PDF
 /downloader?tab=doc | Download document | Download scribd document without login
-/downloader?tab=doc | Download document | Download scribd document without login
-/zalo | Friends manager | Know more about your zalo friends
+/downloader?tab=doc | Download document | Download Studocu document without login
 /zalo | Friends manager | Know more about your zalo friends
 /zalo | Get user info from Phone number | Enter list phone numbers to get user info
 /zalo | Manage all Zalo groups | Efficiently organize and manage all your existing Zalo groups in one place
 /zalo | View mutual groups with any friends | Find and list all Zalo groups that you and a specific friend have in common
 /zalo | View members of any group | Access and export the complete list of members from any Zalo group
 /tip | Telegram tips | Find first group's message, message at specific time, bulk download, ...
-/tip | Telegram tips | Find first group's message, message at specific time, bulk download, ...
 /youtube-subs | Subscriptions | Manage your Youtube subscriptions
-/youtube-subs | Subscriptions | Manage your Youtube subscriptions
-/json-to-excel | Utils | Convert JSON to Excel
+/autorun | Utils | Enter password to unlock locked websites
+/autorun | Auto lock websites | Enter password to unlock locked websites
+/autorun | Magnify any images | Hover an image to magnify, or press Ctrl twice over an image
 /json-to-excel | JSON to Excel | Convert JSON to Excel
 /invisible-text | Invisible text | Generate invisible text to help you hide your secret content
-/web-timer | Web timer | Count time you spend on internet
+/web-timer | Web timer | Track time spent on each website
 /wheel-of-names | Hack Wheel of Names | Hack Wheel of Names results
 /duckrace | Hack Duck Race | Hack Duck Race results
-/apis | APIs | All APIs of FB AIO
-/apis | APIs | All APIs of FB AIO
+/apis | APIs | All APIs of Social AIO
 /logs | Logs | View logs of the app
 /source-code | Source code | View source code of the app

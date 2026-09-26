@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-05-05T08:42:30.319Z",
+  "updatedAt": "2026-09-26T18:13:06.902Z",
   "version": "1.0.0",
   "formats": {
     "json": true,
     "txt": true
   },
   "files": [
+    "guide.md",
     "menus.json",
     "menus.txt",
     "features.json",
@@ -13,5 +14,8 @@
     "apis.json",
     "apis.txt",
     "meta.json"
-  ]
+  ],
+  "counts": {
+    "apis": 150
+  }
 }

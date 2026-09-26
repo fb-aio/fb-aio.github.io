@@ -1,85 +1,99 @@
 {
-  "updatedAt": "2026-05-05T08:42:30.318Z",
+  "updatedAt": "2026-09-26T18:13:06.902Z",
   "apis": [
     {
       "id": "get_fb_page_transparency",
-      "platform": "facebook",
-      "name": "Get Facebook page transparency info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook page transparency info",
+        "vi": "Lấy thông tin minh bạch của trang Facebook"
+      },
       "description": "Support both page and user",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook page or user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook page or user"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "Transparency info",
-          "required": false
+          "description": "Transparency info"
         }
       ],
       "tags": [
         "facebook",
         "page",
         "transparency"
-      ]
+      ],
+      "updated": "2026-02-07"
     },
     {
       "id": "get_fb_page_authenticity",
-      "platform": "facebook",
-      "name": "Get Facebook page authenticity info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook page authenticity info",
+        "vi": "Lấy thông tin xác thực của trang Facebook"
+      },
       "description": "Support both page and user",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook page or user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook page or user"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "Authenticity info",
-          "required": false
+          "description": "Authenticity info"
         }
       ],
       "tags": [
         "facebook",
         "page",
         "authenticity"
-      ]
+      ],
+      "updated": "2026-02-07"
     },
     {
       "id": "get_fb_group_member_info",
-      "platform": "facebook",
-      "name": "Get member info of Facebook group",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get member info of Facebook group",
+        "vi": "Lấy thông tin thành viên của nhóm Facebook"
+      },
       "description": "Joined time, signals, recent photos, recent activity, ...",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "The URL / UID of the Facebook group",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook group"
         },
         {
           "name": "user_url",
           "type": "string",
-          "description": "The URL / UID of the member",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the member"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The info of the members of the Facebook group",
-          "required": false
+          "description": "The info of the members of the Facebook group"
         }
       ],
       "tags": [
@@ -87,27 +101,32 @@
         "group",
         "member",
         "info"
-      ]
+      ],
+      "updated": "2025-11-04"
     },
     {
       "id": "get_fb_page_about_info",
-      "platform": "facebook",
-      "name": "Get about info of Facebook page",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get about info of Facebook page",
+        "vi": "Lấy thông tin giới thiệu của page Facebook"
+      },
       "description": "The info in the about page fb.com/../about",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook page",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook page"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The about info of the Facebook page",
-          "required": false
+          "description": "The about info of the Facebook page"
         }
       ],
       "tags": [
@@ -115,33 +134,38 @@
         "page",
         "about",
         "info"
-      ]
+      ],
+      "updated": "2025-10-26"
     },
     {
       "id": "get_list_fb_search_pages",
-      "platform": "facebook",
-      "name": "Get list Facebook pages (from search result)",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list Facebook pages (from search result)",
+        "vi": "Lấy danh sách page Facebook (từ kết quả tìm kiếm)"
+      },
       "description": "Search by name",
       "params": [
         {
           "name": "name",
           "type": "string",
-          "description": "Facebook page's name to search",
-          "required": true
+          "required": true,
+          "description": "Facebook page's name to search"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "pages",
           "type": "array",
-          "description": "The list of Facebook pages",
-          "required": false
+          "description": "The list of Facebook pages"
         }
       ],
       "tags": [
@@ -149,108 +173,113 @@
         "page",
         "search",
         "list"
-      ]
+      ],
+      "updated": "2025-10-26"
     },
     {
       "id": "get_list_fb_posts",
-      "platform": "facebook",
-      "name": "Get list Facebook posts (user/page)",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list Facebook posts (user/page)",
+        "vi": "Lấy danh sách bài viết Facebook (user/page)"
+      },
       "description": "Support User and Fanpage",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the user / page facebook",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the user / page facebook"
         },
         {
           "name": "privacy",
           "type": "string",
-          "description": "Privacy (default: All)",
-          "required": false
-        },
-        {
-          "name": "afterTime",
-          "type": "number",
-          "description": "Posted after date",
-          "required": false
+          "required": false,
+          "description": "Privacy (default: All)"
         },
         {
           "name": "beforeTime",
           "type": "timestamp",
+          "required": false,
           "description": "Posted before date",
-          "required": false
+          "default": null
         },
         {
           "name": "omitPinnedPost",
           "type": "boolean",
-          "description": "Omit pinned posts",
-          "required": false
+          "required": false,
+          "description": "Omit pinned posts"
         },
         {
           "name": "taggedInOnly",
           "type": "boolean",
-          "description": "Only get posts that are tagged",
-          "required": false
+          "required": false,
+          "description": "Only get posts that are tagged"
         },
         {
           "name": "postedByOthers",
           "type": "boolean",
-          "description": "Only get posts that are posted by others",
-          "required": false
+          "required": false,
+          "description": "Only get posts that are posted by others"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "posts",
           "type": "array",
-          "description": "The list of Facebook posts (user/page)",
-          "required": false
+          "description": "The list of Facebook posts (user/page)"
         }
       ],
       "tags": [
         "facebook",
         "post",
         "list"
-      ]
+      ],
+      "updated": "2025-09-04"
     },
     {
       "id": "get_list_fb_group_posts",
-      "platform": "facebook",
-      "name": "Get list Facebook posts (group)",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list Facebook posts (group)",
+        "vi": "Lấy danh sách bài viết Facebook (group)"
+      },
       "description": "Support Facebook Group",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook group",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook group"
         },
         {
           "name": "sorting",
           "type": "string",
-          "description": "Sorting (default: Newest Posts)",
-          "required": false
+          "required": false,
+          "description": "Sorting (default: Newest Posts)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "posts",
           "type": "array",
-          "description": "The list of Facebook posts (group)",
-          "required": false
+          "description": "The list of Facebook posts (group)"
         }
       ],
       "tags": [
@@ -258,112 +287,133 @@
         "group",
         "post",
         "list"
-      ]
+      ],
+      "updated": "2025-09-04"
     },
     {
       "id": "fb_get_note",
-      "platform": "facebook",
-      "name": "Get current Facebook note",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get current Facebook note",
+        "vi": "Lấy ghi chú Facebook hiện tại"
+      },
       "description": "Get current active Facebook note of the logged in account",
       "params": [],
       "response": [
         {
           "name": "note",
           "type": "object",
-          "description": "Facebook note info (id, description, type, visibility, expiration time, custom audience)",
-          "required": false
+          "description": "Facebook note info (id, description, type, visibility, expiration time, custom audience)"
         }
       ],
       "tags": [
         "facebook",
         "note",
         "get"
-      ]
+      ],
+      "updated": "2025-08-25"
     },
     {
       "id": "fb_set_note",
-      "platform": "facebook",
-      "name": "Create Facebook note",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Create Facebook note",
+        "vi": "Tạo ghi chú Facebook"
+      },
       "description": "Create new Facebook note with custom content, duration and privacy settings",
       "params": [
         {
           "name": "note",
           "type": "string",
-          "description": "The note content",
-          "required": true
+          "required": true,
+          "description": "The note content"
         },
         {
           "name": "duration",
           "type": "number",
+          "required": false,
           "description": "Note display duration (seconds, default 1 day = 86400 seconds)",
-          "required": false
+          "default": 86400
         },
         {
           "name": "privacy",
           "type": "string",
-          "description": "Note privacy setting (default: Friends)",
-          "required": false
+          "required": false,
+          "description": "Note privacy setting (default: Friends)"
         },
         {
           "name": "custom_audience",
           "type": "array",
-          "description": "Custom audience UID list (only use when privacy = CUSTOM, separated by comma or new line)",
-          "required": false
+          "required": false,
+          "description": "Custom audience UID list (only use when privacy = CUSTOM, separated by comma or new line)"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Note creation result",
-          "required": false
+          "description": "Note creation result"
         }
       ],
       "tags": [
         "facebook",
         "note",
         "create"
-      ]
+      ],
+      "updated": "2025-08-25"
     },
     {
       "id": "fb_delete_note",
-      "platform": "facebook",
-      "name": "Delete Facebook note",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Delete Facebook note",
+        "vi": "Xóa ghi chú Facebook"
+      },
       "description": "Delete current Facebook note (if any)",
       "params": [],
       "response": [
         {
           "name": "response",
           "type": "object",
-          "description": "Note deletion result",
-          "required": false
+          "description": "Note deletion result"
         }
       ],
       "tags": [
         "facebook",
         "note",
         "delete"
-      ]
+      ],
+      "updated": "2025-08-25"
     },
     {
       "id": "get_list_fb_hidden_albums",
-      "platform": "facebook",
-      "name": "Get list hidden albums on Facebook",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list hidden albums on Facebook",
+        "vi": "Lấy danh sách album Facebook ẩn"
+      },
       "description": "Support user/page. Know the total number of photos, creation date, and last update date.",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user/page",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user/page"
         }
       ],
       "response": [
         {
           "name": "albums",
           "type": "array",
-          "description": "The list of hidden albums",
-          "required": false
+          "description": "The list of hidden albums"
         }
       ],
       "tags": [
@@ -371,33 +421,38 @@
         "album",
         "hidden",
         "list"
-      ]
+      ],
+      "updated": "2025-06-19"
     },
     {
       "id": "get_list_fb_album_media",
-      "platform": "facebook",
-      "name": "Get list photos/videos of album Facebook",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list photos/videos of album Facebook",
+        "vi": "Lấy danh sách ảnh/video của album Facebook"
+      },
       "description": "Support user / group / page. Video only returns thumbnail, use api get_fb_video_info to get video info from id",
       "params": [
         {
           "name": "album_id",
           "type": "string",
-          "description": "The ID of the Facebook album",
-          "required": true
+          "required": true,
+          "description": "The ID of the Facebook album"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "medias",
           "type": "array",
-          "description": "The list of photos/videos of the album",
-          "required": false
+          "description": "The list of photos/videos of the album"
         }
       ],
       "tags": [
@@ -405,72 +460,82 @@
         "album",
         "media",
         "list"
-      ]
+      ],
+      "updated": "2025-06-17"
     },
     {
       "id": "get_list_fb_albums",
-      "platform": "facebook",
-      "name": "Get list albums Facebook",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list albums Facebook",
+        "vi": "Lấy danh sách album Facebook"
+      },
       "description": "Support user / group / page",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user / group / page",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user / group / page"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "albums",
           "type": "array",
-          "description": "The list of albums",
-          "required": false
+          "description": "The list of albums"
         }
       ],
       "tags": [
         "facebook",
         "album",
         "list"
-      ]
+      ],
+      "updated": "2025-06-17"
     },
     {
       "id": "get_list_fb_comment_reply",
-      "platform": "facebook",
-      "name": "Get list replies comment",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list replies comment",
+        "vi": "Lấy danh sách bình luận trả lời"
+      },
       "description": "Get list replies of any fb post's comment",
       "params": [
         {
           "name": "comment_id",
           "type": "string",
-          "description": "The ID of the comment to get replies (id in base64)",
-          "required": true
+          "required": true,
+          "description": "The ID of the comment to get replies (id in base64)"
         },
         {
           "name": "expansion_token",
           "type": "string",
-          "description": "The expansion token of the comment (Use api get_list_fb_comment to get)",
-          "required": true
+          "required": true,
+          "description": "The expansion token of the comment (Use api get_list_fb_comment to get)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "replies",
           "type": "array",
-          "description": "List of replies",
-          "required": false
+          "description": "List of replies"
         }
       ],
       "tags": [
@@ -479,39 +544,44 @@
         "comment",
         "reply",
         "list"
-      ]
+      ],
+      "updated": "2025-06-08"
     },
     {
       "id": "get_list_fb_pages_other",
-      "platform": "facebook",
-      "name": "Get list fb pages that the user liked",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list fb pages that the user liked",
+        "vi": "Lấy danh sách trang fb người dùng thích"
+      },
       "description": "Support get list fb public pages that the user liked",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "The type of fb page (default: All)",
-          "required": false
+          "required": false,
+          "description": "The type of fb page (default: All)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "pages",
           "type": "array",
-          "description": "The list of fb pages that the user liked",
-          "required": false
+          "description": "The list of fb pages that the user liked"
         }
       ],
       "tags": [
@@ -519,39 +589,45 @@
         "page",
         "liked",
         "list"
-      ]
+      ],
+      "updated": "2025-10-26",
+      "lastChange": "Add param type"
     },
     {
       "id": "get_list_fb_groups_other",
-      "platform": "facebook",
-      "name": "Get all fb groups that the user joined",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get all fb groups that the user joined",
+        "vi": "Lấy danh sách nhóm fb người dùng tham gia"
+      },
       "description": "Support public groups, even with user locked profile",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "The type of fb group (default: All public groups)",
-          "required": false
+          "required": false,
+          "description": "The type of fb group (default: All public groups)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "groups",
           "type": "array",
-          "description": "The list of fb groups that the user joined",
-          "required": false
+          "description": "The list of fb groups that the user joined"
         }
       ],
       "tags": [
@@ -559,319 +635,376 @@
         "group",
         "joined",
         "list"
-      ]
+      ],
+      "updated": "2025-10-26",
+      "lastChange": "Add param type"
     },
     {
       "id": "get_fb_post_info",
-      "platform": "facebook",
-      "name": "Get Facebook post info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook post info",
+        "vi": "Lấy thông tin bài viết Facebook"
+      },
       "description": "author, content, photos, videos, likes, comments,...",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook post",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook post"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The detailed info of the post",
-          "required": false
+          "description": "The detailed info of the post"
         }
       ],
       "tags": [
         "facebook",
         "post",
         "info"
-      ]
+      ],
+      "updated": "2025-06-04"
     },
     {
       "id": "get_list_fb_mediaset",
-      "platform": "facebook",
-      "name": "Get all medias from mediaset_token",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get all medias from mediaset_token",
+        "vi": "Lấy mọi ảnh/video từ mediaset_token"
+      },
       "description": "mediaset_token usually get from post with multiple medias, or facebook album",
       "params": [
         {
           "name": "mediaset_token",
           "type": "string",
-          "description": "The mediaset_token",
-          "required": true
+          "required": true,
+          "description": "The mediaset_token"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "medias",
           "type": "array",
-          "description": "The list of medias",
-          "required": false
+          "description": "The list of medias"
         }
       ],
       "tags": [
         "facebook",
         "media",
         "list"
-      ]
+      ],
+      "updated": "2025-06-04"
     },
     {
       "id": "get_fb_entity_info",
-      "platform": "facebook",
-      "name": "Get Facebook entity info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook entity info",
+        "vi": "Lấy thông tin đối tượng Facebook"
+      },
       "description": "avatar/url/type (user/group/page/...)",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the User/Group/Page",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the User/Group/Page"
         },
         {
           "name": "raw",
           "type": "boolean",
-          "description": "Return the raw data? Raw data from Facebook",
-          "required": false
+          "required": false,
+          "description": "Return the raw data? Raw data from Facebook"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The simple info of the entity (avatar, url, type)",
-          "required": false
+          "description": "The simple info of the entity (avatar, url, type)"
         }
       ],
       "tags": [
         "facebook",
         "user",
         "info"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_fb_user_info",
-      "platform": "facebook",
-      "name": "Get Facebook user info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook user info",
+        "vi": "Lấy thông tin người dùng Facebook"
+      },
       "description": "",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook User",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook User"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The detailed info of the user (name, alternate name, gender, avatar, cover, ...)",
-          "required": false
+          "description": "The detailed info of the user (name, alternate name, gender, avatar, cover, ...)"
         }
       ],
       "tags": [
         "facebook",
         "user",
         "info"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_fb_uid",
-      "platform": "facebook",
-      "name": "Get Facebook UID from URL",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook UID from URL",
+        "vi": "Lấy UID Facebook từ URL"
+      },
       "description": "Support User/Page/Group",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL of the User/Page/Group",
-          "required": true
+          "required": true,
+          "description": "The URL of the User/Page/Group"
         }
       ],
       "response": [
         {
           "name": "uid",
           "type": "string",
-          "description": "UID",
-          "required": false
+          "description": "UID"
         }
       ],
       "tags": [
         "facebook",
         "uid"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_fb_post_id",
-      "platform": "facebook",
-      "name": "Get Facebook post ID from URL",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook post ID from URL",
+        "vi": "Lấy ID bài viết Facebook từ URL"
+      },
       "description": "Support all posts",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL of the Facebook post",
-          "required": true
+          "required": true,
+          "description": "The URL of the Facebook post"
         }
       ],
       "response": [
         {
           "name": "post_id",
           "type": "string",
-          "description": "Post ID",
-          "required": false
+          "description": "Post ID"
         }
       ],
       "tags": [
         "facebook",
         "post",
         "id"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_fb_video_id",
-      "platform": "facebook",
-      "name": "Get Facebook video ID from URL",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook video ID from URL",
+        "vi": "Lấy ID video Facebook từ URL"
+      },
       "description": "Support Video/Story/Post",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL of the Facebook video",
-          "required": true
+          "required": true,
+          "description": "The URL of the Facebook video"
         }
       ],
       "response": [
         {
           "name": "video_id",
           "type": "string",
-          "description": "Video ID",
-          "required": false
+          "description": "Video ID"
         }
       ],
       "tags": [
         "facebook",
         "video",
         "id"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "call_fb_graphql",
-      "platform": "facebook",
-      "name": "Call Facebook GraphQL API",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Call Facebook GraphQL API",
+        "vi": "Gọi GraphQL API Facebook"
+      },
       "description": "Only need to pass doc_id, and variables",
       "params": [
         {
           "name": "doc_id",
           "type": "string",
-          "description": "The doc_id of the GraphQL API",
-          "required": true
+          "required": true,
+          "description": "The doc_id of the GraphQL API"
         },
         {
           "name": "variables",
           "type": "object",
-          "description": "The variables data of the GraphQL API",
-          "required": true
+          "required": true,
+          "description": "The variables data of the GraphQL API"
         }
       ],
       "response": [
         {
           "name": "data",
           "type": "object",
-          "description": "The data returned from Facebook",
-          "required": false
+          "description": "The data returned from Facebook"
         }
       ],
       "tags": [
         "facebook",
         "graphql"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_fb_video_info",
-      "platform": "facebook",
-      "name": "Get Facebook video info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Facebook video info",
+        "vi": "Lấy thông tin video Facebook"
+      },
       "description": "Support Video/Post/Comment",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / ID of the video",
-          "required": true
+          "required": true,
+          "description": "The URL / ID of the video"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The info of the video",
-          "required": false
+          "description": "The info of the video"
         }
       ],
       "tags": [
         "facebook",
         "video",
         "info"
-      ]
+      ],
+      "updated": "2025-06-19",
+      "lastChange": "Support url of facebook post (post have video)"
     },
     {
       "id": "get_list_fb_highlights",
-      "platform": "facebook",
-      "name": "Get list Highlight story on Facebook",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list Highlight story on Facebook",
+        "vi": "Lấy danh sách Tin nổi bật Facebook"
+      },
       "description": "Return the basic info of the highlights",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "array",
-          "description": "The basic info of the highlights",
-          "required": false
+          "description": "The basic info of the highlights"
         }
       ],
       "tags": [
         "facebook",
         "highlights",
         "list"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_fb_highlight_info",
-      "platform": "facebook",
-      "name": "Get list story in one highlight on Facebook",
-      "description": "The URL of the highlights video",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list story in one highlight on Facebook",
+        "vi": "Lấy danh sách story trong một Tin nổi bật Facebook"
+      },
+      "description": "",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL of the highlights video",
-          "required": true
+          "required": true,
+          "description": "The URL of the highlights video"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "array",
-          "description": "The info of the highlights video",
-          "required": false
+          "description": "The info of the highlights video"
         }
       ],
       "tags": [
@@ -879,33 +1012,38 @@
         "highlights",
         "video",
         "list"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_list_fb_user_reels",
-      "platform": "facebook",
-      "name": "Get list of Facebook user reels",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list of Facebook user reels",
+        "vi": "Lấy danh sách Reels của người dùng Facebook"
+      },
       "description": "Support getting user reels roll list",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "reels",
           "type": "array",
-          "description": "List of the user reels",
-          "required": false
+          "description": "List of the user reels"
         }
       ],
       "tags": [
@@ -913,39 +1051,44 @@
         "user",
         "reels",
         "list"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "get_list_fb_user_photos",
-      "platform": "facebook",
-      "name": "Get list photos of Facebook user",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list photos of Facebook user",
+        "vi": "Lấy danh sách hình ảnh người dùng Facebook"
+      },
       "description": "Support getting user photos list",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of the Facebook user",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of the Facebook user"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "The type of the photos",
-          "required": false
+          "required": false,
+          "description": "The type of the photos"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "photos",
           "type": "array",
-          "description": "List of user photos",
-          "required": false
+          "description": "List of user photos"
         }
       ],
       "tags": [
@@ -953,140 +1096,165 @@
         "user",
         "photo",
         "list"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "add_fb_friend",
-      "platform": "facebook",
-      "name": "Add friend on Facebook",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Add friend on Facebook",
+        "vi": "Thêm bạn bè trên Facebook"
+      },
       "description": "Use the Facebook account logged in to send",
       "params": [
         {
           "name": "targetUid",
           "type": "string",
-          "description": "The URL / UID of Facebook profile need add friend",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of Facebook profile need add friend"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Results when sending invitation to add friends",
-          "required": false
+          "description": "Results when sending invitation to add friends"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "add"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "remove_fb_friend",
-      "platform": "facebook",
-      "name": "Remove Facebook friend",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Remove Facebook friend",
+        "vi": "Xóa bạn bè trên Facebook"
+      },
       "description": "Use the Facebook account logged in to remove",
       "params": [
         {
           "name": "targetUid",
           "type": "string",
-          "description": "The URL / UID of Facebook profile need remove friend (in friends list)",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of Facebook profile need remove friend (in friends list)"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Results when sending to remove friends",
-          "required": false
+          "description": "Results when sending to remove friends"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "remove"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "poke_fb_friend",
-      "platform": "facebook",
-      "name": "Poke Facebook friend",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Poke Facebook friend",
+        "vi": "Chọc bạn bè trên Facebook"
+      },
       "description": "Use the Facebook account logged in to poke",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / UID of Facebook profile need poke (in friends list)",
-          "required": true
+          "required": true,
+          "description": "The URL / UID of Facebook profile need poke (in friends list)"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Results when sending to poke",
-          "required": false
+          "description": "Results when sending to poke"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "poke"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "get_list_fb_all_friend",
-      "platform": "facebook",
-      "name": "Get list all friends Facebook",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list all friends Facebook",
+        "vi": "Lấy danh sách tất cả bạn bè Facebook"
+      },
       "description": "Friends of the Facebook account logged in",
       "params": [],
       "response": [
         {
           "name": "friends",
           "type": "array",
-          "description": "List results all friends",
-          "required": false
+          "description": "List results all friends"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "list"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "get_list_fb_comment",
-      "platform": "facebook",
-      "name": "Get list comments of Facebook post",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get list comments of Facebook post",
+        "vi": "Lấy danh sách bình luận của bài viết Facebook"
+      },
       "description": "Support comments level 1 (not included replies)",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / ID of the post",
-          "required": true
+          "required": true,
+          "description": "The URL / ID of the post"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "Comment type (default Newest)",
-          "required": false
+          "required": false,
+          "description": "Comment type (default Newest)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "comments",
           "type": "array",
-          "description": "List of comments",
-          "required": false
+          "description": "List of comments"
         }
       ],
       "tags": [
@@ -1094,311 +1262,346 @@
         "post",
         "comment",
         "list"
-      ]
+      ],
+      "updated": "2025-06-04",
+      "lastChange": "Change id"
     },
     {
       "id": "get_fb_profile_tiles",
-      "platform": "facebook",
-      "name": "Get profile pinned sections",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get profile pinned sections",
+        "vi": "Lấy các mục ghim trên trang cá nhân"
+      },
       "description": "Get pinned sections on profile",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Profile URL/UID",
-          "required": true
+          "required": true,
+          "description": "Profile URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor"
         }
       ],
       "response": [
         {
           "name": "sections",
           "type": "array",
-          "description": "Pinned sections list",
-          "required": false
+          "description": "Pinned sections list"
         }
       ],
       "tags": [
         "facebook",
         "profile",
         "tile"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_fb_activities",
-      "platform": "facebook",
-      "name": "Get activity log",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get activity log",
+        "vi": "Lấy nhật ký hoạt động"
+      },
       "description": "Comments, likes, searches...",
       "params": [
         {
           "name": "category",
           "type": "string",
-          "description": "Category",
-          "required": false
+          "required": false,
+          "description": "Category"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         },
         {
           "name": "year",
           "type": "number",
-          "description": "Year",
-          "required": false
+          "required": false,
+          "description": "Year"
         },
         {
           "name": "month",
           "type": "number",
-          "description": "Month",
-          "required": false
+          "required": false,
+          "description": "Month"
         },
         {
           "name": "person_id",
           "type": "string",
-          "description": "Other person ID",
-          "required": false
+          "required": false,
+          "description": "Other person ID"
         }
       ],
       "response": [
         {
           "name": "activities",
           "type": "array",
-          "description": "Activities",
-          "required": false
+          "description": "Activities"
         }
       ],
       "tags": [
         "facebook",
         "activity",
         "log"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_fb_blocked",
-      "platform": "facebook",
-      "name": "Get blocked list",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get blocked list",
+        "vi": "Lấy danh sách chặn"
+      },
       "description": "Get your blocked list",
       "params": [
         {
           "name": "type",
           "type": "string",
-          "description": "Block type",
-          "required": true
+          "required": true,
+          "description": "Block type"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "blocked",
           "type": "array",
-          "description": "Blocked list",
-          "required": false
+          "description": "Blocked list"
         }
       ],
       "tags": [
         "facebook",
         "block",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_all_my_blocked_with_time",
-      "platform": "facebook",
-      "name": "Get all blocked with time",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get all blocked with time",
+        "vi": "Lấy tất cả chặn (kèm thời gian)"
+      },
       "description": "Get blocked people with block time",
       "params": [],
       "response": [
         {
           "name": "blocked",
           "type": "array",
-          "description": "List",
-          "required": false
+          "description": "List"
         }
       ],
       "tags": [
         "facebook",
         "block",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "fb_set_block",
-      "platform": "facebook",
-      "name": "Block / Unblock",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Block / Unblock",
+        "vi": "Chặn / Bỏ chặn"
+      },
       "description": "Block or unblock entity on Facebook",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Target URL/UID",
-          "required": true
+          "required": true,
+          "description": "Target URL/UID"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "Block type",
-          "required": true
+          "required": true,
+          "description": "Block type"
         },
         {
           "name": "value",
           "type": "boolean",
-          "description": "Action (True=block, False=unblock)",
-          "required": true
+          "required": true,
+          "description": "Action (True=block, False=unblock)"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "block",
         "set"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_check_ins",
-      "platform": "facebook",
-      "name": "Get check-ins",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get check-ins",
+        "vi": "Lấy danh sách check-in"
+      },
       "description": "Get checked-in places",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "URL/UID target",
-          "required": true
+          "required": true,
+          "description": "URL/UID target"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "checkins",
           "type": "array",
-          "description": "Checkins",
-          "required": false
+          "description": "Checkins"
         }
       ],
       "tags": [
         "facebook",
         "checkin",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "create_comment",
-      "platform": "facebook",
-      "name": "Create comment",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Create comment",
+        "vi": "Tạo bình luận"
+      },
       "description": "Create comment on post",
       "params": [
         {
           "name": "post",
           "type": "string",
-          "description": "Post URL/ID",
-          "required": true
+          "required": true,
+          "description": "Post URL/ID"
         },
         {
           "name": "comment",
           "type": "string",
-          "description": "Comment text",
-          "required": true
-        },
-        {
-          "name": "feedLocation",
-          "type": "string",
-          "description": "Feed Location",
-          "required": false
+          "required": true,
+          "description": "Comment text"
         },
         {
           "name": "group",
           "type": "string",
-          "description": "Group URL/ID",
-          "required": false
+          "required": false,
+          "description": "Group URL/ID"
         }
       ],
       "response": [
         {
           "name": "url",
           "type": "string",
-          "description": "New comment URL",
-          "required": false
+          "description": "New comment URL"
         }
       ],
       "tags": [
         "facebook",
         "comment",
         "create"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "reply_to_comment",
-      "platform": "facebook",
-      "name": "Reply to comment",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Reply to comment",
+        "vi": "Trả lời bình luận"
+      },
       "description": "Reply to a comment",
       "params": [
         {
           "name": "postID",
           "type": "string",
-          "description": "Post ID",
-          "required": true
+          "required": true,
+          "description": "Post ID"
         },
         {
           "name": "parentCommentID",
           "type": "string",
-          "description": "Parent comment ID",
-          "required": true
+          "required": true,
+          "description": "Parent comment ID"
         },
         {
           "name": "comment",
           "type": "string",
-          "description": "Reply text",
-          "required": true
+          "required": true,
+          "description": "Reply text"
         },
         {
           "name": "feedLocation",
           "type": "string",
-          "description": "Feed Location",
-          "required": false
+          "required": false,
+          "description": "Feed Location"
         },
         {
           "name": "groupID",
           "type": "string",
-          "description": "Group ID",
-          "required": false
+          "required": false,
+          "description": "Group ID"
         },
         {
           "name": "ranges",
           "type": "array",
-          "description": "Ranges for mentions",
-          "required": false
+          "required": false,
+          "description": "Ranges for mentions"
         }
       ],
       "response": [
         {
           "name": "url",
           "type": "string",
-          "description": "New comment URL",
-          "required": false
+          "description": "New comment URL"
         }
       ],
       "tags": [
@@ -1409,23 +1612,27 @@
     },
     {
       "id": "undo_react_to_comment",
-      "platform": "facebook",
-      "name": "Undo react to comment",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Undo react to comment",
+        "vi": "Huỷ bày tỏ cảm xúc bình luận"
+      },
       "description": "Remove reaction from a comment",
       "params": [
         {
           "name": "comment_id",
           "type": "string",
-          "description": "Comment URL/ID",
-          "required": true
+          "required": true,
+          "description": "Comment URL/ID"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Result",
-          "required": false
+          "description": "Result"
         }
       ],
       "tags": [
@@ -1436,953 +1643,1122 @@
     },
     {
       "id": "react_to_comment",
-      "platform": "facebook",
-      "name": "React to comment",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "React to comment",
+        "vi": "Bày tỏ cảm xúc bình luận"
+      },
       "description": "Add reaction to comment",
       "params": [
         {
           "name": "comment_id",
           "type": "string",
-          "description": "Comment URL/ID",
-          "required": true
+          "required": true,
+          "description": "Comment URL/ID"
         },
         {
           "name": "post_id",
           "type": "string",
-          "description": "Post URL/ID",
-          "required": true
+          "required": true,
+          "description": "Post URL/ID"
         },
         {
           "name": "reaction",
           "type": "string",
-          "description": "Reaction ID",
-          "required": true
+          "required": true,
+          "description": "Reaction ID"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Result",
-          "required": false
+          "description": "Result"
         }
       ],
       "tags": [
         "facebook",
         "comment",
         "react"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_comment_info",
-      "platform": "facebook",
-      "name": "Get fb comment info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get fb comment info",
+        "vi": "Lấy thông tin bình luận fb"
+      },
       "description": "Get specific comment info fb",
       "params": [
         {
           "name": "comment_id",
           "type": "string",
-          "description": "Comment URL/ID",
-          "required": true
+          "required": true,
+          "description": "Comment URL/ID"
         }
       ],
       "response": [
         {
           "name": "comment",
           "type": "object",
-          "description": "Comment details",
-          "required": false
+          "description": "Comment details"
         }
       ],
       "tags": [
         "facebook",
         "comment",
         "info"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_fb_dtsg",
-      "platform": "facebook",
-      "name": "Get fb_dtsg",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get fb_dtsg",
+        "vi": "Lấy fb_dtsg"
+      },
       "description": "Get fb_dtsg for requests",
       "params": [],
       "response": [
         {
           "name": "fb_dtsg",
           "type": "string",
-          "description": "fb_dtsg token",
-          "required": false
+          "description": "fb_dtsg token"
         }
       ],
       "tags": [
         "facebook",
         "core",
         "token"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_access_token",
-      "platform": "facebook",
-      "name": "Get fb access token",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get fb access token",
+        "vi": "Lấy access token fb"
+      },
       "description": "Get EAAB/EAAG/... Token",
       "params": [
         {
           "name": "type",
           "type": "string",
-          "description": "Token type",
-          "required": true
+          "required": true,
+          "description": "Token type"
         }
       ],
       "response": [
         {
           "name": "token",
           "type": "string",
-          "description": "Token",
-          "required": false
+          "description": "Token"
         }
       ],
       "tags": [
         "facebook",
         "core",
         "token"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_profile_lite",
-      "platform": "facebook",
-      "name": "Get my profile lite",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get my profile lite",
+        "vi": "Lấy thông tin cá nhân rút gọn"
+      },
       "description": "Get own profile info",
       "params": [],
       "response": [
         {
           "name": "profile",
           "type": "object",
-          "description": "Profile info",
-          "required": false
+          "description": "Profile info"
         }
       ],
       "tags": [
         "facebook",
         "core",
         "profile"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_delegate_page_id",
-      "platform": "facebook",
-      "name": "Get Delegate Page ID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Delegate Page ID",
+        "vi": "Lấy Delegate Page ID"
+      },
       "description": "Get delegate page ID",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Target URL/ID",
-          "required": true
+          "required": true,
+          "description": "Target URL/ID"
         }
       ],
       "response": [
         {
           "name": "pageId",
           "type": "string",
-          "description": "Page ID",
-          "required": false
+          "description": "Page ID"
         }
       ],
       "tags": [
         "facebook",
         "core",
         "page"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_bulk_route_definition",
-      "platform": "facebook",
-      "name": "Get Bulk Route Definition",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Bulk Route Definition",
+        "vi": "Lấy Routing hàng loạt"
+      },
       "description": "Get bulk route details",
       "params": [
         {
           "name": "urls",
           "type": "string",
-          "description": "List urls want to check, each in new line",
-          "required": true
+          "required": true,
+          "description": "List urls want to check, each in new line"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "Route info",
-          "required": false
+          "description": "Route info"
         }
       ],
       "tags": [
         "facebook",
         "route",
         "info"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_route_definition",
-      "platform": "facebook",
-      "name": "Get Route Definition",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Route Definition",
+        "vi": "Lấy định nghĩa Route"
+      },
       "description": "Get route definition payload",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "URL",
-          "required": true
+          "required": true,
+          "description": "URL"
         }
       ],
       "response": [
         {
           "name": "data",
           "type": "object",
-          "description": "Facebook page route data",
-          "required": false
+          "description": "Facebook page route data"
         }
       ],
       "tags": [
         "facebook",
         "route",
         "info"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_all_collection_ids",
-      "platform": "facebook",
-      "name": "Get all Collection IDs",
-      "description": "Target URL/UID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get all Collection IDs",
+        "vi": "Lấy tất cả Collection ID"
+      },
+      "description": "",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Target URL/UID",
-          "required": true
+          "required": true,
+          "description": "Target URL/UID"
         }
       ],
       "response": [
         {
           "name": "collections",
           "type": "object",
-          "description": "Collections",
-          "required": false
+          "description": "Collections"
         }
       ],
       "tags": [
         "facebook",
         "collection",
         "id"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_single_collection_id",
-      "platform": "facebook",
-      "name": "Get Collection ID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Collection ID",
+        "vi": "Lấy một Collection ID"
+      },
       "description": "Get specific collection ID",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Target URL/UID",
-          "required": true
+          "required": true,
+          "description": "Target URL/UID"
         },
         {
           "name": "tab_key",
           "type": "string",
-          "description": "Tab key (example: photos_albums)",
-          "required": true
+          "required": true,
+          "description": "Tab key (example: photos_albums)"
         },
         {
           "name": "parent_tab_key",
           "type": "string",
-          "description": "Parent Tab Key (Optional)",
-          "required": false
+          "required": false,
+          "description": "Parent Tab Key (Optional)"
         }
       ],
       "response": [
         {
           "name": "collectionId",
           "type": "string",
-          "description": "Collection ID",
-          "required": false
+          "description": "Collection ID"
         }
       ],
       "tags": [
         "facebook",
         "collection",
         "id"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_files",
-      "platform": "facebook",
-      "name": "Get Group Files",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Files",
+        "vi": "Lấy tệp trong nhóm"
+      },
       "description": "Get files attached in a group",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "files",
           "type": "array",
-          "description": "Files list",
-          "required": false
+          "description": "Files list"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "file"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_follow_count",
-      "platform": "facebook",
-      "name": "Get Follow Count",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Follow Count",
+        "vi": "Lấy số lượng đang theo dõi"
+      },
       "description": "Get followed profiles count",
       "params": [],
       "response": [
         {
           "name": "counts",
           "type": "object",
-          "description": "Follow counts",
-          "required": false
+          "description": "Follow counts"
         }
       ],
       "tags": [
         "facebook",
         "follow",
         "count"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_following",
-      "platform": "facebook",
-      "name": "Get Following",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Following",
+        "vi": "Lấy danh sách đang theo dõi"
+      },
       "description": "Get profiles you are following",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "following",
           "type": "array",
-          "description": "Following list",
-          "required": false
+          "description": "Following list"
         }
       ],
       "tags": [
         "facebook",
         "follow",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_unfollowed",
-      "platform": "facebook",
-      "name": "Get Unfollowed",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Unfollowed",
+        "vi": "Lấy danh sách đã bỏ theo dõi"
+      },
       "description": "Get profiles you unfollowed",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "unfollowed",
           "type": "array",
-          "description": "Unfollowed list",
-          "required": false
+          "description": "Unfollowed list"
         }
       ],
       "tags": [
         "facebook",
         "follow",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_follower_grid",
-      "platform": "facebook",
-      "name": "Get Followers Grid",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Followers Grid",
+        "vi": "Lấy followers (Grid)"
+      },
       "description": "Get followers grid",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "followers",
           "type": "array",
-          "description": "Followers",
-          "required": false
+          "description": "Followers"
         }
       ],
       "tags": [
         "facebook",
         "follower",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_following_grid",
-      "platform": "facebook",
-      "name": "Get Following Grid",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Following Grid",
+        "vi": "Lấy đang theo dõi (Grid)"
+      },
       "description": "Get following grid",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         },
         {
           "name": "search",
           "type": "string",
-          "description": "Search",
-          "required": false
+          "required": false,
+          "description": "Search"
         }
       ],
       "response": [
         {
           "name": "following",
           "type": "array",
-          "description": "Following list",
-          "required": false
+          "description": "Following list"
         }
       ],
       "tags": [
         "facebook",
         "following",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_incoming_friend_requests_fast",
-      "platform": "facebook",
-      "name": "Get Incoming Friend Requests (Fast)",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Incoming Friend Requests (Fast)",
+        "vi": "Lấy lời mời kết bạn (Nhanh)"
+      },
       "description": "Get received friend requests",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "data",
           "type": "object",
-          "description": "Requests data and total count",
-          "required": false
+          "description": "Requests data and total count"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "request"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_outgoing_friend_requests_fast",
-      "platform": "facebook",
-      "name": "Get Outgoing Friend Requests (Fast)",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Outgoing Friend Requests (Fast)",
+        "vi": "Lấy lời mời đã gửi (Nhanh)"
+      },
       "description": "Get sent friend requests",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "data",
           "type": "object",
-          "description": "Requests data and total count",
-          "required": false
+          "description": "Requests data and total count"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "request"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_incoming_friend_requests",
-      "platform": "facebook",
-      "name": "Get Incoming Friend Requests",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Incoming Friend Requests",
+        "vi": "Lấy lời mời kết bạn"
+      },
       "description": "Get received friend requests",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "requests",
           "type": "array",
-          "description": "Requests list",
-          "required": false
+          "description": "Requests list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "request"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_outgoing_friend_requests",
-      "platform": "facebook",
-      "name": "Get Outgoing Friend Requests",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Outgoing Friend Requests",
+        "vi": "Lấy lời mời đã gửi"
+      },
       "description": "Get sent friend requests",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "requests",
           "type": "array",
-          "description": "Requests list",
-          "required": false
+          "description": "Requests list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "request"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "decline_friend_request",
-      "platform": "facebook",
-      "name": "Decline Friend Request",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Decline Friend Request",
+        "vi": "Từ chối kết bạn"
+      },
       "description": "Decline a friend request",
       "params": [
         {
           "name": "uid",
           "type": "string",
-          "description": "Requester UID",
-          "required": true
+          "required": true,
+          "description": "Requester UID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "action"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "accept_friend_request",
-      "platform": "facebook",
-      "name": "Accept Friend Request",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Accept Friend Request",
+        "vi": "Chấp nhận kết bạn"
+      },
       "description": "Accept a friend request",
       "params": [
         {
           "name": "uid",
           "type": "string",
-          "description": "Requester UID",
-          "required": true
+          "required": true,
+          "description": "Requester UID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "action"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "cancel_outgoing_friend_request",
-      "platform": "facebook",
-      "name": "Cancel Outgoing Friend Request",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Cancel Outgoing Friend Request",
+        "vi": "Hủy lời mời kết bạn"
+      },
       "description": "Cancel a sent friend request",
       "params": [
         {
           "name": "uid",
           "type": "string",
-          "description": "Requestee UID",
-          "required": true
+          "required": true,
+          "description": "Requestee UID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "action"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_profile_friends_section",
-      "platform": "facebook",
-      "name": "Get Profile Friends Section",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Profile Friends Section",
+        "vi": "Lấy mục bạn bè"
+      },
       "description": "Get friends list by section (Birthdays, recently added...)",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "URL/UID (optional, default to your UID)",
-          "required": false
+          "required": false,
+          "description": "URL/UID (optional, default to your UID)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         },
         {
           "name": "section",
           "type": "string",
-          "description": "Section",
-          "required": false
+          "required": false,
+          "description": "Section"
         }
       ],
       "response": [
         {
           "name": "friends",
           "type": "array",
-          "description": "Friends list",
-          "required": false
+          "description": "Friends list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "find_buddy",
-      "platform": "facebook",
-      "name": "Find friend buddy",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Find friend buddy",
+        "vi": "Tìm bạn thân"
+      },
       "description": "Find buddies from messenger sidebar",
       "params": [
         {
           "name": "max",
           "type": "number",
-          "description": "Number to fetch (default 50)",
-          "required": false
+          "required": false,
+          "description": "Number to fetch (default 50)"
         }
       ],
       "response": [
         {
           "name": "buddies",
           "type": "array",
-          "description": "Buddies",
-          "required": false
+          "description": "Buddies"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_online_friends",
-      "platform": "facebook",
-      "name": "Get Online Friends",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Online Friends",
+        "vi": "Lấy bạn bè đang trực tuyến"
+      },
       "description": "Get online friends list",
       "params": [
         {
           "name": "max",
           "type": "number",
-          "description": "Number to fetch (default 50)",
-          "required": false
+          "required": false,
+          "description": "Number to fetch (default 50)"
         }
       ],
       "response": [
         {
           "name": "friends",
           "type": "array",
-          "description": "Friends list",
-          "required": false
+          "description": "Friends list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_unfriended",
-      "platform": "facebook",
-      "name": "Get Unfriended",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Unfriended",
+        "vi": "Lấy danh sách đã hủy kết bạn"
+      },
       "description": "Get unfriended list",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "unfriended",
           "type": "array",
-          "description": "Unfriended list",
-          "required": false
+          "description": "Unfriended list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_add_friend_time",
-      "platform": "facebook",
-      "name": "Get Add Friend History",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Add Friend History",
+        "vi": "Lịch sử thêm bạn bè"
+      },
       "description": "Get time when friends were added",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "friends",
           "type": "array",
-          "description": "Friends time list",
-          "required": false
+          "description": "Friends time list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_friend_birthdays",
-      "platform": "facebook",
-      "name": "Get Friend Birthdays",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Friend Birthdays",
+        "vi": "Sinh nhật bạn bè"
+      },
       "description": "Get friends birthdays",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor (default: 1)",
-          "required": false
+          "required": false,
+          "description": "Cursor (default: 1)"
         }
       ],
       "response": [
         {
           "name": "birthdays",
           "type": "array",
-          "description": "Birthdays list",
-          "required": false
+          "description": "Birthdays list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_followers",
-      "platform": "facebook",
-      "name": "Get Followers",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Followers",
+        "vi": "Người theo dõi"
+      },
       "description": "Get followers list",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "followers",
           "type": "array",
-          "description": "Followers list",
-          "required": false
+          "description": "Followers list"
         }
       ],
       "tags": [
         "facebook",
         "friend",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_friendship_data",
-      "platform": "facebook",
-      "name": "Get Friendship Data",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Friendship Data",
+        "vi": "Lấy dữ liệu tình bạn"
+      },
       "description": "Get friendship timeline between you and target UID",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Friend URL/UID",
-          "required": true
+          "required": true,
+          "description": "Friend URL/UID"
         }
       ],
       "response": [
         {
           "name": "timeline",
           "type": "array",
-          "description": "Friendship data",
-          "required": false
+          "description": "Friendship data"
         }
       ],
       "tags": [
         "facebook",
         "friendship",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "video_id_to_post_id",
-      "platform": "facebook",
-      "name": "Video ID to Post ID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Video ID to Post ID",
+        "vi": "Video ID sang Post ID"
+      },
       "description": "Convert Video ID to Post ID",
       "params": [
         {
           "name": "video_id",
           "type": "string",
-          "description": "Video ID",
-          "required": true
+          "required": true,
+          "description": "Video ID"
         }
       ],
       "response": [
         {
           "name": "postId",
           "type": "string",
-          "description": "Post ID",
-          "required": false
+          "description": "Post ID"
         }
       ],
       "tags": [
         "facebook",
         "id",
         "video"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_members_root",
-      "platform": "facebook",
-      "name": "Get Group Members Root",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Members Root",
+        "vi": "Lấy tổng quan thành viên nhóm"
+      },
       "description": "Get overview of group member sections",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         }
       ],
       "response": [
         {
           "name": "data",
           "type": "object",
-          "description": "Sections data",
-          "required": false
+          "description": "Sections data"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "member"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "search_group_members",
-      "platform": "facebook",
-      "name": "Search Group Members",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Search Group Members",
+        "vi": "Tìm kiếm thành viên"
+      },
       "description": "Search members in a group",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "search",
           "type": "string",
-          "description": "Search keyword",
-          "required": true
+          "required": true,
+          "description": "Search keyword"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Members list",
-          "required": false
+          "description": "Members list"
         }
       ],
       "tags": [
@@ -2390,27 +2766,32 @@
         "group",
         "members",
         "search"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_admins_section",
-      "platform": "facebook",
-      "name": "Get Group Admins Section",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Admins Section",
+        "vi": "Lấy danh sách Quản trị viên"
+      },
       "description": "Get Admins and Moderators section",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Admins list",
-          "required": false
+          "description": "Admins list"
         }
       ],
       "tags": [
@@ -2418,33 +2799,38 @@
         "group",
         "admin",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_friends_section",
-      "platform": "facebook",
-      "name": "Get Group Friends Section",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Friends Section",
+        "vi": "Lấy bạn bè trong nhóm"
+      },
       "description": "Get friends in group section",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Friends list",
-          "required": false
+          "description": "Friends list"
         }
       ],
       "tags": [
@@ -2452,33 +2838,38 @@
         "group",
         "friend",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_experts_section",
-      "platform": "facebook",
-      "name": "Get Group Experts Section",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Experts Section",
+        "vi": "Lấy chuyên gia nhóm"
+      },
       "description": "Get group experts section",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Experts list",
-          "required": false
+          "description": "Experts list"
         }
       ],
       "tags": [
@@ -2486,33 +2877,38 @@
         "group",
         "expert",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_contributors_section",
-      "platform": "facebook",
-      "name": "Get Group Contributors Section",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Contributors Section",
+        "vi": "Lấy thành viên đóng góp"
+      },
       "description": "Get top contributors section",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Contributors list",
-          "required": false
+          "description": "Contributors list"
         }
       ],
       "tags": [
@@ -2520,33 +2916,38 @@
         "group",
         "contributor",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_things_in_common_section",
-      "platform": "facebook",
-      "name": "Get Group Things In Common",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Things In Common",
+        "vi": "Lấy điểm chung trong nhóm"
+      },
       "description": "Get people with things in common",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Members list",
-          "required": false
+          "description": "Members list"
         }
       ],
       "tags": [
@@ -2554,33 +2955,38 @@
         "group",
         "member",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_same_city_section",
-      "platform": "facebook",
-      "name": "Get Group Same City",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Same City",
+        "vi": "Lấy thành viên cùng thành phố"
+      },
       "description": "Get members in the same city",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Members list",
-          "required": false
+          "description": "Members list"
         }
       ],
       "tags": [
@@ -2588,603 +2994,709 @@
         "group",
         "member",
         "list"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_new_members_section",
-      "platform": "facebook",
-      "name": "Get Group New Members",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group New Members",
+        "vi": "Lấy thành viên mới"
+      },
       "description": "Get new members section",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Members list",
-          "required": false
+          "description": "Members list"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "new"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_group_members",
-      "platform": "facebook",
-      "name": "Get My Group Members",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get My Group Members",
+        "vi": "Lấy thành viên nhóm của tôi"
+      },
       "description": "Manage group members (for Admins)",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         },
         {
           "name": "statusFilter",
           "type": "string",
-          "description": "Status filter",
-          "required": true
+          "required": true,
+          "description": "Status filter"
         },
         {
           "name": "membershipType",
           "type": "string",
-          "description": "Membership type",
-          "required": true
+          "required": true,
+          "description": "Membership type"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         },
         {
           "name": "search",
           "type": "string",
-          "description": "Search text",
-          "required": false
+          "required": false,
+          "description": "Search text"
         }
       ],
       "response": [
         {
           "name": "members",
           "type": "array",
-          "description": "Members list",
-          "required": false
+          "description": "Members list"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "admin"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_member_count",
-      "platform": "facebook",
-      "name": "Group Member Count",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Group Member Count",
+        "vi": "Số lượng thành viên nhóm"
+      },
       "description": "Get admins and members count of a group",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         }
       ],
       "response": [
         {
           "name": "countInfo",
           "type": "object",
-          "description": "Count info object",
-          "required": false
+          "description": "Count info object"
         }
       ],
       "tags": [
         "facebook",
         "groups",
         "members"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_joined_groups_root",
-      "platform": "facebook",
-      "name": "Get My Joined Groups Root",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get My Joined Groups Root",
+        "vi": "Lấy danh sách nhóm đã tham gia (Root)"
+      },
       "description": "Get joined and pending groups root",
       "params": [
         {
           "name": "ordering",
           "type": "string",
-          "description": "Ordering (optional)",
-          "required": false
+          "required": false,
+          "description": "Ordering (optional)"
         }
       ],
       "response": [
         {
           "name": "data",
           "type": "object",
-          "description": "Groups data",
-          "required": false
+          "description": "Groups data"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_joined_groups",
-      "platform": "facebook",
-      "name": "Get My Joined Groups",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get My Joined Groups",
+        "vi": "Lấy các nhóm đã tham gia"
+      },
       "description": "Get groups you have joined",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         },
         {
           "name": "ordering",
           "type": "string",
-          "description": "Ordering (optional)",
-          "required": false
+          "required": false,
+          "description": "Ordering (optional)"
         }
       ],
       "response": [
         {
           "name": "groups",
           "type": "array",
-          "description": "Groups list",
-          "required": false
+          "description": "Groups list"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_groups",
-      "platform": "facebook",
-      "name": "Get My Groups",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get My Groups",
+        "vi": "Lấy tất cả nhóm của tôi"
+      },
       "description": "Get admin and member groups (max 5000)",
       "params": [],
       "response": [
         {
           "name": "groups",
           "type": "object",
-          "description": "Admin and member groups",
-          "required": false
+          "description": "Admin and member groups"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_managed_groups",
-      "platform": "facebook",
-      "name": "Get My Managed Groups",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get My Managed Groups",
+        "vi": "Lấy nhóm do tôi quản lý"
+      },
       "description": "Get groups you manage",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "groups",
           "type": "array",
-          "description": "Groups list",
-          "required": false
+          "description": "Groups list"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "admin"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "leave_group",
-      "platform": "facebook",
-      "name": "Leave Group",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Leave Group",
+        "vi": "Rời nhóm"
+      },
       "description": "Leave a group",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "leave"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "join_group",
-      "platform": "facebook",
-      "name": "Join Group",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Join Group",
+        "vi": "Tham gia nhóm"
+      },
       "description": "Join a group",
       "params": [
         {
           "name": "group_url",
           "type": "string",
-          "description": "Group URL/UID",
-          "required": true
+          "required": true,
+          "description": "Group URL/UID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "group",
         "join"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_locked_profile_status",
-      "platform": "facebook",
-      "name": "Locked Profile Status",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Locked Profile Status",
+        "vi": "Trạng thái khóa bảo vệ trang cá nhân"
+      },
       "description": "Check if your profile is locked",
       "params": [],
       "response": [
         {
           "name": "status",
           "type": "object",
-          "description": "Locked profile status",
-          "required": false
+          "description": "Locked profile status"
         }
       ],
       "tags": [
         "facebook",
         "profile",
         "locked"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "update_locked_profile_status",
-      "platform": "facebook",
-      "name": "Update Locked Profile Status",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Update Locked Profile Status",
+        "vi": "Bật/Tắt khóa bảo vệ trang cá nhân"
+      },
       "description": "Enable or disable locked profile feature",
       "params": [
         {
           "name": "enable",
           "type": "boolean",
-          "description": "Enable (true) / Disable (false)",
-          "required": false
+          "required": false,
+          "description": "Enable (true) / Disable (false)"
         }
       ],
       "response": [
         {
           "name": "status",
           "type": "object",
-          "description": "New status",
-          "required": false
+          "description": "New status"
         }
       ],
       "tags": [
         "facebook",
         "profile",
         "locked"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_all_chat",
-      "platform": "facebook",
-      "name": "Get all fb chat",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get all fb chat",
+        "vi": "Lấy tất cả đoạn chat fb"
+      },
       "description": "Get all Messenger chat threads",
       "params": [],
       "response": [
         {
           "name": "threads",
           "type": "array",
-          "description": "Chat threads list",
-          "required": false
+          "description": "Chat threads list"
         }
       ],
       "tags": [
         "facebook",
         "messages",
         "chat"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_messages_after_msg_id",
-      "platform": "facebook",
-      "name": "Get Messages Around Message ID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Messages Around Message ID",
+        "vi": "Lấy tin nhắn trước/sau ID tin nhắn"
+      },
       "description": "Get messages before or after a specific message",
       "params": [
         {
           "name": "thread_id",
           "type": "string",
-          "description": "Thread ID",
-          "required": true
+          "required": true,
+          "description": "Thread ID"
         },
         {
           "name": "msg_id",
           "type": "string",
-          "description": "Anchor Message ID",
-          "required": true
+          "required": true,
+          "description": "Anchor Message ID"
         },
         {
           "name": "direction",
           "type": "string",
-          "description": "Direction",
-          "required": false
+          "required": false,
+          "description": "Direction"
         },
         {
           "name": "limit",
           "type": "number",
-          "description": "Limit (default 50)",
-          "required": false
+          "required": false,
+          "description": "Limit (default 50)"
         }
       ],
       "response": [
         {
           "name": "messages",
           "type": "array",
-          "description": "Messages",
-          "required": false
+          "description": "Messages"
         }
       ],
       "tags": [
         "facebook",
         "messages",
         "chat"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_messages_at_time_cursor",
-      "platform": "facebook",
-      "name": "Get Messages At Time Cursor",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Messages At Time Cursor",
+        "vi": "Lấy tin nhắn tại mốc thời gian"
+      },
       "description": "Get messages before a specific time cursor",
       "params": [
         {
           "name": "thread_id",
           "type": "string",
-          "description": "Thread ID",
-          "required": true
+          "required": true,
+          "description": "Thread ID"
         },
         {
           "name": "time",
           "type": "number",
-          "description": "Time (timestamp ms)",
-          "required": false
+          "required": false,
+          "description": "Time (timestamp ms)"
         },
         {
           "name": "limit",
           "type": "number",
-          "description": "Limit (default 50)",
-          "required": false
+          "required": false,
+          "description": "Limit (default 50)"
         }
       ],
       "response": [
         {
           "name": "messages",
           "type": "array",
-          "description": "Messages",
-          "required": false
+          "description": "Messages"
         }
       ],
       "tags": [
         "facebook",
         "messages",
         "chat"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "check_can_message",
-      "platform": "facebook",
-      "name": "Check Can Message",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Check Can Message",
+        "vi": "Kiểm tra quyền nhắn tin"
+      },
       "description": "Check if you can send a message to this user",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Target UID/URL",
-          "required": true
+          "required": true,
+          "description": "Target UID/URL"
         }
       ],
       "response": [
         {
           "name": "canMessage",
           "type": "boolean",
-          "description": "Can message",
-          "required": false
+          "description": "Can message"
         }
       ],
       "tags": [
         "facebook",
         "messages",
         "check"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_my_liked_pages",
-      "platform": "facebook",
-      "name": "Get My Liked Pages",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get My Liked Pages",
+        "vi": "Lấy các Trang đã thích"
+      },
       "description": "Get list of Pages you have liked",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "pages",
           "type": "array",
-          "description": "Pages list",
-          "required": false
+          "description": "Pages list"
         }
       ],
       "tags": [
         "facebook",
         "pages",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "unlike_page",
-      "platform": "facebook",
-      "name": "Unlike Page",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Unlike Page",
+        "vi": "Bỏ thích Trang"
+      },
       "description": "Unlike a Page",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Page URL/ID",
-          "required": true
+          "required": true,
+          "description": "Page URL/ID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "pages",
         "unlike"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "follow_page",
-      "platform": "facebook",
-      "name": "Follow Page",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Follow Page",
+        "vi": "Theo dõi Trang"
+      },
       "description": "Follow a Page (Default or See First)",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Page URL/ID",
-          "required": true
+          "required": true,
+          "description": "Page URL/ID"
         },
         {
           "name": "followType",
           "type": "string",
-          "description": "Follow Type",
-          "required": true
+          "required": true,
+          "description": "Follow Type"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "pages",
         "follow"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "un_follow_page",
-      "platform": "facebook",
-      "name": "Unfollow Page",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Unfollow Page",
+        "vi": "Bỏ theo dõi Trang"
+      },
       "description": "Unfollow feed from a Page",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Page URL/ID",
-          "required": true
+          "required": true,
+          "description": "Page URL/ID"
         }
       ],
       "response": [
         {
           "name": "targetId",
           "type": "string",
-          "description": "Page ID after unfollow",
-          "required": false
+          "description": "Page ID after unfollow"
         }
       ],
       "tags": [
         "facebook",
         "pages",
         "unfollow"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_page_invites",
-      "platform": "facebook",
-      "name": "Get Page Invites",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Page Invites",
+        "vi": "Lấy lời mời thích Trang"
+      },
       "description": "Get list of pending Page invites",
       "params": [],
       "response": [
         {
           "name": "invites",
           "type": "array",
-          "description": "Invites list",
-          "required": false
+          "description": "Invites list"
         }
       ],
       "tags": [
         "facebook",
         "pages",
         "invite"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "accept_page_invite",
-      "platform": "facebook",
-      "name": "Accept Page Invite",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Accept Page Invite",
+        "vi": "Chấp nhận mời thích Trang"
+      },
       "description": "Accept an invite to like a page",
       "params": [
         {
           "name": "invite_id",
           "type": "string",
-          "description": "Invite ID",
-          "required": true
+          "required": true,
+          "description": "Invite ID"
         }
       ],
       "response": [],
@@ -3192,634 +3704,733 @@
         "facebook",
         "pages",
         "invite"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "decline_page_invite",
-      "platform": "facebook",
-      "name": "Decline Page Invite",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Decline Page Invite",
+        "vi": "Từ chối mời thích Trang"
+      },
       "description": "Decline an invite to like a page",
       "params": [
         {
           "name": "invite_id",
           "type": "string",
-          "description": "Invite ID",
-          "required": true
+          "required": true,
+          "description": "Invite ID"
         }
       ],
       "response": [
         {
           "name": "id",
           "type": "string",
-          "description": "Result ID",
-          "required": false
+          "description": "Result ID"
         }
       ],
       "tags": [
         "facebook",
         "pages",
         "invite"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_photos",
-      "platform": "facebook",
-      "name": "Get Group Photos",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Photos",
+        "vi": "Lấy ảnh trong Nhóm"
+      },
       "description": "Get photos posted in a Group",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Group URL/ID",
-          "required": true
+          "required": true,
+          "description": "Group URL/ID"
         },
         {
           "name": "count",
           "type": "number",
-          "description": "Count (Default 8)",
-          "required": false
+          "required": false,
+          "description": "Count (Default 8)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "photos",
           "type": "array",
-          "description": "Photos list",
-          "required": false
+          "description": "Photos list"
         }
       ],
       "tags": [
         "facebook",
         "photos",
         "group"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_largest_photo",
-      "platform": "facebook",
-      "name": "Get Largest Photo",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Largest Photo",
+        "vi": "Lấy ảnh kích thước lớn nhất"
+      },
       "description": "Get max resolution photo URL from photoId",
       "params": [
         {
           "name": "photo_id",
           "type": "string",
-          "description": "Photo ID",
-          "required": true
+          "required": true,
+          "description": "Photo ID"
         }
       ],
       "response": [
         {
           "name": "photo",
           "type": "object",
-          "description": "Photo info",
-          "required": false
+          "description": "Photo info"
         }
       ],
       "tags": [
         "facebook",
         "photos",
         "get"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_basic_photo_info",
-      "platform": "facebook",
-      "name": "Get Basic Photo Info",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Basic Photo Info",
+        "vi": "Lấy thông tin cơ bản ảnh"
+      },
       "description": "Get owner and original post info for a photo",
       "params": [
         {
           "name": "photo_id",
           "type": "string",
-          "description": "Photo ID",
-          "required": true
+          "required": true,
+          "description": "Photo ID"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "Basic info",
-          "required": false
+          "description": "Basic info"
         }
       ],
       "tags": [
         "facebook",
         "photos",
         "info"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "delete_post",
-      "platform": "facebook",
-      "name": "Delete Post",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Delete Post",
+        "vi": "Xoá bài viết"
+      },
       "description": "Delete a post permanently",
       "params": [
         {
           "name": "storyId",
           "type": "string",
-          "description": "Story ID (Base64)",
-          "required": true
+          "required": true,
+          "description": "Story ID (Base64)"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Delete status",
-          "required": false
+          "description": "Delete status"
         }
       ],
       "tags": [
         "facebook",
         "posts",
         "delete"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "trash_post",
-      "platform": "facebook",
-      "name": "Trash Post",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Trash Post",
+        "vi": "Chuyển vào thùng rác"
+      },
       "description": "Move a post to trash",
       "params": [
         {
           "name": "storyId",
           "type": "string",
-          "description": "Story ID (Base64)",
-          "required": true
+          "required": true,
+          "description": "Story ID (Base64)"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success or not",
-          "required": false
+          "description": "Success or not"
         }
       ],
       "tags": [
         "facebook",
         "posts",
         "trash"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "search_all_posts_on_fb",
-      "platform": "facebook",
-      "name": "Search All Posts",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Search All Posts",
+        "vi": "Tìm kiếm bài viết"
+      },
       "description": "Search all posts on Facebook by text",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Target URL/ID",
-          "required": true
+          "required": true,
+          "description": "Target URL/ID"
         },
         {
           "name": "text",
           "type": "string",
-          "description": "Search keyword",
-          "required": true
+          "required": true,
+          "description": "Search keyword"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "posts",
           "type": "array",
-          "description": "List of posts",
-          "required": false
+          "description": "List of posts"
         }
       ],
       "tags": [
         "facebook",
         "posts",
         "search"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_post_reaction_count",
-      "platform": "facebook",
-      "name": "Get Post Reaction Count",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Post Reaction Count",
+        "vi": "Đếm số lượng cảm xúc"
+      },
       "description": "Get count of each reaction type on a post",
       "params": [
         {
           "name": "postId",
           "type": "string",
-          "description": "Post ID",
-          "required": true
+          "required": true,
+          "description": "Post ID"
         }
       ],
       "response": [
         {
           "name": "reactions",
           "type": "array",
-          "description": "Reactions list",
-          "required": false
+          "description": "Reactions list"
         }
       ],
       "tags": [
         "facebook",
         "reactions",
         "posts"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_reels_feed",
-      "platform": "facebook",
-      "name": "Reels Feed",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Reels Feed",
+        "vi": "Bảng tin Reels"
+      },
       "description": "Get Reels from feed",
       "params": [
         {
           "name": "page_id",
           "type": "string",
-          "description": "Page ID (Optional)",
-          "required": false
-        },
-        {
-          "name": "group_id_list",
-          "type": "array",
-          "description": "Group IDs (Optional)",
-          "required": false
+          "required": false,
+          "description": "Page ID (Optional)"
         },
         {
           "name": "root_video_id",
           "type": "string",
-          "description": "Root Video ID",
-          "required": false
+          "required": false,
+          "description": "Root Video ID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "reels",
           "type": "array",
-          "description": "Videos list",
-          "required": false
+          "description": "Videos list"
         }
       ],
       "tags": [
         "facebook",
         "reels"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "search_pages",
-      "platform": "facebook",
-      "name": "Search Pages",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Search Pages",
+        "vi": "Tìm kiếm Trang"
+      },
       "description": "Search for Facebook Pages",
       "params": [
         {
           "name": "keyword",
           "type": "string",
-          "description": "Search keyword",
-          "required": true
+          "required": true,
+          "description": "Search keyword"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "results",
           "type": "array",
-          "description": "Pages list",
-          "required": false
+          "description": "Pages list"
         }
       ],
       "tags": [
         "facebook",
         "search",
         "pages"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "search_groups",
-      "platform": "facebook",
-      "name": "Search Groups",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Search Groups",
+        "vi": "Tìm kiếm Nhóm"
+      },
       "description": "Search for Facebook Groups",
       "params": [
         {
           "name": "keyword",
           "type": "string",
-          "description": "Search keyword",
-          "required": true
+          "required": true,
+          "description": "Search keyword"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "results",
           "type": "array",
-          "description": "Groups list",
-          "required": false
+          "description": "Groups list"
         }
       ],
       "tags": [
         "facebook",
         "search",
         "groups"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "search_profiles",
-      "platform": "facebook",
-      "name": "Search Profiles",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Search Profiles",
+        "vi": "Tìm kiếm Người dùng"
+      },
       "description": "Search for Facebook Users",
       "params": [
         {
           "name": "keyword",
           "type": "string",
-          "description": "Search keyword",
-          "required": true
+          "required": true,
+          "description": "Search keyword"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "results",
           "type": "array",
-          "description": "Profiles list",
-          "required": false
+          "description": "Profiles list"
         }
       ],
       "tags": [
         "facebook",
         "search",
         "profile"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "search_place",
-      "platform": "facebook",
-      "name": "Search Places",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Search Places",
+        "vi": "Tìm kiếm Địa điểm"
+      },
       "description": "Search for places",
       "params": [
         {
           "name": "keyword",
           "type": "string",
-          "description": "Keyword",
-          "required": true
+          "required": true,
+          "description": "Keyword"
         }
       ],
       "response": [
         {
           "name": "results",
           "type": "array",
-          "description": "Places list",
-          "required": false
+          "description": "Places list"
         }
       ],
       "tags": [
         "facebook",
         "search",
         "places"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "set_avatar_shield",
-      "platform": "facebook",
-      "name": "Set Avatar Shield",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Set Avatar Shield",
+        "vi": "Bật khiên bảo vệ Avatar"
+      },
       "description": "Enable or disable avatar shield",
       "params": [
         {
           "name": "value",
           "type": "boolean",
-          "description": "Enable/disable",
-          "required": false
+          "required": false,
+          "description": "Enable/disable"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "security",
         "shield"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_recent_stories",
-      "platform": "facebook",
-      "name": "Get Recent Stories",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Recent Stories",
+        "vi": "Lấy tin hiển thị (Stories)"
+      },
       "description": "Get recent stories on timeline",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "stories",
           "type": "array",
-          "description": "Stories list",
-          "required": false
+          "description": "Stories list"
         }
       ],
       "tags": [
         "facebook",
         "stories"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_archived_stories",
-      "platform": "facebook",
-      "name": "Get Archived Stories",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Archived Stories",
+        "vi": "Lấy tin đã lưu trữ"
+      },
       "description": "Get story archives lists",
       "params": [
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "stories",
           "type": "array",
-          "description": "Stories list",
-          "required": false
+          "description": "Stories list"
         }
       ],
       "tags": [
         "facebook",
         "stories",
         "archive"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_story_viewers",
-      "platform": "facebook",
-      "name": "Get Story Viewers",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Story Viewers",
+        "vi": "Lấy người xem tin"
+      },
       "description": "Get users who viewed a story",
       "params": [
         {
           "name": "storyId",
           "type": "string",
-          "description": "Story ID",
-          "required": true
+          "required": true,
+          "description": "Story ID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "viewers",
           "type": "array",
-          "description": "Viewers list",
-          "required": false
+          "description": "Viewers list"
         }
       ],
       "tags": [
         "facebook",
         "stories"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_story_from_bucket_id",
-      "platform": "facebook",
-      "name": "Get Story From Bucket ID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Story From Bucket ID",
+        "vi": "Lấy tin theo Bucket ID"
+      },
       "description": "Get a story based on bucket ID",
       "params": [
         {
           "name": "bucketID",
           "type": "string",
-          "description": "Bucket ID",
-          "required": true
+          "required": true,
+          "description": "Bucket ID"
         }
       ],
       "response": [
         {
           "name": "story",
           "type": "object",
-          "description": "Story details",
-          "required": false
+          "description": "Story details"
         }
       ],
       "tags": [
         "facebook",
         "stories"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_first_story_bucket_id_to_show",
-      "platform": "facebook",
-      "name": "Get First Story Bucket ID",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get First Story Bucket ID",
+        "vi": "Lấy Bucket ID Tin đầu tiên"
+      },
       "description": "Get first story bucket to show of a user",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "User URL/ID",
-          "required": true
+          "required": true,
+          "description": "User URL/ID"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "Bucket info ID",
-          "required": false
+          "description": "Bucket info ID"
         }
       ],
       "tags": [
         "facebook",
         "stories"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "react_story",
-      "platform": "facebook",
-      "name": "React Story",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "React Story",
+        "vi": "Bày tỏ cảm xúc Tin"
+      },
       "description": "React to a story",
       "params": [
         {
           "name": "storyId",
           "type": "string",
-          "description": "Story ID",
-          "required": true
+          "required": true,
+          "description": "Story ID"
         },
         {
           "name": "reaction",
           "type": "string",
-          "description": "Any Emoji",
-          "required": true
+          "required": true,
+          "description": "Any Emoji"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
         "facebook",
         "stories",
         "reaction"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "delete_archived_story",
-      "platform": "facebook",
-      "name": "Delete Archived Story",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Delete Archived Story",
+        "vi": "Xoá tin lưu trữ"
+      },
       "description": "Delete an archived story",
       "params": [
         {
           "name": "storyId",
           "type": "string",
-          "description": "Archived Story ID",
-          "required": true
+          "required": true,
+          "description": "Archived Story ID"
         }
       ],
       "response": [
         {
           "name": "success",
           "type": "boolean",
-          "description": "Success",
-          "required": false
+          "description": "Success"
         }
       ],
       "tags": [
@@ -3827,45 +4438,56 @@
         "stories",
         "archive",
         "delete"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_tagged_video",
-      "platform": "facebook",
-      "name": "Get Tagged Videos",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Tagged Videos",
+        "vi": "Lấy video được tag"
+      },
       "description": "Get list of videos a user is tagged in",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Entity URL/ID",
-          "required": true
+          "required": true,
+          "description": "Entity URL/ID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "taggedVideo",
           "type": "array",
-          "description": "Tagged video list",
-          "required": false
+          "description": "Tagged video list"
         }
       ],
       "tags": [
         "facebook",
         "tagged",
         "videos"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_all_message_themes",
-      "platform": "facebook",
-      "name": "Get All Message Themes",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get All Message Themes",
+        "vi": "Lấy tất cả chủ đề Messenger"
+      },
       "description": "Get messenger theme choices",
       "params": [],
       "response": [],
@@ -3873,191 +4495,253 @@
         "facebook",
         "theme",
         "messages"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_post_format_presets",
-      "platform": "facebook",
-      "name": "Post Format Presets",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Post Format Presets",
+        "vi": "Định dạng phông nền bài viết"
+      },
       "description": "Get preset backgrounds for text status",
       "params": [],
       "response": [
         {
           "name": "presets",
           "type": "object",
-          "description": "Presets info",
-          "required": false
+          "description": "Presets info"
         }
       ],
       "tags": [
         "facebook",
         "upload",
         "posts"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_user_video",
-      "platform": "facebook",
-      "name": "Get User Videos",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get User Videos",
+        "vi": "Lấy video cá nhân"
+      },
       "description": "Get videos uploaded by user",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "User URL/ID",
-          "required": true
+          "required": true,
+          "description": "User URL/ID"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "Video collection type",
-          "required": false
+          "required": false,
+          "description": "Video collection type"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Videos info object",
-          "required": false
+          "description": "Videos info object"
         }
       ],
       "tags": [
         "facebook",
         "videos",
         "user"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_group_video",
-      "platform": "facebook",
-      "name": "Get Group Videos",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Group Videos",
+        "vi": "Lấy video nhóm"
+      },
       "description": "Get videos uploaded in a group",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Group URL/ID",
-          "required": true
+          "required": true,
+          "description": "Group URL/ID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Videos list",
-          "required": false
+          "description": "Videos list"
         }
       ],
       "tags": [
         "facebook",
         "videos",
         "groups"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
       "id": "get_page_video",
-      "platform": "facebook",
-      "name": "Get Page's Videos",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Get Page's Videos",
+        "vi": "Lấy video của page"
+      },
       "description": "Get page uploaded videos",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "Page URL/ID",
-          "required": true
+          "required": true,
+          "description": "Page URL/ID"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Cursor",
-          "required": false
+          "required": false,
+          "description": "Cursor"
         }
       ],
       "response": [
         {
           "name": "result",
           "type": "object",
-          "description": "Videos result",
-          "required": false
+          "description": "Videos result"
         }
       ],
       "tags": [
         "facebook",
         "videos",
         "pages"
-      ]
+      ],
+      "updated": "2026-03-08"
     },
     {
-      "id": "get_ig_user_info",
-      "platform": "instagram",
-      "name": "Get Instagram user info",
-      "description": "avatar/url/type",
+      "id": "get_ggdrive_video_info",
+      "platforms": [
+        "ggdrive"
+      ],
+      "name": {
+        "en": "Get Google Drive video info",
+        "vi": "Lấy thông tin video Google Drive"
+      },
+      "description": "Support videos dont have download button",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL or Username of Instagram user",
-          "required": true
-        },
-        {
-          "name": "raw",
-          "type": "boolean",
-          "description": "Return the raw data? Raw data from Instagram",
-          "required": false
+          "required": true,
+          "description": "The URL of the video"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The info of the Instagram user",
-          "required": false
+          "description": "The info of the video"
+        }
+      ],
+      "tags": [
+        "ggdrive",
+        "video",
+        "info"
+      ],
+      "updated": "2025-05-19"
+    },
+    {
+      "id": "get_ig_user_info",
+      "platforms": [
+        "instagram"
+      ],
+      "name": {
+        "en": "Get Instagram user info",
+        "vi": "Lấy thông tin người dùng Instagram"
+      },
+      "description": "avatar/url/type",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "The URL or Username of Instagram user"
+        },
+        {
+          "name": "raw",
+          "type": "boolean",
+          "required": false,
+          "description": "Return the raw data? Raw data from Instagram"
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the Instagram user"
         }
       ],
       "tags": [
         "instagram",
         "user",
         "info"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_list_ig_user_stories",
-      "platform": "instagram",
-      "name": "Get Instagram user stories",
-      "description": "The URL or Username of Instagram user",
+      "platforms": [
+        "instagram"
+      ],
+      "name": {
+        "en": "Get Instagram user stories",
+        "vi": "Lấy danh sách story của user Instagram"
+      },
+      "description": "",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL or Username of Instagram user",
-          "required": true
+          "required": true,
+          "description": "The URL or Username of Instagram user"
         },
         {
           "name": "raw",
           "type": "boolean",
-          "description": "Return the raw data? Raw data from Instagram",
-          "required": false
+          "required": false,
+          "description": "Return the raw data? Raw data from Instagram"
         }
       ],
       "response": [
         {
           "name": "stories",
           "type": "array",
-          "description": "The stories of the Instagram user",
-          "required": false
+          "description": "The stories of the Instagram user"
         }
       ],
       "tags": [
@@ -4065,39 +4749,44 @@
         "user",
         "stories",
         "list"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_list_ig_user_reels",
-      "platform": "instagram",
-      "name": "Get Instagram user reels",
-      "description": "The URL or Username of Instagram user",
+      "platforms": [
+        "instagram"
+      ],
+      "name": {
+        "en": "Get Instagram user reels",
+        "vi": "Lấy danh sách reels của người dùng Instagram"
+      },
+      "description": "",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL or Username of Instagram user",
-          "required": true
+          "required": true,
+          "description": "The URL or Username of Instagram user"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         },
         {
           "name": "raw",
           "type": "boolean",
-          "description": "Return the raw data? Raw data from Instagram",
-          "required": false
+          "required": false,
+          "description": "Return the raw data? Raw data from Instagram"
         }
       ],
       "response": [
         {
           "name": "reels",
           "type": "array",
-          "description": "The reels of the Instagram user",
-          "required": false
+          "description": "The reels of the Instagram user"
         }
       ],
       "tags": [
@@ -4105,228 +4794,257 @@
         "user",
         "reels",
         "list"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_list_ig_post",
-      "platform": "instagram",
-      "name": "Get Instagram post list",
+      "platforms": [
+        "instagram"
+      ],
+      "name": {
+        "en": "Get Instagram post list",
+        "vi": "Lấy danh sách bài viết Instagram"
+      },
       "description": "Get all posts of the Instagram user",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL or Username of Instagram user",
-          "required": true
+          "required": true,
+          "description": "The URL or Username of Instagram user"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         }
       ],
       "response": [
         {
           "name": "posts",
           "type": "array",
-          "description": "The list of the Instagram post",
-          "required": false
+          "description": "The list of the Instagram post"
         }
       ],
       "tags": [
         "instagram",
         "post",
         "list"
-      ]
+      ],
+      "updated": "2025-06-07",
+      "lastChange": "Fix id and description"
     },
     {
       "id": "get_threads_user_info",
-      "platform": "threads",
-      "name": "Get Threads user info",
+      "platforms": [
+        "threads"
+      ],
+      "name": {
+        "en": "Get Threads user info",
+        "vi": "Lấy thông tin người dùng Threads"
+      },
       "description": "Support get Threads user info",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL or Username of Threads user",
-          "required": true
+          "required": true,
+          "description": "The URL or Username of Threads user"
         },
         {
           "name": "raw",
           "type": "boolean",
-          "description": "Return the raw data? Raw data from Threads",
-          "required": false
+          "required": false,
+          "description": "Return the raw data? Raw data from Threads"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The info of the Threads user",
-          "required": false
+          "description": "The info of the Threads user"
         }
       ],
       "tags": [
         "threads",
         "user",
         "info"
-      ]
+      ],
+      "updated": "2025-05-21"
     },
     {
       "id": "get_list_threads_posts",
-      "platform": "threads",
-      "name": "Get list Threads post of user",
+      "platforms": [
+        "threads"
+      ],
+      "name": {
+        "en": "Get list Threads post of user",
+        "vi": "Lấy danh sách bài viết Threads"
+      },
       "description": "Support get list Threads post from URL",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL or Username of Threads user",
-          "required": true
+          "required": true,
+          "description": "The URL or Username of Threads user"
         },
         {
           "name": "type",
           "type": "string",
-          "description": "Post type: 'Threads', 'Replies', 'Media' or 'Reposts' (default 'Threads')",
-          "required": false
+          "required": false,
+          "description": "Post type: 'Threads', 'Replies', 'Media' or 'Reposts' (default 'Threads')"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         },
         {
           "name": "raw",
           "type": "boolean",
-          "description": "Return the raw data? Raw data from Threads",
-          "required": false
+          "required": false,
+          "description": "Return the raw data? Raw data from Threads"
         }
       ],
       "response": [
         {
           "name": "posts",
           "type": "array",
-          "description": "The list of the Threads post",
-          "required": false
+          "description": "The list of the Threads post"
         }
       ],
       "tags": [
         "threads",
         "post",
         "list"
-      ]
+      ],
+      "updated": "2026-02-08",
+      "lastChange": "Support Media tab"
     },
     {
       "id": "get_tiktok_video_info",
-      "platform": "tiktok",
-      "name": "Get Tiktok video info",
-      "description": "The URL of the video",
+      "platforms": [
+        "tiktok"
+      ],
+      "name": {
+        "en": "Get Tiktok video info",
+        "vi": "Lấy thông tin video Tiktok"
+      },
+      "description": "",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL of the video",
-          "required": true
+          "required": true,
+          "description": "The URL of the video"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The info of the video",
-          "required": false
+          "description": "The info of the video"
         }
       ],
       "tags": [
         "tiktok",
         "video",
         "info"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_tiktok_user_info",
-      "platform": "tiktok",
-      "name": "Get Tiktok user info",
-      "description": "The URL of the user",
+      "platforms": [
+        "tiktok"
+      ],
+      "name": {
+        "en": "Get Tiktok user info",
+        "vi": "Lấy thông tin người dùng Tiktok"
+      },
+      "description": "id, nickname, secUid, avatar, created, verified, language, bio ...",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL of the user",
-          "required": true
+          "required": true,
+          "description": "The URL of the user"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The info of the user",
-          "required": false
+          "description": "The info of the user"
         }
       ],
       "tags": [
         "tiktok",
         "user",
         "info"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_list_tiktok_user_videos",
-      "platform": "tiktok",
-      "name": "Get Tiktok user videos",
+      "platforms": [
+        "tiktok"
+      ],
+      "name": {
+        "en": "Get Tiktok user videos",
+        "vi": "Lấy danh sách video của người dùng Tiktok"
+      },
       "description": "Support user URL or secUid input. Use cursor for pagination.",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The URL / username of the Tiktok user (optional if secuid is provided)",
-          "required": false
+          "required": false,
+          "description": "The URL / username of the Tiktok user (optional if secuid is provided)"
         },
         {
           "name": "secuid",
           "type": "string",
-          "description": "The secUid of the Tiktok user (optional if url is provided)",
-          "required": false
+          "required": false,
+          "description": "The secUid of the Tiktok user (optional if url is provided)"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "Pagination cursor (empty for first page)",
-          "required": false
+          "required": false,
+          "description": "Pagination cursor (empty for first page)"
         },
         {
           "name": "raw",
           "type": "boolean",
-          "description": "Return raw data from TikTok",
-          "required": false
+          "required": false,
+          "description": "Return raw data from TikTok"
         }
       ],
       "response": [
         {
           "name": "items",
           "type": "array",
-          "description": "The list of the user video / photo posts",
-          "required": false
+          "description": "The list of the user video / photo posts"
         },
         {
           "name": "cursor",
           "type": "string",
-          "description": "The next cursor for pagination",
-          "required": false
+          "description": "The next cursor for pagination"
         },
         {
           "name": "hasMore",
           "type": "boolean",
-          "description": "Whether there is more data to fetch",
-          "required": false
+          "description": "Whether there is more data to fetch"
         },
         {
           "name": "secUid",
           "type": "string",
-          "description": "The resolved secUid",
-          "required": false
+          "description": "The resolved secUid"
         }
       ],
       "tags": [
@@ -4334,133 +5052,413 @@
         "user",
         "videos",
         "list"
-      ]
-    },
-    {
-      "id": "get_bilibili_video_info",
-      "platform": "bilibili",
-      "name": "Get Bilibili video info",
-      "description": "Get Bilibili video info",
-      "params": [
-        {
-          "name": "url",
-          "type": "string",
-          "description": "The URL of the video",
-          "required": true
-        }
       ],
-      "response": [
-        {
-          "name": "info",
-          "type": "object",
-          "description": "The info of the video",
-          "required": false
-        }
-      ],
-      "tags": [
-        "bilibili",
-        "video"
-      ]
+      "updated": "2026-04-24"
     },
     {
       "id": "extract_douyin_url",
-      "platform": "douyin",
-      "name": "Extract Douyin URL from text",
+      "platforms": [
+        "douyin"
+      ],
+      "name": {
+        "en": "Extract Douyin URL from text",
+        "vi": "Tách URL Douyin từ nội dung"
+      },
       "description": "Support shared Douyin link (often injected video name, user name, ...)",
       "params": [
         {
           "name": "text",
           "type": "string",
-          "description": "The text contains Douyin URL",
-          "required": true
+          "required": true,
+          "description": "The text contains Douyin URL"
         }
       ],
       "response": [
         {
           "name": "url",
           "type": "string",
-          "description": "The Douyin URL",
-          "required": false
+          "description": "The Douyin URL"
         }
       ],
       "tags": [
         "extract",
         "douyin",
         "url"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_douyin_video_id",
-      "platform": "douyin",
-      "name": "Get Douyin video ID from URL",
+      "platforms": [
+        "douyin"
+      ],
+      "name": {
+        "en": "Get Douyin video ID from URL",
+        "vi": "Lấy ID video Douyin từ URL"
+      },
       "description": "Support shared Douyin link (often injected video name, user name, ...)",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The Douyin video URL ",
-          "required": true
+          "required": true,
+          "description": "The Douyin video URL "
         }
       ],
       "response": [
         {
           "name": "id",
           "type": "string",
-          "description": "The Douyin video ID",
-          "required": false
+          "description": "The Douyin video ID"
         }
       ],
       "tags": [
         "douyin",
         "video",
         "id"
-      ]
+      ],
+      "updated": "2025-05-19"
     },
     {
       "id": "get_douyin_video_info",
-      "platform": "douyin",
-      "name": "Get Douyin video info",
+      "platforms": [
+        "douyin"
+      ],
+      "name": {
+        "en": "Get Douyin video info",
+        "vi": "Lấy thông tin video Douyin"
+      },
       "description": "Support shared Douyin link (often injected video name, user name, ...)",
       "params": [
         {
           "name": "url",
           "type": "string",
-          "description": "The Douyin video URL, support shared link (injected video name, user name, ...)",
-          "required": true
+          "required": true,
+          "description": "The Douyin video URL, support shared link (injected video name, user name, ...)"
         }
       ],
       "response": [
         {
           "name": "info",
           "type": "object",
-          "description": "The Douyin video info",
-          "required": false
+          "description": "The Douyin video info"
         }
       ],
       "tags": [
         "douyin",
         "video",
         "info"
-      ]
+      ],
+      "updated": "2025-05-19"
+    },
+    {
+      "id": "get_bilibili_video_info",
+      "platforms": [
+        "bilibili"
+      ],
+      "name": {
+        "en": "Get Bilibili video info",
+        "vi": "Lấy thông tin video Bilibili"
+      },
+      "description": "Get Bilibili video info",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "The URL of the video"
+        }
+      ],
+      "response": [
+        {
+          "name": "info",
+          "type": "object",
+          "description": "The info of the video"
+        }
+      ],
+      "tags": [
+        "bilibili",
+        "video"
+      ],
+      "updated": "2025-05-19"
+    },
+    {
+      "id": "get_best_video_download",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "threads",
+        "tiktok",
+        "douyin",
+        "ggdrive",
+        "bilibili"
+      ],
+      "name": {
+        "en": "Find best quality video download",
+        "vi": "Tìm link tải video nét nhất"
+      },
+      "description": "Find the highest quality version. If it is split into separate video/audio, returns both links (type = merge) to use with merge_video_audio API",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": false,
+          "description": "Video URL (Facebook, TikTok, Douyin, Google Drive, Bilibili). Leave empty if using video_info"
+        },
+        {
+          "name": "video_info",
+          "type": "object",
+          "required": false,
+          "description": "Video info from get_..._video_info APIs (has variants), or a video item from IG reels/stories/posts list APIs. Use instead of url"
+        }
+      ],
+      "response": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "direct = one link with sound, merge = video + audio need merging"
+        },
+        {
+          "name": "resolution",
+          "type": "number",
+          "description": "Resolution (e.g. 1080), 0 = unknown"
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "description": "Download link (type = direct)"
+        },
+        {
+          "name": "video",
+          "type": "string",
+          "description": "Video-only stream link (type = merge)"
+        },
+        {
+          "name": "audio",
+          "type": "string",
+          "description": "Audio stream link (type = merge)"
+        }
+      ],
+      "tags": [
+        "video",
+        "download",
+        "best",
+        "quality",
+        "hd",
+        "merge",
+        "facebook",
+        "instagram",
+        "threads",
+        "tiktok",
+        "douyin",
+        "ggdrive",
+        "bilibili"
+      ],
+      "updated": "2026-09-26"
+    },
+    {
+      "id": "download_video_best_quality",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "threads",
+        "tiktok",
+        "douyin",
+        "ggdrive",
+        "bilibili"
+      ],
+      "name": {
+        "en": "Download best quality video",
+        "vi": "Tải video nét nhất"
+      },
+      "description": "Find the best version and download it. Split video/audio is merged right in the browser (no re-encoding, low memory)",
+      "params": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": false,
+          "description": "Video URL (Facebook, TikTok, Douyin, Google Drive, Bilibili). Leave empty if using video_info"
+        },
+        {
+          "name": "video_info",
+          "type": "object",
+          "required": false,
+          "description": "Video info from get_..._video_info APIs (has variants), or a video item from IG reels/stories/posts list APIs. Use instead of url"
+        },
+        {
+          "name": "file_name",
+          "type": "string",
+          "required": false,
+          "description": "File name to save (no extension needed). Default = video ID"
+        }
+      ],
+      "response": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "direct = downloaded directly, merge = merged video + audio"
+        },
+        {
+          "name": "resolution",
+          "type": "number",
+          "description": "Resolution, 0 = unknown"
+        },
+        {
+          "name": "file_name",
+          "type": "string",
+          "description": "Saved file name"
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "description": "File size (bytes), 0 if downloaded directly"
+        }
+      ],
+      "tags": [
+        "video",
+        "download",
+        "best",
+        "quality",
+        "hd",
+        "merge",
+        "facebook",
+        "instagram",
+        "threads",
+        "tiktok",
+        "douyin",
+        "ggdrive",
+        "bilibili"
+      ],
+      "updated": "2026-09-26"
+    },
+    {
+      "id": "merge_video_audio",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "threads",
+        "tiktok",
+        "douyin",
+        "ggdrive",
+        "bilibili"
+      ],
+      "name": {
+        "en": "Merge video + audio",
+        "vi": "Gộp video + audio"
+      },
+      "description": "Merge a video-only link + an audio link into one file and download it (no re-encoding, no quality loss)",
+      "params": [
+        {
+          "name": "video_url",
+          "type": "string",
+          "required": true,
+          "description": "Video stream link"
+        },
+        {
+          "name": "audio_url",
+          "type": "string",
+          "required": true,
+          "description": "Audio stream link"
+        },
+        {
+          "name": "file_name",
+          "type": "string",
+          "required": false,
+          "description": "File name to save (no extension needed)",
+          "default": "video"
+        }
+      ],
+      "response": [
+        {
+          "name": "file_name",
+          "type": "string",
+          "description": "Saved file name"
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "description": "File size (bytes)"
+        },
+        {
+          "name": "extension",
+          "type": "string",
+          "description": "File extension (.mp4 / .mkv)"
+        }
+      ],
+      "tags": [
+        "video",
+        "audio",
+        "merge",
+        "download",
+        "facebook",
+        "instagram",
+        "threads",
+        "tiktok",
+        "douyin",
+        "ggdrive",
+        "bilibili"
+      ],
+      "updated": "2026-09-26"
     },
     {
       "id": "get_ext_version",
-      "platform": "utils",
-      "name": "Get extension version",
-      "description": "Version of FB AIO",
+      "platforms": [
+        "general"
+      ],
+      "name": {
+        "en": "Get extension version",
+        "vi": "Lấy version Extension"
+      },
+      "description": "Version of Social AIO",
       "params": [],
       "response": [
         {
           "name": "version",
           "type": "string",
-          "description": "Version",
-          "required": false
+          "description": "Version"
         }
       ],
       "tags": [
         "fbaio",
         "get",
         "version"
+      ]
+    },
+    {
+      "id": "fb.e2ee.mergeMessages",
+      "platforms": [
+        "facebook"
+      ],
+      "name": {
+        "en": "Merge E2EE messages",
+        "vi": "Gộp tin nhắn E2EE"
+      },
+      "description": "",
+      "params": [
+        {
+          "name": "messages",
+          "type": "array",
+          "required": true,
+          "description": "Existing list"
+        },
+        {
+          "name": "incoming",
+          "type": "array",
+          "required": true,
+          "description": "Incoming"
+        }
+      ],
+      "response": [
+        {
+          "name": "merged",
+          "type": "array",
+          "description": "Merged list"
+        }
+      ],
+      "tags": [
+        "facebook",
+        "e2ee",
+        "messages"
       ]
     }
   ]

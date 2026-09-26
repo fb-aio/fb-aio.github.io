@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T22:01:54.042Z",
+  "generatedAt": "2026-09-26T18:13:04.780Z",
   "rootPath": "src",
   "structure": [
     {
@@ -12,6 +12,13 @@
           "key": "apis/bilibili",
           "type": "folder",
           "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/bilibili/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
             {
               "title": "core.ts",
               "key": "apis/bilibili/core.ts",
@@ -26,6 +33,13 @@
           "key": "apis/douyin",
           "type": "folder",
           "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/douyin/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
             {
               "title": "core.ts",
               "key": "apis/douyin/core.ts",
@@ -594,6 +608,13 @@
               "isLeaf": true
             },
             {
+              "title": "activities.test.ts",
+              "key": "apis/facebook/activities.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "activities.ts",
               "key": "apis/facebook/activities.ts",
               "type": "file",
@@ -631,6 +652,13 @@
             {
               "title": "checkins.ts",
               "key": "apis/facebook/checkins.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "comments.test.ts",
+              "key": "apis/facebook/comments.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -699,6 +727,13 @@
               "isLeaf": true
             },
             {
+              "title": "getIds.test.ts",
+              "key": "apis/facebook/getIds.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "getIds.ts",
               "key": "apis/facebook/getIds.ts",
               "type": "file",
@@ -715,6 +750,13 @@
             {
               "title": "groupMembers.ts",
               "key": "apis/facebook/groupMembers.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "groups.test.ts",
+              "key": "apis/facebook/groups.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -790,6 +832,13 @@
               "isLeaf": true
             },
             {
+              "title": "posts.test.ts",
+              "key": "apis/facebook/posts.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "posts.ts",
               "key": "apis/facebook/posts.ts",
               "type": "file",
@@ -825,6 +874,13 @@
               "isLeaf": true
             },
             {
+              "title": "search.test.ts",
+              "key": "apis/facebook/search.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "search.ts",
               "key": "apis/facebook/search.ts",
               "type": "file",
@@ -839,6 +895,13 @@
               "isLeaf": true
             },
             {
+              "title": "shares.test.ts",
+              "key": "apis/facebook/shares.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
               "title": "shares.ts",
               "key": "apis/facebook/shares.ts",
               "type": "file",
@@ -848,6 +911,13 @@
             {
               "title": "stories.ts",
               "key": "apis/facebook/stories.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "tagged.test.ts",
+              "key": "apis/facebook/tagged.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -897,6 +967,13 @@
             {
               "title": "core.ts",
               "key": "apis/ggdrive/core.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "driveAuth.test.ts",
+              "key": "apis/ggdrive/driveAuth.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -974,6 +1051,13 @@
             {
               "title": "highlights.ts",
               "key": "apis/instagram/highlights.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "instagram.test.ts",
+              "key": "apis/instagram/instagram.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -1089,6 +1173,13 @@
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
+            },
+            {
+              "title": "threads.test.ts",
+              "key": "apis/threads/threads.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
             }
           ]
         },
@@ -1097,6 +1188,13 @@
           "key": "apis/tiktok",
           "type": "folder",
           "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/tiktok/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
             {
               "title": "core.ts",
               "key": "apis/tiktok/core.ts",
@@ -2584,6 +2682,13 @@
           "isLeaf": true
         },
         {
+          "title": "AppErrorBoundary.tsx",
+          "key": "components/AppErrorBoundary.tsx",
+          "type": "file",
+          "extension": ".tsx",
+          "isLeaf": true
+        },
+        {
           "title": "ArchivedStoryViewer.tsx",
           "key": "components/ArchivedStoryViewer.tsx",
           "type": "file",
@@ -2864,6 +2969,13 @@
           "isLeaf": true
         },
         {
+          "title": "constants.test.ts",
+          "key": "constants/constants.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "index.ts",
           "key": "constants/index.ts",
           "type": "file",
@@ -2955,6 +3067,13 @@
           "isLeaf": true
         },
         {
+          "title": "useLanguage.test.ts",
+          "key": "hooks/useLanguage.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "useLanguage.ts",
           "key": "hooks/useLanguage.ts",
           "type": "file",
@@ -3011,6 +3130,13 @@
           "isLeaf": true
         },
         {
+          "title": "useVIP.test.tsx",
+          "key": "hooks/useVIP.test.tsx",
+          "type": "file",
+          "extension": ".tsx",
+          "isLeaf": true
+        },
+        {
           "title": "useVIP.tsx",
           "key": "hooks/useVIP.tsx",
           "type": "file",
@@ -3045,6 +3171,13 @@
       "key": "routes",
       "type": "folder",
       "children": [
+        {
+          "title": "menus.test.ts",
+          "key": "routes/menus.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
         {
           "title": "menus.ts",
           "key": "routes/menus.ts",
@@ -3124,6 +3257,20 @@
                   "type": "file",
                   "extension": ".ts",
                   "isLeaf": true
+                },
+                {
+                  "title": "video.test.ts",
+                  "key": "screens/Apis/categories/video.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "video.ts",
+                  "key": "screens/Apis/categories/video.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
                 }
               ]
             },
@@ -3158,6 +3305,13 @@
             {
               "title": "api-catalog.ignore.ts",
               "key": "screens/Apis/api-catalog.ignore.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "apis.test.ts",
+              "key": "screens/Apis/apis.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -4220,6 +4374,13 @@
               ]
             },
             {
+              "title": "AddVIP.test.tsx",
+              "key": "screens/ForDev/AddVIP.test.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
               "title": "AddVIP.tsx",
               "key": "screens/ForDev/AddVIP.tsx",
               "type": "file",
@@ -4238,6 +4399,27 @@
               "key": "screens/ForDev/Logs.tsx",
               "type": "file",
               "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "ReviewQueue.tsx",
+              "key": "screens/ForDev/ReviewQueue.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "reviewReward.test.ts",
+              "key": "screens/ForDev/reviewReward.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "reviewReward.ts",
+              "key": "screens/ForDev/reviewReward.ts",
+              "type": "file",
+              "extension": ".ts",
               "isLeaf": true
             },
             {
@@ -5431,6 +5613,13 @@
           "type": "folder",
           "children": [
             {
+              "title": "downloadBulkService.test.tsx",
+              "key": "services/downloadBulk/downloadBulkService.test.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
               "title": "downloadBulkService.tsx",
               "key": "services/downloadBulk/downloadBulkService.tsx",
               "type": "file",
@@ -5440,6 +5629,104 @@
             {
               "title": "types.ts",
               "key": "services/downloadBulk/types.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "videoMerge",
+          "key": "services/videoMerge",
+          "type": "folder",
+          "children": [
+            {
+              "title": "__fixtures__",
+              "key": "services/videoMerge/__fixtures__",
+              "type": "folder",
+              "children": [
+                {
+                  "title": "audio_only.m4a",
+                  "key": "services/videoMerge/__fixtures__/audio_only.m4a",
+                  "type": "file",
+                  "extension": ".m4a",
+                  "isLeaf": true
+                },
+                {
+                  "title": "audio_only.webm",
+                  "key": "services/videoMerge/__fixtures__/audio_only.webm",
+                  "type": "file",
+                  "extension": ".webm",
+                  "isLeaf": true
+                },
+                {
+                  "title": "video_only.mp4",
+                  "key": "services/videoMerge/__fixtures__/video_only.mp4",
+                  "type": "file",
+                  "extension": ".mp4",
+                  "isLeaf": true
+                },
+                {
+                  "title": "video_only.webm",
+                  "key": "services/videoMerge/__fixtures__/video_only.webm",
+                  "type": "file",
+                  "extension": ".webm",
+                  "isLeaf": true
+                }
+              ]
+            },
+            {
+              "title": "bestStreams.ts",
+              "key": "services/videoMerge/bestStreams.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "chunkedFetch.ts",
+              "key": "services/videoMerge/chunkedFetch.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "downloadBest.ts",
+              "key": "services/videoMerge/downloadBest.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "getVideoInfoFromUrl.ts",
+              "key": "services/videoMerge/getVideoInfoFromUrl.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "mergeVideoAudio.ts",
+              "key": "services/videoMerge/mergeVideoAudio.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "streaming.test.ts",
+              "key": "services/videoMerge/streaming.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "tempStorage.ts",
+              "key": "services/videoMerge/tempStorage.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "videoMerge.test.ts",
+              "key": "services/videoMerge/videoMerge.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -5475,6 +5762,13 @@
           "isLeaf": true
         },
         {
+          "title": "index.test.ts",
+          "key": "store/index.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "index.ts",
           "key": "store/index.ts",
           "type": "file",
@@ -5503,6 +5797,20 @@
       "type": "folder",
       "children": [
         {
+          "title": "appUpdate.test.ts",
+          "key": "utils/appUpdate.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
+          "title": "appUpdate.ts",
+          "key": "utils/appUpdate.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "autoRun.ts",
           "key": "utils/autoRun.ts",
           "type": "file",
@@ -5517,6 +5825,13 @@
           "isLeaf": true
         },
         {
+          "title": "docid.test.ts",
+          "key": "utils/docid.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "docid.ts",
           "key": "utils/docid.ts",
           "type": "file",
@@ -5526,6 +5841,13 @@
         {
           "title": "download.ts",
           "key": "utils/download.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
+          "title": "encrypt.test.ts",
+          "key": "utils/encrypt.test.ts",
           "type": "file",
           "extension": ".ts",
           "isLeaf": true
@@ -5552,6 +5874,13 @@
           "isLeaf": true
         },
         {
+          "title": "helper.test.ts",
+          "key": "utils/helper.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "helper.ts",
           "key": "utils/helper.ts",
           "type": "file",
@@ -5566,8 +5895,22 @@
           "isLeaf": true
         },
         {
+          "title": "invisible.test.ts",
+          "key": "utils/invisible.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "invisible.ts",
           "key": "utils/invisible.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
+          "title": "ipadress.test.ts",
+          "key": "utils/ipadress.test.ts",
           "type": "file",
           "extension": ".ts",
           "isLeaf": true
@@ -5594,6 +5937,13 @@
           "isLeaf": true
         },
         {
+          "title": "log.test.ts",
+          "key": "utils/log.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "log.ts",
           "key": "utils/log.ts",
           "type": "file",
@@ -5601,8 +5951,22 @@
           "isLeaf": true
         },
         {
+          "title": "parse.test.ts",
+          "key": "utils/parse.test.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
           "title": "parse.ts",
           "key": "utils/parse.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
+        {
+          "title": "postMakerUtils.test.ts",
+          "key": "utils/postMakerUtils.test.ts",
           "type": "file",
           "extension": ".ts",
           "isLeaf": true
@@ -5626,6 +5990,13 @@
           "key": "utils/smoothScroll.js",
           "type": "file",
           "extension": ".js",
+          "isLeaf": true
+        },
+        {
+          "title": "versionManager.test.ts",
+          "key": "utils/versionManager.test.ts",
+          "type": "file",
+          "extension": ".ts",
           "isLeaf": true
         },
         {

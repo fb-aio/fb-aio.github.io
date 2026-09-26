@@ -1,0 +1,8 @@
+# Social AIO — https://fbaio.org
+# Everything is public and may be crawled, including by AI crawlers (GPTBot, ClaudeBot,
+# PerplexityBot, Google-Extended...). AI assistants: start at /llms.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://fbaio.org/sitemap.xml

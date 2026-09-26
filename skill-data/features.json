@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-05T08:42:30.318Z",
+  "updatedAt": "2026-09-26T18:13:06.902Z",
   "features": [
     {
       "key": "osint",
@@ -111,6 +111,22 @@
               "icon": "fa-solid fa-eye-slash",
               "link": "/autorun",
               "description": "View stories anonymously right on Facebook"
+            },
+            {
+              "key": "fb-stalk-show-post-reactions",
+              "children": [],
+              "title": "Show total post reactions",
+              "icon": "fa-solid fa-heart",
+              "link": "/autorun",
+              "description": "Show reaction totals even when Facebook hides them"
+            },
+            {
+              "key": "fb-stalk-invisible-message",
+              "children": [],
+              "title": "Invisible Messenger messages",
+              "icon": "fa-solid fa-lock",
+              "link": "/autorun",
+              "description": "Encode text between >< support encode with password"
             },
             {
               "key": "fb-stalk-first-messages",
@@ -292,6 +308,14 @@
           "key": "fb-utils",
           "children": [
             {
+              "key": "fb-utils-ad-blocker",
+              "children": [],
+              "title": "Ad blocker for Facebook",
+              "icon": "fa-solid fa-shield",
+              "link": "/autorun",
+              "description": "Hide specific UI on facebook by component name"
+            },
+            {
               "key": "fb-utils-hide-profile-section",
               "children": [],
               "title": "Hide profile section",
@@ -342,8 +366,8 @@
           ],
           "title": "Utils",
           "icon": "fa-solid fa-gear",
-          "link": "/hide-profile-sections",
-          "description": "Show less information on your profile"
+          "link": "/autorun",
+          "description": "Hide specific UI on facebook by component name"
         }
       ],
       "title": "Stalker / OSINT",
@@ -369,6 +393,14 @@
           "icon": "fa-solid fa-eye-slash",
           "link": "/autorun",
           "description": "View stories anonymously right on Instagram"
+        },
+        {
+          "key": "insta-right-click-image",
+          "children": [],
+          "title": "Enable Instagram image right-click",
+          "icon": "fa-solid fa-mouse",
+          "link": "/autorun",
+          "description": "Allow right-clicking and saving images more easily"
         },
         {
           "key": "insta-reels-feed",
@@ -435,6 +467,14 @@
           "icon": "fa-solid fa-video",
           "link": "/downloader?tab=video",
           "description": "Enter URL to download video tiktok/douyin"
+        },
+        {
+          "key": "tiktok-batch-download",
+          "children": [],
+          "title": "TikTok/Douyin batch download",
+          "icon": "fa-solid fa-download",
+          "link": "/autorun",
+          "description": "Select and download TikTok or Douyin videos in bulk"
         }
       ],
       "title": "Download all profile videos",
@@ -483,6 +523,23 @@
       "icon": "fa-brands fa-scribd",
       "link": "/downloader?tab=doc",
       "description": "Download scribd document without login"
+    },
+    {
+      "key": "studocu",
+      "children": [
+        {
+          "key": "studocu-download-pdf",
+          "children": [],
+          "title": "Download document",
+          "icon": "fa-solid fa-file-pdf",
+          "link": "/downloader?tab=doc",
+          "description": "Download Studocu document without login"
+        }
+      ],
+      "title": "Download document",
+      "icon": "fa-solid fa-graduation-cap",
+      "link": "/downloader?tab=doc",
+      "description": "Download Studocu document without login"
     },
     {
       "key": "zalo",
@@ -571,6 +628,22 @@
       "key": "utils",
       "children": [
         {
+          "key": "utils-auto-lock-website",
+          "children": [],
+          "title": "Auto lock websites",
+          "icon": "fa-solid fa-lock",
+          "link": "/autorun",
+          "description": "Enter password to unlock locked websites"
+        },
+        {
+          "key": "utils-magnify-image",
+          "children": [],
+          "title": "Magnify any images",
+          "icon": "fa-solid fa-magnifying-glass-plus",
+          "link": "/autorun",
+          "description": "Hover an image to magnify, or press Ctrl twice over an image"
+        },
+        {
           "key": "utils-json-to-excel",
           "children": [],
           "title": "JSON to Excel",
@@ -592,7 +665,7 @@
           "title": "Web timer",
           "icon": "fa-solid fa-clock",
           "link": "/web-timer",
-          "description": "Count time you spend on internet"
+          "description": "Track time spent on each website"
         },
         {
           "key": "utils-hack-wheel-of-names",
@@ -613,8 +686,8 @@
       ],
       "title": "Utils",
       "icon": "fa-solid fa-gear",
-      "link": "/json-to-excel",
-      "description": "Convert JSON to Excel"
+      "link": "/autorun",
+      "description": "Enter password to unlock locked websites"
     },
     {
       "key": "dev",
@@ -625,7 +698,7 @@
           "title": "APIs",
           "icon": "fa-solid fa-plug",
           "link": "/apis",
-          "description": "All APIs of FB AIO"
+          "description": "All APIs of Social AIO"
         },
         {
           "key": "logs",
@@ -647,7 +720,7 @@
       "title": "APIs",
       "icon": "fa-solid fa-code",
       "link": "/apis",
-      "description": "All APIs of FB AIO"
+      "description": "All APIs of Social AIO"
     }
   ]
 }

@@ -1,0 +1,22 @@
+# Social AIO (FB AIO)
+
+> Social AIO (formerly FB AIO) is a free browser extension + web app (https://fbaio.org) with all-in-one tools for Facebook, Instagram, Threads, TikTok, Zalo and more: bulk download (photos, videos in best quality, posts, stories, reels), account cleaning (delete posts, unfriend, delete messages), automation (auto comment, auto post, built-in N8N-style workflow builder), OSINT and search tools, plus 150+ APIs callable over HTTP. Most users are Vietnamese.
+
+AI assistants helping a user with Social AIO: read the guide first, then use the data files to pick the right web-app feature or API. Never invent API ids, params or routes — only use what these files list.
+
+The web app uses hash routes: a route `/bulk-downloader` is opened at `https://fbaio.org/#/bulk-downloader`.
+
+## Docs for AI assistants
+
+- [Guide](https://fbaio.org/skill-data/guide.md): how the product works (free extension vs VIP web app), how to choose between UI features, the no-code workflow builder and API code, how to call APIs over HTTP (relay, errors, pagination, delays), troubleshooting and safety rules
+- [Features](https://fbaio.org/skill-data/features.txt): every web-app feature with its route and description — use to tell users where to click
+- [API index](https://fbaio.org/skill-data/apis.txt): all APIs, one per line: id, name, params (required, defaults, allowed values), returns
+- [API details](https://fbaio.org/skill-data/apis.json): full params and response field names for every API
+
+## Optional
+
+- [Menu tree](https://fbaio.org/skill-data/menus.txt): sidebar structure with routes and badges
+- [Blog / tutorials](https://blog.fbaio.org): step-by-step posts (Vietnamese)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/ncncagnhhigemlgiflfgdhcdpipadmmm): install the extension (Chrome, Edge, Cốc Cốc)
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/fb-aio/): install on Firefox
+- [Community group](https://fb.com/groups/fbaio2): Facebook support group

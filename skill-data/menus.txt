@@ -62,7 +62,7 @@ OSINT Tools
   /osint-sources | OSINT sources
   /webcheck | WebCheck
   ---
-  /map | Map (no-ext)
+  /map | Map [NEW] (no-ext)
   /tip | Tip (no-ext)
 Utils
   /json-to-excel | JSON to Excel [HOT] (no-ext)
@@ -117,7 +117,7 @@ Games
   /nasa-solar | NASA Solar
   /solar-system | Solar System
   /multiverse | Multiverse
-  /fbaio | FB AIO [HOT]
+  /fbaio | Social AIO [HOT]
 ---
 Help
   /FAQ | FAQ (no-ext)
