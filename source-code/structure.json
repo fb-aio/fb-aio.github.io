@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T18:29:44.800Z",
+  "generatedAt": "2026-09-27T02:05:17.551Z",
   "rootPath": "src",
   "structure": [
     {
@@ -2668,6 +2668,27 @@
           ]
         },
         {
+          "title": "RequestQueue",
+          "key": "components/RequestQueue",
+          "type": "folder",
+          "children": [
+            {
+              "title": "QueueConfigEditor.tsx",
+              "key": "components/RequestQueue/QueueConfigEditor.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "RequestQueueWidget.tsx",
+              "key": "components/RequestQueue/RequestQueueWidget.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
           "title": "ActionButton.tsx",
           "key": "components/ActionButton.tsx",
           "type": "file",
@@ -3010,6 +3031,13 @@
       "key": "hooks",
       "type": "folder",
       "children": [
+        {
+          "title": "useAction.queue.test.tsx",
+          "key": "hooks/useAction.queue.test.tsx",
+          "type": "file",
+          "extension": ".tsx",
+          "isLeaf": true
+        },
         {
           "title": "useAction.tsx",
           "key": "hooks/useAction.tsx",
@@ -4927,6 +4955,146 @@
               ]
             },
             {
+              "title": "recipes",
+              "key": "screens/N8n/recipes",
+              "type": "folder",
+              "children": [
+                {
+                  "title": "templates",
+                  "key": "screens/N8n/recipes/templates",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "title": "cleanup.ts",
+                      "key": "screens/N8n/recipes/templates/cleanup.ts",
+                      "type": "file",
+                      "extension": ".ts",
+                      "isLeaf": true
+                    },
+                    {
+                      "title": "collect.ts",
+                      "key": "screens/N8n/recipes/templates/collect.ts",
+                      "type": "file",
+                      "extension": ".ts",
+                      "isLeaf": true
+                    },
+                    {
+                      "title": "engage.ts",
+                      "key": "screens/N8n/recipes/templates/engage.ts",
+                      "type": "file",
+                      "extension": ".ts",
+                      "isLeaf": true
+                    },
+                    {
+                      "title": "monitor.ts",
+                      "key": "screens/N8n/recipes/templates/monitor.ts",
+                      "type": "file",
+                      "extension": ".ts",
+                      "isLeaf": true
+                    },
+                    {
+                      "title": "shared.ts",
+                      "key": "screens/N8n/recipes/templates/shared.ts",
+                      "type": "file",
+                      "extension": ".ts",
+                      "isLeaf": true
+                    }
+                  ]
+                },
+                {
+                  "title": "aiImport.ts",
+                  "key": "screens/N8n/recipes/aiImport.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "aiPrompt.ts",
+                  "key": "screens/N8n/recipes/aiPrompt.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "apiHelpers.ts",
+                  "key": "screens/N8n/recipes/apiHelpers.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "paginate.ts",
+                  "key": "screens/N8n/recipes/paginate.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "recipeCore.test.ts",
+                  "key": "screens/N8n/recipes/recipeCore.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "recipes.test.ts",
+                  "key": "screens/N8n/recipes/recipes.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "recipes.ts",
+                  "key": "screens/N8n/recipes/recipes.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "recipesMore.test.ts",
+                  "key": "screens/N8n/recipes/recipesMore.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "RecipesPanel.tsx",
+                  "key": "screens/N8n/recipes/RecipesPanel.tsx",
+                  "type": "file",
+                  "extension": ".tsx",
+                  "isLeaf": true
+                },
+                {
+                  "title": "runRecipe.ts",
+                  "key": "screens/N8n/recipes/runRecipe.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "schedule.ts",
+                  "key": "screens/N8n/recipes/schedule.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "useScheduledRun.test.tsx",
+                  "key": "screens/N8n/recipes/useScheduledRun.test.tsx",
+                  "type": "file",
+                  "extension": ".tsx",
+                  "isLeaf": true
+                },
+                {
+                  "title": "useScheduledRun.ts",
+                  "key": "screens/N8n/recipes/useScheduledRun.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                }
+              ]
+            },
+            {
               "title": "apiParamResolver.test.ts",
               "key": "screens/N8n/apiParamResolver.test.ts",
               "type": "file",
@@ -5636,6 +5804,27 @@
             {
               "title": "types.ts",
               "key": "services/downloadBulk/types.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "requestQueue",
+          "key": "services/requestQueue",
+          "type": "folder",
+          "children": [
+            {
+              "title": "queue.test.ts",
+              "key": "services/requestQueue/queue.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "queue.ts",
+              "key": "services/requestQueue/queue.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true

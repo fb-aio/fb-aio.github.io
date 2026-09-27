@@ -1,4 +1,4 @@
-# Social AIO (FB AIO) API index — 150 APIs — generated 2026-09-26
+# Social AIO (FB AIO) API index — 150 APIs — generated 2026-09-27
 # Format: id — name | params (* required, =default, {allowed|values}) | returns
 # Full details (param descriptions, types): apis.json. Usage guide: guide.md
 
@@ -46,7 +46,7 @@ get_check_ins — Get check-ins (Get checked-in places) | params: url*, cursor |
 create_comment — Create comment (Create comment on post) | params: post*, comment*, group | returns: url
 reply_to_comment — Reply to comment (Reply to a comment) | params: postID*, parentCommentID*, comment*, feedLocation, groupID, ranges | returns: url
 undo_react_to_comment — Undo react to comment (Remove reaction from a comment) | params: comment_id* | returns: result
-react_to_comment — React to comment (Add reaction to comment) | params: comment_id*, post_id*, reaction* | returns: result
+react_to_comment — React to comment (Add reaction to comment) | params: comment_id*, post_id, reaction* | returns: result
 get_comment_info — Get fb comment info (Get specific comment info fb) | params: comment_id* | returns: comment
 get_fb_dtsg — Get fb_dtsg (Get fb_dtsg for requests) | params: (none) | returns: fb_dtsg
 get_access_token — Get fb access token (Get EAAB/EAAG/... Token) | params: type* | returns: token

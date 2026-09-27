@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T18:29:47.181Z",
+  "updatedAt": "2026-09-27T02:05:20.097Z",
   "items": [
     {
       "label": "Search features",
@@ -99,10 +99,10 @@
           "badge": "NEW"
         },
         {
-          "label": "N8N",
+          "label": "N8N - Automation",
           "path": "/n8n",
           "icon": "fa-solid fa-diagram-project",
-          "badge": "WIP"
+          "badge": "NEW"
         }
       ]
     },

@@ -16,7 +16,7 @@ Automation
   /auto/comment | Comment [NEW]
   /auto-post-fb | Auto Post [WIP]
   /apis | APIs [NEW]
-  /n8n | N8N [WIP]
+  /n8n | N8N - Automation [NEW]
 Clean Facebook
   /activities | Activities [NEW]
   /posts | Posts [HOT]

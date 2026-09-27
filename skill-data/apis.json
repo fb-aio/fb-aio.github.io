@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T18:29:47.182Z",
+  "updatedAt": "2026-09-27T02:05:20.099Z",
   "apis": [
     {
       "id": "get_fb_page_transparency",
@@ -1661,14 +1661,14 @@
         {
           "name": "post_id",
           "type": "string",
-          "required": true,
-          "description": "Post URL/ID"
+          "required": false,
+          "description": "Post URL/ID (not needed when comment_id comes from get_list_fb_comment)"
         },
         {
           "name": "reaction",
           "type": "string",
           "required": true,
-          "description": "Reaction ID"
+          "description": "Reaction: LIKE, LOVE, HAHA, WOW, SAD, ANGRY"
         }
       ],
       "response": [

@@ -29,7 +29,7 @@ Never invent an API id, param name or route. If it is not in these files, it doe
 ## 2. How to help — decide the path first
 
 1. **User just wants a result (most users):** find the feature in `features.txt` / `menus.txt`, then give short numbered steps: open `https://fbaio.org/#/<route>` → what to paste/choose → which button. Prefer this over code for non-technical users.
-2. **User wants automation without coding:** the built-in workflow builder at `/n8n` (drag nodes, one node = one API from `apis.txt`, run in the browser, no server needed).
+2. **User wants automation without coding:** `/n8n` → tab **"Mẫu dùng ngay / Recipes"** has ready-made automations — **collect:** export post comments, phone leads merged from many posts (one row per person), giveaway winner picker (min tagged friends, keyword, one entry/person, exclude list), filter group posts by keyword, engagement report, search group members, export members of a group I admin, export friends, bulk download best-quality videos of a page/profile/group, export + download a TikTok channel, export an Instagram account's posts; **engage:** auto-accept friend requests, auto-comment new group posts, auto-reply to comments with keywords on my post (never twice); **monitor:** alert on new posts, find leads across many groups, competitor spy (top posts of many pages), upcoming friend birthdays; **clean-up (dry run by default):** cancel old sent friend requests, bulk leave unused groups (never admin groups), bulk unfriend by rules/list — fill a form, Run, export Excel, optionally repeat on a timer while the tab is open. Nothing fits → write a workflow for them (section 9) and tell them to paste it via **"Nhờ AI viết workflow"**.
 3. **User wants to integrate with their own code / external n8n / Make / Zapier / Google Sheets:** use the HTTP relay (section 3).
 4. **User only needs one quick call to test:** `/apis` → pick the API → fill params → "Try". Results can be copied as JSON; `/json-to-excel` turns JSON into Excel.
 
@@ -108,3 +108,53 @@ When writing code: one function per API call, check `error`, add delay + max-ite
 
 - Only act on accounts/data the user is allowed to access. Mass actions (auto comment, add friends, delete) can get accounts restricted — recommend small batches and delays.
 - Never ask for or share passwords, cookies, access tokens or the Client ID publicly.
+
+## 9. Workflow JSON for N8N (write automations the user pastes into `/n8n`)
+
+Runs in the user's browser with their login — no server, no code on their machine. Reply with ONE ```json block:
+
+```json
+{
+  "name": "Short name",
+  "description": "What it does, 1 sentence",
+  "inputs": [
+    { "key": "url", "label": { "vi": "Link nhóm", "en": "Group URL" }, "type": "text", "required": true },
+    { "key": "max", "label": { "vi": "Tối đa", "en": "Max" }, "type": "number", "default": 100, "min": 1, "max": 1000 }
+  ],
+  "nodes": [
+    { "id": "start", "type": "manual_trigger", "data": { "label": "Start" } },
+    { "id": "fetch", "type": "code", "data": { "label": "Fetch", "code": "return await fetchAll('get_list_fb_group_posts', { url: getConfig('url') }, { max: getConfig('max') });" } },
+    { "id": "rows", "type": "code", "data": { "label": "Table", "code": "const list = [].concat(inputs.default ?? []);\nreturn list.map(p => ({ Link: p.url, Text: p.content?.text }));" } },
+    { "id": "out", "type": "workflow_output", "data": { "label": "Output" } }
+  ],
+  "edges": [
+    { "source": "start", "target": "fetch" }, { "source": "fetch", "target": "rows" }, { "source": "rows", "target": "out" }
+  ]
+}
+```
+
+- `inputs` become a form; values are read with `getConfig('key')` (numbers already converted, text trimmed). Types: `text`, `textarea`, `number`, `switch`. Multi-value input = `textarea`, one per line: `getConfig('urls').split('\n').map(s => s.trim()).filter(Boolean)`.
+- The last node's output (array of flat objects) is shown as a table with Excel/CSV/JSON export — use readable column names.
+- Code nodes are async JavaScript. Previous node's output: `const list = [].concat(inputs.default ?? []);`
+- Helpers inside code nodes (all available as plain functions):
+  - `await callApi(id, params)` — any API in `apis.txt`. Returns the API result **directly** (not wrapped); **throws** on error or missing required params. Wrap in `try/catch` inside loops so one failure doesn't stop the batch.
+  - Every `callApi` / `fetchAll` request is **automatically spaced 1.5–3 s apart, max 20 per minute** (shared by all running workflows), and all requests pause for 30 min if Facebook signals blocking. Bursts get accounts flagged for "automated behavior" — so keep `max` small and don't try to work around the spacing (e.g. with `Promise.all`).
+  - `await fetchAll(id, params, { max, maxPages, delayMs })` — list APIs. Returns a **flat array of items** (it finds the list inside the response and follows the cursor). `max` counts items. De-duplicates on `id` / `post_id` / `uid`.
+  - `progress(text)` — show progress. `console.log(x)` — appears in the run log; use it to show the user a sample when unsure of a field.
+  - `loadMemory(key, fallback)` / `saveMemory(key, value)` — **synchronous**, JSON values, stored in this browser, shared by all workflows → prefix keys with something unique, e.g. `'mywf:done:' + url`. Keep lists bounded (`.slice(-2000)`).
+  - `spin('{Hi|Hello} bạn')` — spintax. `await randomSleep(minSec, maxSec)` — random pause, stops instantly when the user presses Stop. `await sleep(ms)`.
+  - `throw new Error('...')` stops the workflow and shows the message to the user.
+- Key fields of common results (enough to map columns; `console.log` for anything else):
+  - `get_list_fb_comment` items: `id` (base64 — pass directly as `comment_id` to `react_to_comment` / `reply_to_comment`), `text`, `created_time` (seconds), `url`, `author { id, name, url }`, `react { total }`. Param `type`: `RECENT_ACTIVITY_INTENT_V1` (newest, default), `CHRONOLOGICAL_UNFILTERED_INTENT_V1` (all incl. spam), `RANKED_FILTERED_INTENT_V1` (most relevant).
+  - `get_list_fb_posts` / `get_list_fb_group_posts` items: `id`, `post_id`, `url`, `creation_time` (**seconds or ms** — normalise: `t < 1e12 ? t * 1000 : t`), `content.text`, `actor { id, name, url }`. Their reaction/comment counts are often 0 → for real counts call `get_fb_post_info` (`reactions.total`, `comments.total_count`, `shares.total`). Group `sorting` default is `CHRONOLOGICAL` (newest); also `RECENT_ACTIVITY`, `TOP_POSTS`.
+  - `get_incoming_friend_requests_fast`: items `id, name, url, desc` (`desc` like "12 bạn chung"). `accept_friend_request({ uid })`.
+  - `search_group_members`: searches by **name only**; items `id, name, url, bio, joinStatus`.
+  - `get_list_fb_all_friend`: array of `{ uid, name, url, avatar }`.
+  - `react_to_comment` `reaction`: `LIKE`, `LOVE`, `HAHA`, `WOW`, `SAD`, `ANGRY`.
+  - `download_video_best_quality({ url })`: `url` = video link or id; saves through the browser's normal download (turn off "Ask where to save" in the browser for many files).
+- Not possible (don't invent APIs): commenters' phone numbers/emails unless written in the comment text, private profiles' hidden data, other people's inbox.
+- Other node types exist (`schedule_trigger`, `switch_node`, `loop_node`, `delay_node`, `http_request`, `api_node`, `export_node`) but prefer `code` + helpers: fewer nodes, fewer mistakes.
+- Repeating: don't add a schedule node. Pasted workflows with `inputs` get the same form with a **"Tự chạy lặp lại / Repeat"** toggle (every N minutes/hours, min 5 minutes); it only runs while the tab stays open. Tell the user to turn it on. (Editor-only alternative: a `manual_trigger` replaced by `{ "type": "schedule_trigger", "data": { "scheduleType": "interval", "interval": 30, "unit": "minutes" } }` or `"cron": "0 8 * * *"`, then the "Schedule" button.)
+- On a repeating job, the first run should only remember existing items (return `[]`) so the user isn't flooded; later runs return only new ones.
+- Anything that writes to Facebook: cap per run (`max` input, default 5–20), `randomSleep` between actions (comments 30–90 s, reactions/accepts 5–20 s), remember done ids with `saveMemory` so repeated runs never repeat, and for destructive actions (unfriend, leave group, delete) add a `dryRun` switch defaulting to true that only lists what would happen.
+
