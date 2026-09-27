@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T02:05:17.551Z",
+  "generatedAt": "2026-09-27T02:50:11.252Z",
   "rootPath": "src",
   "structure": [
     {
@@ -4680,13 +4680,6 @@
                   "isLeaf": true
                 },
                 {
-                  "title": "ExplorePanel.tsx",
-                  "key": "screens/N8n/components/ExplorePanel.tsx",
-                  "type": "file",
-                  "extension": ".tsx",
-                  "isLeaf": true
-                },
-                {
                   "title": "LogPanel.tsx",
                   "key": "screens/N8n/components/LogPanel.tsx",
                   "type": "file",
@@ -4841,6 +4834,13 @@
                   "isLeaf": true
                 },
                 {
+                  "title": "FilterNode.tsx",
+                  "key": "screens/N8n/nodes/FilterNode.tsx",
+                  "type": "file",
+                  "extension": ".tsx",
+                  "isLeaf": true
+                },
+                {
                   "title": "HttpRequestNode.tsx",
                   "key": "screens/N8n/nodes/HttpRequestNode.tsx",
                   "type": "file",
@@ -4892,6 +4892,13 @@
                 {
                   "title": "OutputConnector.tsx",
                   "key": "screens/N8n/nodes/OutputConnector.tsx",
+                  "type": "file",
+                  "extension": ".tsx",
+                  "isLeaf": true
+                },
+                {
+                  "title": "PickFieldsNode.tsx",
+                  "key": "screens/N8n/nodes/PickFieldsNode.tsx",
                   "type": "file",
                   "extension": ".tsx",
                   "isLeaf": true
@@ -4998,6 +5005,13 @@
                       "type": "file",
                       "extension": ".ts",
                       "isLeaf": true
+                    },
+                    {
+                      "title": "visual.ts",
+                      "key": "screens/N8n/recipes/templates/visual.ts",
+                      "type": "file",
+                      "extension": ".ts",
+                      "isLeaf": true
                     }
                   ]
                 },
@@ -5018,6 +5032,34 @@
                 {
                   "title": "apiHelpers.ts",
                   "key": "screens/N8n/recipes/apiHelpers.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "autoLayout.test.ts",
+                  "key": "screens/N8n/recipes/autoLayout.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "autoLayout.ts",
+                  "key": "screens/N8n/recipes/autoLayout.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "itemTools.test.ts",
+                  "key": "screens/N8n/recipes/itemTools.test.ts",
+                  "type": "file",
+                  "extension": ".ts",
+                  "isLeaf": true
+                },
+                {
+                  "title": "itemTools.ts",
+                  "key": "screens/N8n/recipes/itemTools.ts",
                   "type": "file",
                   "extension": ".ts",
                   "isLeaf": true
