@@ -1,4 +1,4 @@
-# Social AIO (FB AIO) API index — 150 APIs — generated 2026-09-27
+# Social AIO (FB AIO) API index — 150 APIs — generated 2026-10-16
 # Format: id — name | params (* required, =default, {allowed|values}) | returns
 # Full details (param descriptions, types): apis.json. Usage guide: guide.md
 

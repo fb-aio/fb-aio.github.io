@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T02:50:11.252Z",
+  "generatedAt": "2026-10-16T17:01:34.015Z",
   "rootPath": "src",
   "structure": [
     {
@@ -1026,6 +1026,13 @@
                   "isLeaf": true
                 }
               ]
+            },
+            {
+              "title": "CLAUDE.md",
+              "key": "apis/instagram/CLAUDE.md",
+              "type": "file",
+              "extension": ".md",
+              "isLeaf": true
             },
             {
               "title": "core.ts",
