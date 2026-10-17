@@ -1,75 +1,51 @@
 route | title | description
-/ip-info | OSINT | A collection of Useful IP Information
-/ip-info | IP Info | A collection of Useful IP Information
-/ip-location | IP Location | Find IP location in bulk
-/github-osint | Github OSINT | Know more events about Github user
-/search | Search tools | A collection of Useful Search Tools for Detectives
-/map | Map | Explore Vietnam new map
-/tip | Tip | Best tips when using Internet
-/bulk-downloader?platform=Facebook | Stalker / OSINT | joined groups, liked pages, tagged, ... even on locked profile
-/bulk-downloader?platform=Facebook | Find all infor about someone | joined groups, liked pages, tagged, ... even on locked profile
-/search-fb-accounts | Search profile by Avatar | Enter user name and avatar to search
-/search-fb-posts | Search posts | Support many search criteria
-/stories | Stories today | View all stories of your friends today, anonymous
-/autorun | Block the "seen" feature in Facebook Stories | View stories anonymously right on Facebook
-/autorun | Show total post reactions | Show reaction totals even when Facebook hides them
-/autorun | Invisible Messenger messages | Encode text between >< support encode with password
-/messages/first | First messages | View first messages of any thread
-/bulk-downloader?platform=Facebook | Downloader | posts, story, videos, reels, ... of anyone
-/bulk-downloader?platform=Facebook | Bulk download all data | posts, story, videos, reels, ... of anyone
-/bulk-downloader?platform=FacebookPost | Download post data | Content, media, comments, reactions, shares...
-/downloader?tab=video | Download any Facebook video | Support all video/reels/comments
-/autorun | Add download button on every video on Facebook | Show download button directly on video facebook interface
-/messages/all | Download all chats of messenger threads | Support all chats not E2EE (end to end encrypted)
-/stories | Download all stories of your / your friends | Stories today or Archived stories (your old stories)
-/reels | Download all reels feed | View reels and download them all
-/activities | Cleaner | Your activities on Facebook
-/activities | Activities | Your activities on Facebook
-/posts | Posts | Manage all your posts
-/friends | Friends | Remove friends in bulk
-/messages/all | Messages | Manage all your Facebook chats
-/stories | Stories | View friend stories, Manage your own stories
-/friend-requests | Friend requests | Incoming or outgoing
-/follows | Following | Unfollow in bulk
-/groups | Groups | Leave group in bulk
-/pages | Pages | Bulk unfollow/unlike pages
-/blocked | Blocked | Manage all your blocked list
-/autorun | Utils | Hide specific UI on facebook by component name
-/autorun | Ad blocker for Facebook | Hide specific UI on facebook by component name
-/hide-profile-sections | Hide profile section | Show less information on your profile
-/notes | Notes | Manage your notes on Messenger
-/fb-avatar-shield | Avatar Shield | Protect your profile avatar
-/get-access-token | Access token | Get access token of your account
-/shortcuts | Shortcuts | Access top features of Facebook faster
-/bulk-downloader?platform=Instagram | Download profile data | Story, highlight, posts, reels
-/autorun | Block the "seen" feature in Instagram Stories | View stories anonymously right on Instagram
-/autorun | Enable Instagram image right-click | Allow right-clicking and saving images more easily
-/reels | Reels feed | View IG reels feed anonymously
-/bulk-downloader?platform=Threads | Download profile data | Posts, replies, reposts
-/autorun | Add download button on every video on Threads | Support all video/reel/comment
-/bulk-downloader?platform=Tiktok | Download all profile videos | Download all videos of a Tiktok user
-/autorun | Add download button on every video on Tiktok | Support all video from home, search, user profile, ...
-/downloader?tab=video | Download video from URL (Tiktok/Douyin) | Enter URL to download video tiktok/douyin
-/autorun | TikTok/Douyin batch download | Select and download TikTok or Douyin videos in bulk
-/downloader?tab=video | Download view only video | Support private (only you can view) and public videos
-/downloader?tab=doc | Download view only PDF | Support private (only you can view) and public PDF
-/downloader?tab=doc | Download document | Download scribd document without login
-/downloader?tab=doc | Download document | Download Studocu document without login
-/zalo | Friends manager | Know more about your zalo friends
-/zalo | Get user info from Phone number | Enter list phone numbers to get user info
-/zalo | Manage all Zalo groups | Efficiently organize and manage all your existing Zalo groups in one place
-/zalo | View mutual groups with any friends | Find and list all Zalo groups that you and a specific friend have in common
-/zalo | View members of any group | Access and export the complete list of members from any Zalo group
-/tip | Telegram tips | Find first group's message, message at specific time, bulk download, ...
-/youtube-subs | Subscriptions | Manage your Youtube subscriptions
-/autorun | Utils | Enter password to unlock locked websites
-/autorun | Auto lock websites | Enter password to unlock locked websites
-/autorun | Magnify any images | Hover an image to magnify, or press Ctrl twice over an image
-/json-to-excel | JSON to Excel | Convert JSON to Excel
-/invisible-text | Invisible text | Generate invisible text to help you hide your secret content
-/web-timer | Web timer | Track time spent on each website
-/wheel-of-names | Hack Wheel of Names | Hack Wheel of Names results
-/duckrace | Hack Duck Race | Hack Duck Race results
-/apis | APIs | All APIs of Social AIO
-/logs | Logs | View logs of the app
-/source-code | Source code | View source code of the app
+/bulk-downloader?platform=Facebook | Facebook | Photos, videos, reels, posts, joined groups, liked pages… of anyone, even locked profiles
+/bulk-downloader?platform=Facebook | Facebook bulk downloader | Photos, videos, reels, posts, joined groups, liked pages… of anyone, even locked profiles
+/bulk-downloader?platform=FacebookPost | Export post comments & reactions | Comments, reactors, shares, media of a post → Excel
+/search-fb-accounts | Find accounts by avatar | Enter a name and avatar to find the right person
+/search-fb-posts | Search posts | Filter by keyword, time, author, group…
+/search-fb-pages | Search pages | Find pages by keyword, export the list
+/fb-crawler | Data crawler | Search by keyword, collect posts and their reactors in bulk
+/stories | Friends' stories | View today's friend stories anonymously, download them
+/reels | Facebook & Instagram reels | Browse the reels feed and download them all
+/messages/all | Download Messenger chats | Stats and full download of chats (non-E2EE)
+/messages/first | First messages | See the first messages of any chat
+/delete-messages | Bulk delete messages | Delete many chats at once
+/friends | Friend cleaner | Find and remove inactive friends in bulk
+/posts | Bulk delete posts | Manage, hide, delete your old posts
+/activities | Clear activity log | Comments, reactions, searches… you made on Facebook
+/friend-requests | Friend requests | Cancel sent requests, handle received ones in bulk
+/follows | Bulk unfollow | People and pages you follow
+/groups | Bulk leave groups | Manage and leave joined groups
+/hide-profile-sections | Hide profile | Show less information on your profile
+/fb-avatar-shield | Avatar shield | Turn on profile picture guard
+/notes | Messenger notes | Manage your notes on Messenger
+/get-access-token | Access token | Get your account access token
+/autorun | Automation | Block "seen", hide ads, video download buttons, image zoom, web lock… turn on once
+/autorun | AutoRun on pages (free) | Block "seen", hide ads, video download buttons, image zoom, web lock… turn on once
+/auto/comment | Auto reply comments | Watch posts, filter comments by rules and reply automatically
+/auto-post-fb | Bulk post to groups | Schedule and post to many groups with delays
+/n8n | Drag & drop workflows (n8n) | Chain steps into automated flows, no code
+/apis | APIs | Call Social AIO features from code / other tools
+/bulk-downloader?platform=Instagram | Instagram | Stories, highlights, posts, reels of anyone
+/bulk-downloader?platform=Instagram | Instagram bulk downloader | Stories, highlights, posts, reels of anyone
+/bulk-downloader?platform=Threads | Threads | Posts, replies, reposts
+/bulk-downloader?platform=Threads | Threads bulk downloader | Posts, replies, reposts
+/bulk-downloader?platform=Tiktok | TikTok | All videos of a TikTok user
+/bulk-downloader?platform=Tiktok | TikTok bulk downloader | All videos of a TikTok user
+/downloader?tab=video | Download from link | Facebook, TikTok, Douyin, Bilibili, Google Drive (even download-blocked videos)
+/downloader?tab=video | Video downloader | Facebook, TikTok, Douyin, Bilibili, Google Drive (even download-blocked videos)
+/downloader?tab=doc | Document & PDF downloader | Download-blocked Drive PDFs, Scribd, Studocu — no login
+/zalo | Zalo | Friends, groups, members, mutual groups, user lookup by phone
+/zalo | Zalo manager | Friends, groups, members, mutual groups, user lookup by phone
+/youtube-subs | YouTube | View and unsubscribe YouTube channels in bulk
+/youtube-subs | Subscriptions | View and unsubscribe YouTube channels in bulk
+/search | OSINT | Useful search tools for detectives
+/search | Search tools | Useful search tools for detectives
+/ip-info | IP info | Everything about an IP address
+/ip-location | Bulk IP location | Locate many IP addresses
+/desktop | Utilities | All extra tools, OSINT and games on one Windows/macOS-style desktop — open many windows at once
+/desktop | AIO Desktop | All extra tools, OSINT and games on one Windows/macOS-style desktop — open many windows at once
+/json-to-excel | JSON to Excel | Convert downloaded JSON data to Excel
+/invisible-text | Invisible text | Generate invisible text to hide secrets
+/wheel-of-names | Hack Wheel of Names | Pick the wheel result in advance

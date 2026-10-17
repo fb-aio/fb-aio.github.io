@@ -52,6 +52,7 @@ Youtube Tools
   /youtube-subs | Subscription [NEW]
 /products | Other products [NEW] (no-ext)
 ---
+/desktop | AIO Desktop [NEW]
 OSINT Tools
   /search | Search tools [HOT] (no-ext)
   /ip-info | IP Info

@@ -1,442 +1,262 @@
 {
-  "updatedAt": "2026-10-16T17:01:36.480Z",
+  "updatedAt": "2026-10-17T15:57:46.959Z",
   "features": [
-    {
-      "key": "osint",
-      "children": [
-        {
-          "key": "osint-ip-info",
-          "children": [],
-          "title": "IP Info",
-          "icon": "fa-solid fa-map-location-dot",
-          "link": "/ip-info",
-          "description": "A collection of Useful IP Information"
-        },
-        {
-          "key": "osint-ip-location",
-          "children": [],
-          "title": "IP Location",
-          "icon": "fa-solid fa-location-dot",
-          "link": "/ip-location",
-          "description": "Find IP location in bulk"
-        },
-        {
-          "key": "osint-github",
-          "children": [],
-          "title": "Github OSINT",
-          "icon": "fa-brands fa-github",
-          "link": "/github-osint",
-          "description": "Know more events about Github user"
-        },
-        {
-          "key": "osint-search-tools",
-          "children": [],
-          "title": "Search tools",
-          "icon": "fa-solid fa-magnifying-glass",
-          "link": "/search",
-          "description": "A collection of Useful Search Tools for Detectives"
-        },
-        {
-          "key": "osint-map",
-          "children": [],
-          "title": "Map",
-          "icon": "fa-solid fa-map",
-          "link": "/map",
-          "description": "Explore Vietnam new map"
-        },
-        {
-          "key": "osint-tip",
-          "children": [],
-          "title": "Tip",
-          "icon": "fa-solid fa-lightbulb",
-          "link": "/tip",
-          "description": "Best tips when using Internet"
-        }
-      ],
-      "title": "OSINT",
-      "icon": "fa-solid fa-arrow-pointer",
-      "link": "/ip-info",
-      "description": "A collection of Useful IP Information"
-    },
     {
       "key": "facebook",
       "children": [
         {
-          "key": "fb-stalk",
-          "children": [
-            {
-              "key": "fb-stalk-bulk-downloader",
-              "children": [],
-              "title": "Find all infor about someone",
-              "icon": "fa-solid fa-arrows-down-to-line",
-              "link": "/bulk-downloader?platform=Facebook",
-              "description": "joined groups, liked pages, tagged, ... even on locked profile"
-            },
-            {
-              "key": "fb-stalk-search-by-avatar",
-              "children": [],
-              "title": "Search profile by Avatar",
-              "icon": "fa-solid fa-user",
-              "link": "/search-fb-accounts",
-              "description": "Enter user name and avatar to search"
-            },
-            {
-              "key": "fb-stalk-search-posts",
-              "children": [],
-              "title": "Search posts",
-              "icon": "fa-solid fa-newspaper",
-              "link": "/search-fb-posts",
-              "description": "Support many search criteria"
-            },
-            {
-              "key": "fb-stalk-search-tools",
-              "children": [],
-              "title": "Search tools",
-              "icon": "fa-solid fa-magnifying-glass",
-              "link": "/search",
-              "description": "A collection of Useful Search Tools for Detectives"
-            },
-            {
-              "key": "fb-stalk-stories",
-              "children": [],
-              "title": "Stories today",
-              "icon": "fa-solid fa-heart",
-              "link": "/stories",
-              "description": "View all stories of your friends today, anonymous"
-            },
-            {
-              "key": "fb-stalk-block-seen-story",
-              "children": [],
-              "title": "Block the \"seen\" feature in Facebook Stories",
-              "icon": "fa-solid fa-eye-slash",
-              "link": "/autorun",
-              "description": "View stories anonymously right on Facebook"
-            },
-            {
-              "key": "fb-stalk-show-post-reactions",
-              "children": [],
-              "title": "Show total post reactions",
-              "icon": "fa-solid fa-heart",
-              "link": "/autorun",
-              "description": "Show reaction totals even when Facebook hides them"
-            },
-            {
-              "key": "fb-stalk-invisible-message",
-              "children": [],
-              "title": "Invisible Messenger messages",
-              "icon": "fa-solid fa-lock",
-              "link": "/autorun",
-              "description": "Encode text between >< support encode with password"
-            },
-            {
-              "key": "fb-stalk-first-messages",
-              "children": [],
-              "title": "First messages",
-              "icon": "fa-solid fa-clock-rotate-left",
-              "link": "/messages/first",
-              "description": "View first messages of any thread"
-            },
-            {
-              "key": "fb-stalk-tip",
-              "children": [],
-              "title": "Tip",
-              "icon": "fa-solid fa-lightbulb",
-              "link": "/tip",
-              "description": "Best tips when using Internet"
-            }
-          ],
-          "title": "Stalker / OSINT",
-          "icon": "fa-solid fa-eye",
+          "key": "fb-bulk",
+          "children": [],
+          "title": "Facebook bulk downloader",
+          "icon": "fa-solid fa-arrows-down-to-line",
           "link": "/bulk-downloader?platform=Facebook",
-          "description": "joined groups, liked pages, tagged, ... even on locked profile"
+          "description": "Photos, videos, reels, posts, joined groups, liked pages… of anyone, even locked profiles"
         },
         {
-          "key": "fb-downloader",
-          "children": [
-            {
-              "key": "fb-downloader-bulk",
-              "children": [],
-              "title": "Bulk download all data",
-              "icon": "fa-solid fa-arrows-down-to-line",
-              "link": "/bulk-downloader?platform=Facebook",
-              "description": "posts, story, videos, reels, ... of anyone"
-            },
-            {
-              "key": "fb-downloader-download-post-data",
-              "children": [],
-              "title": "Download post data",
-              "icon": "fa-solid fa-newspaper",
-              "link": "/bulk-downloader?platform=FacebookPost",
-              "description": "Content, media, comments, reactions, shares..."
-            },
-            {
-              "key": "fb-downloader-video",
-              "children": [],
-              "title": "Download any Facebook video",
-              "icon": "fa-solid fa-video",
-              "link": "/downloader?tab=video",
-              "description": "Support all video/reels/comments"
-            },
-            {
-              "key": "fb-downloader-download-btn",
-              "children": [],
-              "title": "Add download button on every video on Facebook",
-              "icon": "fa-solid fa-download",
-              "link": "/autorun",
-              "description": "Show download button directly on video facebook interface"
-            },
-            {
-              "key": "fb-downloader-down-messages",
-              "children": [],
-              "title": "Download all chats of messenger threads",
-              "icon": "fa-solid fa-message",
-              "link": "/messages/all",
-              "description": "Support all chats not E2EE (end to end encrypted)"
-            },
-            {
-              "key": "fb-downloader-down-stories",
-              "children": [],
-              "title": "Download all stories of your / your friends",
-              "icon": "fa-solid fa-heart",
-              "link": "/stories",
-              "description": "Stories today or Archived stories (your old stories)"
-            },
-            {
-              "key": "fb-downloader-down-reels",
-              "children": [],
-              "title": "Download all reels feed",
-              "icon": "fa-solid fa-film",
-              "link": "/reels",
-              "description": "View reels and download them all"
-            }
-          ],
-          "title": "Downloader",
-          "icon": "fa-solid fa-download",
-          "link": "/bulk-downloader?platform=Facebook",
-          "description": "posts, story, videos, reels, ... of anyone"
+          "key": "fb-post-data",
+          "children": [],
+          "title": "Export post comments & reactions",
+          "icon": "fa-solid fa-file-arrow-down",
+          "link": "/bulk-downloader?platform=FacebookPost",
+          "description": "Comments, reactors, shares, media of a post → Excel"
         },
         {
-          "key": "fb-cleaner",
-          "children": [
-            {
-              "key": "fb-cleaner-activities",
-              "children": [],
-              "title": "Activities",
-              "icon": "fa-solid fa-clock-rotate-left",
-              "link": "/activities",
-              "description": "Your activities on Facebook"
-            },
-            {
-              "key": "fb-cleaner-posts",
-              "children": [],
-              "title": "Posts",
-              "icon": "fa-solid fa-newspaper",
-              "link": "/posts",
-              "description": "Manage all your posts"
-            },
-            {
-              "key": "fb-cleaner-friends",
-              "children": [],
-              "title": "Friends",
-              "icon": "fa-solid fa-users",
-              "link": "/friends",
-              "description": "Remove friends in bulk"
-            },
-            {
-              "key": "fb-cleaner-messages",
-              "children": [],
-              "title": "Messages",
-              "icon": "fa-solid fa-message",
-              "link": "/messages/all",
-              "description": "Manage all your Facebook chats"
-            },
-            {
-              "key": "fb-cleaner-stories",
-              "children": [],
-              "title": "Stories",
-              "icon": "fa-solid fa-heart",
-              "link": "/stories",
-              "description": "View friend stories, Manage your own stories"
-            },
-            {
-              "key": "fb-cleaner-friend-requests",
-              "children": [],
-              "title": "Friend requests",
-              "icon": "fa-solid fa-user-plus",
-              "link": "/friend-requests",
-              "description": "Incoming or outgoing"
-            },
-            {
-              "key": "fb-cleaner-following",
-              "children": [],
-              "title": "Following",
-              "icon": "fa-solid fa-person-walking-arrow-right",
-              "link": "/follows",
-              "description": "Unfollow in bulk"
-            },
-            {
-              "key": "fb-cleaner-groups",
-              "children": [],
-              "title": "Groups",
-              "icon": "fa-solid fa-users",
-              "link": "/groups",
-              "description": "Leave group in bulk"
-            },
-            {
-              "key": "fb-cleaner-pages",
-              "children": [],
-              "title": "Pages",
-              "icon": "fa-solid fa-flag",
-              "link": "/pages",
-              "description": "Bulk unfollow/unlike pages"
-            },
-            {
-              "key": "fb-cleaner-blocked",
-              "children": [],
-              "title": "Blocked",
-              "icon": "fa-solid fa-ban",
-              "link": "/blocked",
-              "description": "Manage all your blocked list"
-            }
-          ],
-          "title": "Cleaner",
-          "icon": "fa-solid fa-broom",
+          "key": "fb-search-accounts",
+          "children": [],
+          "title": "Find accounts by avatar",
+          "icon": "fa-solid fa-user",
+          "link": "/search-fb-accounts",
+          "description": "Enter a name and avatar to find the right person"
+        },
+        {
+          "key": "fb-search-posts",
+          "children": [],
+          "title": "Search posts",
+          "icon": "fa-solid fa-newspaper",
+          "link": "/search-fb-posts",
+          "description": "Filter by keyword, time, author, group…"
+        },
+        {
+          "key": "fb-search-pages",
+          "children": [],
+          "title": "Search pages",
+          "icon": "fa-solid fa-flag",
+          "link": "/search-fb-pages",
+          "description": "Find pages by keyword, export the list"
+        },
+        {
+          "key": "fb-crawler",
+          "children": [],
+          "title": "Data crawler",
+          "icon": "fa-solid fa-spider",
+          "link": "/fb-crawler",
+          "description": "Search by keyword, collect posts and their reactors in bulk"
+        },
+        {
+          "key": "fb-stories",
+          "children": [],
+          "title": "Friends' stories",
+          "icon": "fa-solid fa-circle-play",
+          "link": "/stories",
+          "description": "View today's friend stories anonymously, download them"
+        },
+        {
+          "key": "fb-reels",
+          "children": [],
+          "title": "Facebook & Instagram reels",
+          "icon": "fa-solid fa-film",
+          "link": "/reels",
+          "description": "Browse the reels feed and download them all"
+        },
+        {
+          "key": "fb-messages",
+          "children": [],
+          "title": "Download Messenger chats",
+          "icon": "fa-solid fa-comment-dots",
+          "link": "/messages/all",
+          "description": "Stats and full download of chats (non-E2EE)"
+        },
+        {
+          "key": "fb-first-messages",
+          "children": [],
+          "title": "First messages",
+          "icon": "fa-solid fa-clock-rotate-left",
+          "link": "/messages/first",
+          "description": "See the first messages of any chat"
+        },
+        {
+          "key": "fb-delete-messages",
+          "children": [],
+          "title": "Bulk delete messages",
+          "icon": "fa-solid fa-comment-slash",
+          "link": "/delete-messages",
+          "description": "Delete many chats at once"
+        },
+        {
+          "key": "fb-friends",
+          "children": [],
+          "title": "Friend cleaner",
+          "icon": "fa-solid fa-user-xmark",
+          "link": "/friends",
+          "description": "Find and remove inactive friends in bulk"
+        },
+        {
+          "key": "fb-posts",
+          "children": [],
+          "title": "Bulk delete posts",
+          "icon": "fa-solid fa-trash-can",
+          "link": "/posts",
+          "description": "Manage, hide, delete your old posts"
+        },
+        {
+          "key": "fb-activities",
+          "children": [],
+          "title": "Clear activity log",
+          "icon": "fa-solid fa-list-check",
           "link": "/activities",
-          "description": "Your activities on Facebook"
+          "description": "Comments, reactions, searches… you made on Facebook"
         },
         {
-          "key": "fb-utils",
-          "children": [
-            {
-              "key": "fb-utils-ad-blocker",
-              "children": [],
-              "title": "Ad blocker for Facebook",
-              "icon": "fa-solid fa-shield",
-              "link": "/autorun",
-              "description": "Hide specific UI on facebook by component name"
-            },
-            {
-              "key": "fb-utils-hide-profile-section",
-              "children": [],
-              "title": "Hide profile section",
-              "icon": "fa-solid fa-eye-slash",
-              "link": "/hide-profile-sections",
-              "description": "Show less information on your profile"
-            },
-            {
-              "key": "fb-utils-search-posts",
-              "children": [],
-              "title": "Search posts",
-              "icon": "fa-solid fa-newspaper",
-              "link": "/search-fb-posts",
-              "description": "Support many search criteria"
-            },
-            {
-              "key": "fb-utils-notes",
-              "children": [],
-              "title": "Notes",
-              "icon": "fa-solid fa-note-sticky",
-              "link": "/notes",
-              "description": "Manage your notes on Messenger"
-            },
-            {
-              "key": "fb-utils-avatar-shield",
-              "children": [],
-              "title": "Avatar Shield",
-              "icon": "fa-solid fa-shield-halved",
-              "link": "/fb-avatar-shield",
-              "description": "Protect your profile avatar"
-            },
-            {
-              "key": "fb-utils-access-token",
-              "children": [],
-              "title": "Access token",
-              "icon": "fa-solid fa-key",
-              "link": "/get-access-token",
-              "description": "Get access token of your account"
-            },
-            {
-              "key": "fb-utils-shortcuts",
-              "children": [],
-              "title": "Shortcuts",
-              "icon": "fa-solid fa-link",
-              "link": "/shortcuts",
-              "description": "Access top features of Facebook faster"
-            }
-          ],
-          "title": "Utils",
-          "icon": "fa-solid fa-gear",
-          "link": "/autorun",
-          "description": "Hide specific UI on facebook by component name"
+          "key": "fb-friend-requests",
+          "children": [],
+          "title": "Friend requests",
+          "icon": "fa-solid fa-user-plus",
+          "link": "/friend-requests",
+          "description": "Cancel sent requests, handle received ones in bulk"
+        },
+        {
+          "key": "fb-follows",
+          "children": [],
+          "title": "Bulk unfollow",
+          "icon": "fa-solid fa-person-walking-arrow-right",
+          "link": "/follows",
+          "description": "People and pages you follow"
+        },
+        {
+          "key": "fb-groups",
+          "children": [],
+          "title": "Bulk leave groups",
+          "icon": "fa-solid fa-people-group",
+          "link": "/groups",
+          "description": "Manage and leave joined groups"
+        },
+        {
+          "key": "fb-hide-profile",
+          "children": [],
+          "title": "Hide profile",
+          "icon": "fa-solid fa-user-secret",
+          "link": "/hide-profile-sections",
+          "description": "Show less information on your profile"
+        },
+        {
+          "key": "fb-avatar-shield",
+          "children": [],
+          "title": "Avatar shield",
+          "icon": "fa-solid fa-shield-halved",
+          "link": "/fb-avatar-shield",
+          "description": "Turn on profile picture guard"
+        },
+        {
+          "key": "fb-notes",
+          "children": [],
+          "title": "Messenger notes",
+          "icon": "fa-solid fa-note-sticky",
+          "link": "/notes",
+          "description": "Manage your notes on Messenger"
+        },
+        {
+          "key": "fb-access-token",
+          "children": [],
+          "title": "Access token",
+          "icon": "fa-solid fa-key",
+          "link": "/get-access-token",
+          "description": "Get your account access token"
         }
       ],
-      "title": "Stalker / OSINT",
+      "title": "Facebook",
       "icon": "fa-brands fa-facebook",
       "link": "/bulk-downloader?platform=Facebook",
-      "description": "joined groups, liked pages, tagged, ... even on locked profile"
+      "description": "Photos, videos, reels, posts, joined groups, liked pages… of anyone, even locked profiles"
+    },
+    {
+      "key": "auto",
+      "children": [
+        {
+          "key": "autorun",
+          "children": [],
+          "title": "AutoRun on pages (free)",
+          "icon": "fa-solid fa-play",
+          "link": "/autorun",
+          "description": "Block \"seen\", hide ads, video download buttons, image zoom, web lock… turn on once"
+        },
+        {
+          "key": "auto-comment",
+          "children": [],
+          "title": "Auto reply comments",
+          "icon": "fa-solid fa-reply-all",
+          "link": "/auto/comment",
+          "description": "Watch posts, filter comments by rules and reply automatically"
+        },
+        {
+          "key": "auto-post",
+          "children": [],
+          "title": "Bulk post to groups",
+          "icon": "fa-solid fa-paper-plane",
+          "link": "/auto-post-fb",
+          "description": "Schedule and post to many groups with delays"
+        },
+        {
+          "key": "n8n",
+          "children": [],
+          "title": "Drag & drop workflows (n8n)",
+          "icon": "fa-solid fa-diagram-project",
+          "link": "/n8n",
+          "description": "Chain steps into automated flows, no code"
+        },
+        {
+          "key": "apis",
+          "children": [],
+          "title": "APIs",
+          "icon": "fa-solid fa-plug",
+          "link": "/apis",
+          "description": "Call Social AIO features from code / other tools"
+        }
+      ],
+      "title": "Automation",
+      "icon": "fa-solid fa-robot",
+      "link": "/autorun",
+      "description": "Block \"seen\", hide ads, video download buttons, image zoom, web lock… turn on once"
     },
     {
       "key": "instagram",
       "children": [
         {
-          "key": "insta-bulk-downloader",
+          "key": "insta-bulk",
           "children": [],
-          "title": "Download profile data",
+          "title": "Instagram bulk downloader",
           "icon": "fa-solid fa-arrows-down-to-line",
           "link": "/bulk-downloader?platform=Instagram",
-          "description": "Story, highlight, posts, reels"
-        },
-        {
-          "key": "insta-story-anonymously",
-          "children": [],
-          "title": "Block the \"seen\" feature in Instagram Stories",
-          "icon": "fa-solid fa-eye-slash",
-          "link": "/autorun",
-          "description": "View stories anonymously right on Instagram"
-        },
-        {
-          "key": "insta-right-click-image",
-          "children": [],
-          "title": "Enable Instagram image right-click",
-          "icon": "fa-solid fa-mouse",
-          "link": "/autorun",
-          "description": "Allow right-clicking and saving images more easily"
-        },
-        {
-          "key": "insta-reels-feed",
-          "children": [],
-          "title": "Reels feed",
-          "icon": "fa-solid fa-film",
-          "link": "/reels",
-          "description": "View IG reels feed anonymously"
+          "description": "Stories, highlights, posts, reels of anyone"
         }
       ],
-      "title": "Download profile data",
+      "title": "Instagram",
       "icon": "fa-brands fa-instagram",
       "link": "/bulk-downloader?platform=Instagram",
-      "description": "Story, highlight, posts, reels"
+      "description": "Stories, highlights, posts, reels of anyone"
     },
     {
       "key": "threads",
       "children": [
         {
-          "key": "threads-downloader",
+          "key": "threads-bulk",
           "children": [],
-          "title": "Download profile data",
+          "title": "Threads bulk downloader",
           "icon": "fa-solid fa-arrows-down-to-line",
           "link": "/bulk-downloader?platform=Threads",
           "description": "Posts, replies, reposts"
-        },
-        {
-          "key": "threads-add-download-video-btn",
-          "children": [],
-          "title": "Add download button on every video on Threads",
-          "icon": "fa-solid fa-download",
-          "link": "/autorun",
-          "description": "Support all video/reel/comment"
         }
       ],
-      "title": "Download profile data",
+      "title": "Threads",
       "icon": "fa-solid fa-at",
       "link": "/bulk-downloader?platform=Threads",
       "description": "Posts, replies, reposts"
@@ -445,167 +265,60 @@
       "key": "tiktok",
       "children": [
         {
-          "key": "tiktok-bulk-downloader",
+          "key": "tiktok-bulk",
           "children": [],
-          "title": "Download all profile videos",
+          "title": "TikTok bulk downloader",
           "icon": "fa-solid fa-arrows-down-to-line",
           "link": "/bulk-downloader?platform=Tiktok",
-          "description": "Download all videos of a Tiktok user"
-        },
-        {
-          "key": "tiktok-add-download-video-btn",
-          "children": [],
-          "title": "Add download button on every video on Tiktok",
-          "icon": "fa-solid fa-download",
-          "link": "/autorun",
-          "description": "Support all video from home, search, user profile, ..."
-        },
-        {
-          "key": "tiktok-download-video-url",
-          "children": [],
-          "title": "Download video from URL (Tiktok/Douyin)",
-          "icon": "fa-solid fa-video",
-          "link": "/downloader?tab=video",
-          "description": "Enter URL to download video tiktok/douyin"
-        },
-        {
-          "key": "tiktok-batch-download",
-          "children": [],
-          "title": "TikTok/Douyin batch download",
-          "icon": "fa-solid fa-download",
-          "link": "/autorun",
-          "description": "Select and download TikTok or Douyin videos in bulk"
+          "description": "All videos of a TikTok user"
         }
       ],
-      "title": "Download all profile videos",
+      "title": "TikTok",
       "icon": "fa-brands fa-tiktok",
       "link": "/bulk-downloader?platform=Tiktok",
-      "description": "Download all videos of a Tiktok user"
+      "description": "All videos of a TikTok user"
     },
     {
-      "key": "ggdrive",
+      "key": "link",
       "children": [
         {
-          "key": "ggdrive-download-video",
+          "key": "link-video",
           "children": [],
-          "title": "Download view only video",
-          "icon": "fa-solid fa-download",
+          "title": "Video downloader",
+          "icon": "fa-solid fa-video",
           "link": "/downloader?tab=video",
-          "description": "Support private (only you can view) and public videos"
+          "description": "Facebook, TikTok, Douyin, Bilibili, Google Drive (even download-blocked videos)"
         },
         {
-          "key": "ggdrive-download-pdf",
+          "key": "link-doc",
           "children": [],
-          "title": "Download view only PDF",
+          "title": "Document & PDF downloader",
           "icon": "fa-solid fa-file-pdf",
           "link": "/downloader?tab=doc",
-          "description": "Support private (only you can view) and public PDF"
+          "description": "Download-blocked Drive PDFs, Scribd, Studocu — no login"
         }
       ],
-      "title": "Download view only video",
-      "icon": "fa-brands fa-google-drive",
+      "title": "Download from link",
+      "icon": "fa-solid fa-link",
       "link": "/downloader?tab=video",
-      "description": "Support private (only you can view) and public videos"
-    },
-    {
-      "key": "scribd",
-      "children": [
-        {
-          "key": "scribd-download-pdf",
-          "children": [],
-          "title": "Download document",
-          "icon": "fa-solid fa-file-pdf",
-          "link": "/downloader?tab=doc",
-          "description": "Download scribd document without login"
-        }
-      ],
-      "title": "Download document",
-      "icon": "fa-brands fa-scribd",
-      "link": "/downloader?tab=doc",
-      "description": "Download scribd document without login"
-    },
-    {
-      "key": "studocu",
-      "children": [
-        {
-          "key": "studocu-download-pdf",
-          "children": [],
-          "title": "Download document",
-          "icon": "fa-solid fa-file-pdf",
-          "link": "/downloader?tab=doc",
-          "description": "Download Studocu document without login"
-        }
-      ],
-      "title": "Download document",
-      "icon": "fa-solid fa-graduation-cap",
-      "link": "/downloader?tab=doc",
-      "description": "Download Studocu document without login"
+      "description": "Facebook, TikTok, Douyin, Bilibili, Google Drive (even download-blocked videos)"
     },
     {
       "key": "zalo",
       "children": [
         {
-          "key": "zalo-friends",
+          "key": "zalo",
           "children": [],
-          "title": "Friends manager",
+          "title": "Zalo manager",
           "icon": "fa-solid fa-users",
           "link": "/zalo",
-          "description": "Know more about your zalo friends"
-        },
-        {
-          "key": "zalo-phone-to-user",
-          "children": [],
-          "title": "Get user info from Phone number",
-          "icon": "fa-solid fa-phone",
-          "link": "/zalo",
-          "description": "Enter list phone numbers to get user info"
-        },
-        {
-          "key": "zalo-manage-groups",
-          "children": [],
-          "title": "Manage all Zalo groups",
-          "icon": "fa-solid fa-users-gear",
-          "link": "/zalo",
-          "description": "Efficiently organize and manage all your existing Zalo groups in one place"
-        },
-        {
-          "key": "zalo-mutual-groups",
-          "children": [],
-          "title": "View mutual groups with any friends",
-          "icon": "fa-solid fa-people-arrows",
-          "link": "/zalo",
-          "description": "Find and list all Zalo groups that you and a specific friend have in common"
-        },
-        {
-          "key": "zalo-group-members",
-          "children": [],
-          "title": "View members of any group",
-          "icon": "fa-solid fa-address-book",
-          "link": "/zalo",
-          "description": "Access and export the complete list of members from any Zalo group"
+          "description": "Friends, groups, members, mutual groups, user lookup by phone"
         }
       ],
-      "title": "Friends manager",
+      "title": "Zalo",
       "icon": "fa-solid fa-z",
       "link": "/zalo",
-      "description": "Know more about your zalo friends"
-    },
-    {
-      "key": "telegram",
-      "children": [
-        {
-          "key": "telegram-tips",
-          "children": [],
-          "title": "Telegram tips",
-          "icon": "fa-solid fa-search",
-          "link": "/tip",
-          "description": "Find first group's message, message at specific time, bulk download, ..."
-        }
-      ],
-      "title": "Telegram tips",
-      "icon": "fa-brands fa-telegram",
-      "link": "/tip",
-      "description": "Find first group's message, message at specific time, bulk download, ..."
+      "description": "Friends, groups, members, mutual groups, user lookup by phone"
     },
     {
       "key": "youtube",
@@ -616,32 +329,57 @@
           "title": "Subscriptions",
           "icon": "fa-solid fa-bell",
           "link": "/youtube-subs",
-          "description": "Manage your Youtube subscriptions"
+          "description": "View and unsubscribe YouTube channels in bulk"
         }
       ],
-      "title": "Subscriptions",
+      "title": "YouTube",
       "icon": "fa-brands fa-youtube",
       "link": "/youtube-subs",
-      "description": "Manage your Youtube subscriptions"
+      "description": "View and unsubscribe YouTube channels in bulk"
+    },
+    {
+      "key": "osint",
+      "children": [
+        {
+          "key": "osint-search",
+          "children": [],
+          "title": "Search tools",
+          "icon": "fa-solid fa-magnifying-glass",
+          "link": "/search",
+          "description": "Useful search tools for detectives"
+        },
+        {
+          "key": "osint-ip-info",
+          "children": [],
+          "title": "IP info",
+          "icon": "fa-solid fa-network-wired",
+          "link": "/ip-info",
+          "description": "Everything about an IP address"
+        },
+        {
+          "key": "osint-ip-location",
+          "children": [],
+          "title": "Bulk IP location",
+          "icon": "fa-solid fa-location-dot",
+          "link": "/ip-location",
+          "description": "Locate many IP addresses"
+        }
+      ],
+      "title": "OSINT",
+      "icon": "fa-solid fa-arrow-pointer",
+      "link": "/search",
+      "description": "Useful search tools for detectives"
     },
     {
       "key": "utils",
       "children": [
         {
-          "key": "utils-auto-lock-website",
+          "key": "utils-desktop",
           "children": [],
-          "title": "Auto lock websites",
-          "icon": "fa-solid fa-lock",
-          "link": "/autorun",
-          "description": "Enter password to unlock locked websites"
-        },
-        {
-          "key": "utils-magnify-image",
-          "children": [],
-          "title": "Magnify any images",
-          "icon": "fa-solid fa-magnifying-glass-plus",
-          "link": "/autorun",
-          "description": "Hover an image to magnify, or press Ctrl twice over an image"
+          "title": "AIO Desktop",
+          "icon": "fa-solid fa-display",
+          "link": "/desktop",
+          "description": "All extra tools, OSINT and games on one Windows/macOS-style desktop — open many windows at once"
         },
         {
           "key": "utils-json-to-excel",
@@ -649,78 +387,29 @@
           "title": "JSON to Excel",
           "icon": "fa-solid fa-file-excel",
           "link": "/json-to-excel",
-          "description": "Convert JSON to Excel"
+          "description": "Convert downloaded JSON data to Excel"
         },
         {
           "key": "utils-invisible-text",
           "children": [],
           "title": "Invisible text",
-          "icon": "fa-solid fa-eye-slash",
+          "icon": "fa-solid fa-ghost",
           "link": "/invisible-text",
-          "description": "Generate invisible text to help you hide your secret content"
+          "description": "Generate invisible text to hide secrets"
         },
         {
-          "key": "utils-web-timer",
-          "children": [],
-          "title": "Web timer",
-          "icon": "fa-solid fa-clock",
-          "link": "/web-timer",
-          "description": "Track time spent on each website"
-        },
-        {
-          "key": "utils-hack-wheel-of-names",
+          "key": "utils-wheel",
           "children": [],
           "title": "Hack Wheel of Names",
           "icon": "fa-solid fa-dharmachakra",
           "link": "/wheel-of-names",
-          "description": "Hack Wheel of Names results"
-        },
-        {
-          "key": "utils-hack-duck-race",
-          "children": [],
-          "title": "Hack Duck Race",
-          "icon": "fa-solid fa-dice",
-          "link": "/duckrace",
-          "description": "Hack Duck Race results"
+          "description": "Pick the wheel result in advance"
         }
       ],
-      "title": "Utils",
-      "icon": "fa-solid fa-gear",
-      "link": "/autorun",
-      "description": "Enter password to unlock locked websites"
-    },
-    {
-      "key": "dev",
-      "children": [
-        {
-          "key": "apis",
-          "children": [],
-          "title": "APIs",
-          "icon": "fa-solid fa-plug",
-          "link": "/apis",
-          "description": "All APIs of Social AIO"
-        },
-        {
-          "key": "logs",
-          "children": [],
-          "title": "Logs",
-          "icon": "fa-solid fa-file-lines",
-          "link": "/logs",
-          "description": "View logs of the app"
-        },
-        {
-          "key": "dev-source-code",
-          "children": [],
-          "title": "Source code",
-          "icon": "fa-solid fa-code",
-          "link": "/source-code",
-          "description": "View source code of the app"
-        }
-      ],
-      "title": "APIs",
-      "icon": "fa-solid fa-code",
-      "link": "/apis",
-      "description": "All APIs of Social AIO"
+      "title": "Utilities",
+      "icon": "fa-solid fa-toolbox",
+      "link": "/desktop",
+      "description": "All extra tools, OSINT and games on one Windows/macOS-style desktop — open many windows at once"
     }
   ]
 }

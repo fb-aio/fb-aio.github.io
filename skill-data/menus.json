@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T17:01:36.479Z",
+  "updatedAt": "2026-10-17T15:57:46.958Z",
   "items": [
     {
       "label": "Search features",
@@ -303,6 +303,12 @@
     },
     {
       "divider": true
+    },
+    {
+      "label": "AIO Desktop",
+      "path": "/desktop",
+      "icon": "fa-solid fa-display fa-lg",
+      "badge": "NEW"
     },
     {
       "label": "OSINT Tools",

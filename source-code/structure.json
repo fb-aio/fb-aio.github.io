@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:01:34.015Z",
+  "generatedAt": "2026-10-17T15:57:44.325Z",
   "rootPath": "src",
   "structure": [
     {
@@ -2288,6 +2288,13 @@
               "isLeaf": true
             },
             {
+              "title": "intro-video.jpg",
+              "key": "assets/thumbnail/intro-video.jpg",
+              "type": "file",
+              "extension": ".jpg",
+              "isLeaf": true
+            },
+            {
               "title": "live-code.jpg",
               "key": "assets/thumbnail/live-code.jpg",
               "type": "file",
@@ -2696,6 +2703,90 @@
           ]
         },
         {
+          "title": "ui",
+          "key": "components/ui",
+          "type": "folder",
+          "children": [
+            {
+              "title": "ActionCard.tsx",
+              "key": "components/ui/ActionCard.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "Chip.tsx",
+              "key": "components/ui/Chip.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "CLAUDE.md",
+              "key": "components/ui/CLAUDE.md",
+              "type": "file",
+              "extension": ".md",
+              "isLeaf": true
+            },
+            {
+              "title": "GradientButton.tsx",
+              "key": "components/ui/GradientButton.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "IconTile.tsx",
+              "key": "components/ui/IconTile.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "index.ts",
+              "key": "components/ui/index.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "Layout.tsx",
+              "key": "components/ui/Layout.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "Pill.tsx",
+              "key": "components/ui/Pill.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "swal.css",
+              "key": "components/ui/swal.css",
+              "type": "file",
+              "extension": ".css",
+              "isLeaf": true
+            },
+            {
+              "title": "tokens.ts",
+              "key": "components/ui/tokens.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "ui.css",
+              "key": "components/ui/ui.css",
+              "type": "file",
+              "extension": ".css",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
           "title": "ActionButton.tsx",
           "key": "components/ActionButton.tsx",
           "type": "file",
@@ -2712,6 +2803,13 @@
         {
           "title": "AppErrorBoundary.tsx",
           "key": "components/AppErrorBoundary.tsx",
+          "type": "file",
+          "extension": ".tsx",
+          "isLeaf": true
+        },
+        {
+          "title": "AppTheme.tsx",
+          "key": "components/AppTheme.tsx",
           "type": "file",
           "extension": ".tsx",
           "isLeaf": true
@@ -2789,6 +2887,13 @@
         {
           "title": "ExportButton.tsx",
           "key": "components/ExportButton.tsx",
+          "type": "file",
+          "extension": ".tsx",
+          "isLeaf": true
+        },
+        {
+          "title": "ExtensionRequired.tsx",
+          "key": "components/ExtensionRequired.tsx",
           "type": "file",
           "extension": ".tsx",
           "isLeaf": true
@@ -3206,6 +3311,13 @@
       "key": "routes",
       "type": "folder",
       "children": [
+        {
+          "title": "enabled.ts",
+          "key": "routes/enabled.ts",
+          "type": "file",
+          "extension": ".ts",
+          "isLeaf": true
+        },
         {
           "title": "menus.test.ts",
           "key": "routes/menus.test.ts",
@@ -3893,6 +4005,76 @@
             {
               "title": "index.tsx",
               "key": "screens/ComingSoon/index.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "Dashboard",
+          "key": "screens/Dashboard",
+          "type": "folder",
+          "children": [
+            {
+              "title": "index.tsx",
+              "key": "screens/Dashboard/index.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "landing.css",
+              "key": "screens/Dashboard/landing.css",
+              "type": "file",
+              "extension": ".css",
+              "isLeaf": true
+            },
+            {
+              "title": "useLandingAnim.ts",
+              "key": "screens/Dashboard/useLandingAnim.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "Desktop",
+          "key": "screens/Desktop",
+          "type": "folder",
+          "children": [
+            {
+              "title": "apps.ts",
+              "key": "screens/Desktop/apps.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "desktop.css",
+              "key": "screens/Desktop/desktop.css",
+              "type": "file",
+              "extension": ".css",
+              "isLeaf": true
+            },
+            {
+              "title": "index.tsx",
+              "key": "screens/Desktop/index.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "skins.css",
+              "key": "screens/Desktop/skins.css",
+              "type": "file",
+              "extension": ".css",
+              "isLeaf": true
+            },
+            {
+              "title": "Window.tsx",
+              "key": "screens/Desktop/Window.tsx",
               "type": "file",
               "extension": ".tsx",
               "isLeaf": true
@@ -5631,13 +5813,6 @@
         {
           "title": "Comparison.tsx",
           "key": "screens/Comparison.tsx",
-          "type": "file",
-          "extension": ".tsx",
-          "isLeaf": true
-        },
-        {
-          "title": "Dashboard.tsx",
-          "key": "screens/Dashboard.tsx",
           "type": "file",
           "extension": ".tsx",
           "isLeaf": true
