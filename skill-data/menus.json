@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T15:57:46.958Z",
+  "updatedAt": "2026-10-17T16:32:41.687Z",
   "items": [
     {
       "label": "Search features",
@@ -297,9 +297,7 @@
     {
       "label": "Other products",
       "path": "/products",
-      "icon": "fa-solid fa-cubes fa-lg",
-      "badge": "NEW",
-      "dontNeedExt": true
+      "icon": "fa-solid fa-cubes fa-lg"
     },
     {
       "divider": true
@@ -379,6 +377,23 @@
       "icon": "fa-solid fa-gear fa-lg",
       "children": [
         {
+          "label": "Social AIO Blog",
+          "path": "/blog",
+          "icon": "fa-solid fa-newspaper"
+        },
+        {
+          "label": "Time Horizon",
+          "path": "/time-horizon",
+          "icon": "fa-solid fa-timeline",
+          "badge": "NEW"
+        },
+        {
+          "label": "TV Remote",
+          "path": "/tv-remote",
+          "icon": "fa-solid fa-tv",
+          "badge": "NEW"
+        },
+        {
           "label": "JSON to Excel",
           "path": "/json-to-excel",
           "icon": "fa-solid fa-file-excel",
@@ -419,7 +434,7 @@
         },
         {
           "label": "iFocus",
-          "path": "https://hoangtran99.is-a.dev/ifocus",
+          "path": "https://ifocuss.pages.dev",
           "icon": "fa-solid fa-battery-half",
           "newTab": true
         },
@@ -529,6 +544,12 @@
       "icon": "fa-solid fa-gamepad fa-lg",
       "children": [
         {
+          "label": "Gamehub24",
+          "path": "/gamehub24",
+          "icon": "fa-solid fa-chess-board",
+          "badge": "NEW"
+        },
+        {
           "label": "WheelOfNames",
           "path": "/wheel-of-names",
           "icon": "fa-solid fa-dharmachakra"
@@ -575,9 +596,9 @@
           "divider": true
         },
         {
-          "label": "LOL2D",
+          "label": "MOBA2D",
           "path": "/lol2d",
-          "icon": "fa-solid fa-l",
+          "icon": "fa-solid fa-chess-knight",
           "badge": "HOT"
         },
         {

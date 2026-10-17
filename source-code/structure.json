@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T15:57:44.325Z",
+  "generatedAt": "2026-10-17T16:32:38.529Z",
   "rootPath": "src",
   "structure": [
     {
@@ -4061,6 +4061,13 @@
             {
               "title": "index.tsx",
               "key": "screens/Desktop/index.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "SkinPicker.tsx",
+              "key": "screens/Desktop/SkinPicker.tsx",
               "type": "file",
               "extension": ".tsx",
               "isLeaf": true

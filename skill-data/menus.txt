@@ -50,7 +50,7 @@ Zalo Tools
   /zalo | Manager [NEW]
 Youtube Tools
   /youtube-subs | Subscription [NEW]
-/products | Other products [NEW] (no-ext)
+/products | Other products
 ---
 /desktop | AIO Desktop [NEW]
 OSINT Tools
@@ -66,6 +66,9 @@ OSINT Tools
   /map | Map [NEW] (no-ext)
   /tip | Tip (no-ext)
 Utils
+  /blog | Social AIO Blog
+  /time-horizon | Time Horizon [NEW]
+  /tv-remote | TV Remote [NEW]
   /json-to-excel | JSON to Excel [HOT] (no-ext)
   /json-crack | JSON Crack
   /md-to-word | Markdown to Word [NEW]
@@ -73,7 +76,7 @@ Utils
   /pixel-diff | Pixel Diff
   /invisible-text | Invisible text (no-ext)
   /web-timer | Web timer
-  https://hoangtran99.is-a.dev/ifocus | iFocus
+  https://ifocuss.pages.dev | iFocus
   /titan-bench | Titan Bench [NEW]
   ---
   /it-tools | IT Tools
@@ -94,6 +97,7 @@ Utils
   /store/accounts | Accounts (no-ext)
   ---
 Games
+  /gamehub24 | Gamehub24 [NEW]
   /wheel-of-names | WheelOfNames
   /duckrace | Hack duckrace
   ---
@@ -104,7 +108,7 @@ Games
   /win98 | Win 98
   /win96 | Win 96
   ---
-  /lol2d | LOL2D [HOT]
+  /lol2d | MOBA2D [HOT]
   ---
   /pong-retro | Pong Retro
   /hyper-pong | Hyper Pong
