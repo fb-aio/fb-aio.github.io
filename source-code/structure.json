@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:32:38.529Z",
+  "generatedAt": "2026-10-18T14:11:16.310Z",
   "rootPath": "src",
   "structure": [
     {
@@ -3162,6 +3162,13 @@
           "key": "hooks/useAdSense.ts",
           "type": "file",
           "extension": ".ts",
+          "isLeaf": true
+        },
+        {
+          "title": "useCacheState.test.tsx",
+          "key": "hooks/useCacheState.test.tsx",
+          "type": "file",
+          "extension": ".tsx",
           "isLeaf": true
         },
         {
