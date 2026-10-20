@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:11:16.310Z",
+  "generatedAt": "2026-10-20T20:08:38.946Z",
   "rootPath": "src",
   "structure": [
     {
@@ -3113,6 +3113,13 @@
           "key": "constants/index.ts",
           "type": "file",
           "extension": ".ts",
+          "isLeaf": true
+        },
+        {
+          "title": "landingPages.json",
+          "key": "constants/landingPages.json",
+          "type": "file",
+          "extension": ".json",
           "isLeaf": true
         },
         {
