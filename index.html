@@ -4,6 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- Gộp SEO về fbaio.org: người MỚI vào facebook-all-in-one.com (và Googlebot) được chuyển sang
+             fbaio.org. Người cũ đã có dữ liệu ở domain này (cài đặt, workflow n8n trong IndexedDB...)
+             thì ở lại — redirect 301 cứng ở Cloudflare sẽ làm họ "mất" dữ liệu vì storage gắn theo domain -->
+        <script>
+            (function () {
+                try {
+                    if (
+                        location.hostname.replace(/^www\./, '') === 'facebook-all-in-one.com' &&
+                        !localStorage.getItem('facebook-all-in-one-extension')
+                    )
+                        location.replace(
+                            'https://fbaio.org' + location.pathname + location.search + location.hash
+                        );
+                } catch (e) {}
+            })();
+        </script>
+
         <!-- /policy -> privacy policy, redirect before loading the app -->
         <script>
             (function () {
@@ -26,10 +43,12 @@
         <!-- description -->
         <meta
             name="description"
-            content="Social AIO: All in one toolbox for manage your Social Media"
+            content="Social AIO (FB AIO - Facebook All In One): all-in-one toolbox to bulk download, clean up and automate Facebook, Instagram, TikTok, Threads"
         />
 
-        <title>Social AIO Extension</title>
+        <!-- giữ tên cũ "FB AIO" / "Facebook AIO" trong title: người dùng vẫn tìm bằng tên cũ, bỏ đi
+             (31/7/2026) làm traffic Google từ khoá "facebook aio" giảm ~90% -->
+        <title>Social AIO (FB AIO) - Facebook All In One Extension</title>
 
         <!-- Web deploy trên nhiều mirror (pages.dev, vercel, netlify, github.io...) cùng nội dung →
              báo Google bản chính là fbaio.org để không bị coi là trùng lặp / chia thứ hạng -->
@@ -229,7 +248,7 @@
                 margin-right: 8px;
             }
         </style>
-      <script type="module" crossorigin src="./src/p0gzKOmd.js"></script>
+      <script type="module" crossorigin src="./src/h2g_stYH.js"></script>
       <link rel="modulepreload" crossorigin href="./libs/BzZCwfXG.js">
       <link rel="modulepreload" crossorigin href="./libs/BIsa_wjq.js">
       <link rel="modulepreload" crossorigin href="./libs/B3ZIOLOa.js">
