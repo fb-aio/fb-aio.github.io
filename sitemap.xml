@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://fbaio.org/</loc><lastmod>2026-10-17</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://fbaio.org/llms.txt</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://fbaio.org/skill-data/guide.md</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://fbaio.org/skill-data/features.txt</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://fbaio.org/skill-data/apis.txt</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://fbaio.org/skill-data/apis.json</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://fbaio.org/skill-data/menus.txt</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://fbaio.org/</loc><lastmod>2026-10-20</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://fbaio.org/llms.txt</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fbaio.org/skill-data/guide.md</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fbaio.org/skill-data/features.txt</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fbaio.org/skill-data/apis.txt</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fbaio.org/skill-data/apis.json</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://fbaio.org/skill-data/menus.txt</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/xem-story-facebook-an-danh/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/loc-ban-be-facebook/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/tai-anh-video-facebook-hang-loat/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/xem-tin-nhan-dau-tien-messenger/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/roi-nhom-facebook-hang-loat/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fbaio.org/tinh-nang/xoa-bai-viet-facebook-hang-loat/</loc><lastmod>2026-10-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>
