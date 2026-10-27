@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T20:08:38.946Z",
+  "generatedAt": "2026-10-27T11:56:51.668Z",
   "rootPath": "src",
   "structure": [
     {
@@ -4171,6 +4171,13 @@
               "isLeaf": true
             },
             {
+              "title": "StreamDownloader.tsx",
+              "key": "screens/Downloader/StreamDownloader.tsx",
+              "type": "file",
+              "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
               "title": "TelegramDownloader.tsx",
               "key": "screens/Downloader/TelegramDownloader.tsx",
               "type": "file",
@@ -6070,6 +6077,83 @@
             {
               "title": "queue.ts",
               "key": "services/requestQueue/queue.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "streamDownload",
+          "key": "services/streamDownload",
+          "type": "folder",
+          "children": [
+            {
+              "title": "dash.test.ts",
+              "key": "services/streamDownload/dash.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "dash.ts",
+              "key": "services/streamDownload/dash.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "hls.test.ts",
+              "key": "services/streamDownload/hls.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "hls.ts",
+              "key": "services/streamDownload/hls.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "index.ts",
+              "key": "services/streamDownload/index.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "remux.ts",
+              "key": "services/streamDownload/remux.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "segmentDownloader.test.ts",
+              "key": "services/streamDownload/segmentDownloader.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "segmentDownloader.ts",
+              "key": "services/streamDownload/segmentDownloader.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "types.ts",
+              "key": "services/streamDownload/types.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "url.ts",
+              "key": "services/streamDownload/url.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
