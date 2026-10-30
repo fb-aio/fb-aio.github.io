@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T11:56:51.668Z",
+  "generatedAt": "2026-10-30T10:57:31.743Z",
   "rootPath": "src",
   "structure": [
     {
@@ -5461,6 +5461,13 @@
             {
               "title": "workflowInputs.ts",
               "key": "screens/N8n/workflowInputs.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "workflowRunner.diamond.test.ts",
+              "key": "screens/N8n/workflowRunner.diamond.test.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
