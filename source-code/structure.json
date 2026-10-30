@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T12:17:16.210Z",
+  "generatedAt": "2026-10-30T16:45:58.149Z",
   "rootPath": "src",
   "structure": [
     {
@@ -25,6 +25,20 @@
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
+            },
+            {
+              "title": "profile.test.ts",
+              "key": "apis/bilibili/profile.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "profile.ts",
+              "key": "apis/bilibili/profile.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
             }
           ]
         },
@@ -43,6 +57,20 @@
             {
               "title": "core.ts",
               "key": "apis/douyin/core.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "profile.test.ts",
+              "key": "apis/douyin/profile.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "profile.ts",
+              "key": "apis/douyin/profile.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -1107,6 +1135,48 @@
           ]
         },
         {
+          "title": "kuaishou",
+          "key": "apis/kuaishou",
+          "type": "folder",
+          "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/kuaishou/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "core.ts",
+              "key": "apis/kuaishou/core.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "rednote",
+          "key": "apis/rednote",
+          "type": "folder",
+          "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/rednote/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "core.ts",
+              "key": "apis/rednote/core.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
           "title": "scribd",
           "key": "apis/scribd",
           "type": "folder",
@@ -1205,6 +1275,48 @@
             {
               "title": "core.ts",
               "key": "apis/tiktok/core.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "weibo",
+          "key": "apis/weibo",
+          "type": "folder",
+          "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/weibo/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "core.ts",
+              "key": "apis/weibo/core.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            }
+          ]
+        },
+        {
+          "title": "x",
+          "key": "apis/x",
+          "type": "folder",
+          "children": [
+            {
+              "title": "core.test.ts",
+              "key": "apis/x/core.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "core.ts",
+              "key": "apis/x/core.ts",
               "type": "file",
               "extension": ".ts",
               "isLeaf": true
@@ -6065,6 +6177,20 @@
               "key": "services/downloadBulk/downloadBulkService.tsx",
               "type": "file",
               "extension": ".tsx",
+              "isLeaf": true
+            },
+            {
+              "title": "options.test.ts",
+              "key": "services/downloadBulk/options.test.ts",
+              "type": "file",
+              "extension": ".ts",
+              "isLeaf": true
+            },
+            {
+              "title": "options.ts",
+              "key": "services/downloadBulk/options.ts",
+              "type": "file",
+              "extension": ".ts",
               "isLeaf": true
             },
             {
